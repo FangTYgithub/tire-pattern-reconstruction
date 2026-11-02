@@ -1,0 +1,95 @@
+{
+ "t_local": "2026-10-12T00:07:27+02:00",
+ "counts": {
+  "views": 2752,
+  "unique_images": 2688,
+  "unique_decodes": 2688,
+  "unique_rasters": 49,
+  "images_main_ABC": 2016,
+  "images_gauss": 672,
+  "by_family": {
+   "point": 1088,
+   "line": 1600
+  },
+  "shared_images": 64,
+  "shared_detail": [
+   {
+    "family": "point",
+    "size_mm": 0.5,
+    "phase_label": "sn_phase2",
+    "n": 64
+   }
+  ]
+ },
+ "budget": {
+  "Q_dot": 5850.0,
+  "Q_line": 11695.0,
+  "dot_min_integral": 5850.0,
+  "dot_min_at": [
+   "r 0.5 sn_phase2"
+  ],
+  "dot_integrals": {
+   "r0.5|sn_phase0": 6172.0,
+   "r0.5|sn_phase1": 5880.0,
+   "r0.5|sn_phase2": 5850.0,
+   "r1|sn_phase0": 24576.0,
+   "r1|sn_phase1": 23479.0,
+   "r1|sn_phase2": 23440.0,
+   "r1.5|sn_phase0": 55264.0,
+   "r1.5|sn_phase1": 52812.0,
+   "r1.5|sn_phase2": 52787.0
+  },
+  "line_min_integral": 15360.0,
+  "line_integrals": {
+   "w0.5|ph0": 16896.0,
+   "w0.5|ph1": 16896.0,
+   "w0.5|ph2": 15360.0,
+   "w0.5|ph3": 15360.0,
+   "w0.5|ph4": 15872.0,
+   "w0.5|ph5": 15872.0,
+   "w0.5|ph6": 17408.0,
+   "w0.5|ph7": 17408.0,
+   "w0.75|ph0": 25088.0,
+   "w0.75|ph1": 25600.0,
+   "w0.75|ph2": 24064.0,
+   "w0.75|ph3": 23040.0,
+   "w0.75|ph4": 23040.0,
+   "w0.75|ph5": 23040.0,
+   "w0.75|ph6": 25088.0,
+   "w0.75|ph7": 25088.0,
+   "w1|ph0": 34816.0,
+   "w1|ph1": 34304.0,
+   "w1|ph2": 32768.0,
+   "w1|ph3": 31744.0,
+   "w1|ph4": 31744.0,
+   "w1|ph5": 32256.0,
+   "w1|ph6": 34816.0,
+   "w1|ph7": 34816.0,
+   "w1.25|ph0": 43008.0,
+   "w1.25|ph1": 43008.0,
+   "w1.25|ph2": 40960.0,
+   "w1.25|ph3": 39424.0,
+   "w1.25|ph4": 39424.0,
+   "w1.25|ph5": 39424.0,
+   "w1.25|ph6": 41984.0,
+   "w1.25|ph7": 43008.0,
+   "w1.5|ph0": 51200.0,
+   "w1.5|ph1": 51712.0,
+   "w1.5|ph2": 48640.0,
+   "w1.5|ph3": 47104.0,
+   "w1.5|ph4": 47104.0,
+   "w1.5|ph5": 46592.0,
+   "w1.5|ph6": 49664.0,
+   "w1.5|ph7": 51200.0
+  },
+  "max_equal_integral_peak": 1.0,
+  "max_integral_rel_err": 4.1751282599401454e-08,
+  "dot_Q_equals_min_integral": true,
+  "all_peaks_le_1": true,
+  "line_registered_raster_hash_ok": true,
+  "n_line_rasters_checked": 40
+ },
+ "problems": [],
+ "views_csv_sha256": "3e94d533c4257087e1117c463c0a30432906dc92d962da3c50aa73006538254f",
+ "images_csv_sha256": "6602e55815876ef545a59fb76b8fd7dfebc06899e8920d08e54820086dbad7de"
+}

@@ -1,0 +1,24 @@
+{
+ "identity": "omega0",
+ "boundary": "legacy",
+ "n_nodes": 30947,
+ "hash": "e240df004a66e58d8dfb12162a8a18ba6452c6a58c7664a860dd352b2b3b0ea3",
+ "step": 0.5,
+ "x0": -46.0,
+ "y0": -46.0,
+ "nx": 185,
+ "ny": 185,
+ "bounds": {
+  "x": [
+   -45.0,
+   44.5
+  ],
+  "y": [
+   -43.0,
+   45.0
+  ]
+ },
+ "npz_sha256": "6c191c249ea3682966a38c4b8ba7721a81bae10f9005fe24847a27795fa53500",
+ "complete": true,
+ "t_local": "2026-10-16T18:06:41+0200"
+}

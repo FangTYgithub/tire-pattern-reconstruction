@@ -1,0 +1,761 @@
+{
+ "version": "SURF-02 v1 (2026-10-11)",
+ "created_local": "2026-10-11T22:33:24+0200",
+ "frame": {
+  "mapping": "x = -x_p, y = y_p, z = c - H",
+  "c_ref_mm": 16.645465475819755,
+  "c_ref_definition": "H_B,base(0, 0): flat-ground profile B + arc at the axis, read once, shared by all surfaces; no per-surface re-zeroing",
+  "kappa_H_1_per_mm": 0.0025,
+  "gauss": {
+   "d_mm": 5.0,
+   "fwhm_mm": 20.0,
+   "center": [
+    0.0,
+    0.0
+   ],
+   "aspect": 1.0
+  },
+  "m3_mode": "mesh[\"z_alignment\"] = \"absolute\" (new explicit mode; default \"min\" unchanged)"
+ },
+ "device": {
+  "convention": "fixed nominal simulation device (SENSOR_DEFAULTS); not measured extrinsics",
+  "image_px": [
+   512,
+   512
+  ],
+  "focal_length_mm": 25.0,
+  "pixel_pitch_mm": 0.03,
+  "baseline_mm": 50.0,
+  "working_dist_mm": 150.0,
+  "K": [
+   [
+    833.3333333333334,
+    0.0,
+    255.5
+   ],
+   [
+    0.0,
+    833.3333333333334,
+    255.5
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "camera_center_mm": [
+   0.0,
+   25.0,
+   -150.0
+  ],
+  "projector_center_mm": [
+   0.0,
+   -25.0,
+   -150.0
+  ],
+  "camera_R": [
+   [
+    -0.0,
+    0.9863939238321437,
+    0.1643989873053573
+   ],
+   [
+    -1.0,
+    -0.0,
+    0.0
+   ],
+   [
+    0.0,
+    -0.1643989873053573,
+    0.9863939238321437
+   ]
+  ],
+  "projector_R": [
+   [
+    0.0,
+    0.9863939238321437,
+    -0.1643989873053573
+   ],
+   [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.1643989873053573,
+    0.9863939238321437
+   ]
+  ],
+  "look_at_mm": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "mm_per_px_at_wd": 0.18,
+  "triangulation_angle_deg": 18.924644416051233
+ },
+ "window": {
+  "z0_mm": -16.0,
+  "z1_mm": 4.0,
+  "measurement_volume_mm": 20.0,
+  "line_search_margin_mm": 1e-06,
+  "dot_cfg_keys": {
+   "search_z_min_mm": -16.0,
+   "measurement_volume_mm": 20.0
+  },
+  "line_cfg_keys": {
+   "search_z_min_mm": -16.0,
+   "measurement_volume_mm": 20.0,
+   "search_margin_mm": 1e-06
+  },
+  "note": "one window for every surface and both families; coverage reported, never adapted per case"
+ },
+ "grid": {
+  "scientific": [
+   0.25,
+   0.125
+  ],
+  "check_only": [
+   0.5,
+   0.25
+  ],
+  "x_half_mm": 100.0,
+  "y_range": "profile range of the variant"
+ },
+ "roi": {
+  "r_mm": 15.0,
+  "gross_mm": 1.0,
+  "fov_half_mm": 46.08
+ },
+ "surfaces": {
+  "A_curv": {
+   "variant": "A",
+   "gauss": false,
+   "de": "A: M10 + Zusatzkrümmung",
+   "zh": "M10+弧",
+   "sha16": "80db5f55eca4e989",
+   "shape": [
+    1897,
+    801
+   ],
+   "z_range_mm": [
+    -50.54167914274573,
+    3.106689886118682
+   ],
+   "roi": {
+    "n_nodes": 22605,
+    "area_total_mm2": 706.40625,
+    "hash": "2d5068b1e1a8a222a361fa04a0bf9191c5bb68a13031af7f1e84c28d9bd377ca",
+    "z_range": [
+     -0.2867252098776234,
+     2.1121474868541448
+    ],
+    "window_cov_roi": 1.0,
+    "window_cov_fov": 1.0,
+    "z_range_fov": [
+     -3.174475364716269,
+     3.106689886118682
+    ]
+   }
+  },
+  "C_curv": {
+   "variant": "C",
+   "gauss": false,
+   "de": "C: M24 + Zusatzkrümmung",
+   "zh": "M24+弧",
+   "sha16": "4c503bf09d6454cd",
+   "shape": [
+    1889,
+    801
+   ],
+   "z_range_mm": [
+    -49.05957836892795,
+    1.9249622080814852
+   ],
+   "roi": {
+    "n_nodes": 22605,
+    "area_total_mm2": 706.40625,
+    "hash": "ac44c3742f801ac2062fd6204a86c0142aaf7860d878ce072f8f77120b62a46c",
+    "z_range": [
+     -5.204402352225323,
+     -0.5273382704221063
+    ],
+    "window_cov_roi": 1.0,
+    "window_cov_fov": 1.0,
+    "z_range_fov": [
+     -13.856329965502798,
+     1.8161230772506034
+    ]
+   }
+  },
+  "B_curv": {
+   "variant": "B",
+   "gauss": false,
+   "de": "B: ebene Fahrbahn (Reifenkontur) + Zusatzkrümmung",
+   "zh": "平地B+弧",
+   "sha16": "0a1ac8130478b682",
+   "shape": [
+    1897,
+    801
+   ],
+   "z_range_mm": [
+    -51.73045725115059,
+    1.352433081541772
+   ],
+   "roi": {
+    "n_nodes": 22605,
+    "area_total_mm2": 706.40625,
+    "hash": "fe73d456a203d61afe5770be86fbcf71793704bf69c8e6179edfb7fb56320678",
+    "z_range": [
+     -0.5242720359585427,
+     0.12977389464288436
+    ],
+    "window_cov_roi": 1.0,
+    "window_cov_fov": 1.0,
+    "z_range_fov": [
+     -3.0971735677148295,
+     1.274048710037686
+    ]
+   }
+  },
+  "A_curv_gauss": {
+   "variant": "A",
+   "gauss": true,
+   "de": "A: M10 + Zusatzkrümmung + Gauß-Erhebung (5 mm)",
+   "zh": "M10+弧+5 mm高斯",
+   "sha16": "cda78aa7cb043808",
+   "shape": [
+    1897,
+    801
+   ],
+   "z_range_mm": [
+    -50.54167914274573,
+    3.1066871783764345
+   ],
+   "roi": {
+    "n_nodes": 22605,
+    "area_total_mm2": 706.40625,
+    "hash": "9f1fe9df1f4f50d7f85f6bedb199f72e29e95749e30e9376f0df90b73202746d",
+    "z_range": [
+     -4.168633404869972,
+     1.0610269677870008
+    ],
+    "window_cov_roi": 1.0,
+    "window_cov_fov": 1.0,
+    "z_range_fov": [
+     -4.168633404869972,
+     3.1066871783764345
+    ]
+   }
+  }
+ },
+ "dots": {
+  "lattice": "R8x4",
+  "r_mm": 1.0,
+  "peak": 1.0,
+  "group": "D0",
+  "positions": [
+   33,
+   115
+  ],
+  "positions_uv": [
+   [
+    0.09375,
+    0.15625
+   ],
+   [
+    0.21875,
+    0.46875
+   ]
+  ],
+  "detector": "r5_detect candidates + D0 window",
+  "correspondence": "epipolar (M4), not anchored"
+ },
+ "lines": {
+  "LINE": {
+   "w_mm": 0.5,
+   "s_mm": 8.0,
+   "phi_deg": 0.0,
+   "peak": 1.0,
+   "regime": "fixed_peak",
+   "path": "P4_C3_cal",
+   "phases": [
+    -0.3125,
+    0.4375
+   ]
+  },
+  "P4_C3_cal": {
+   "detector": "steger",
+   "steger_threshold_rule": "design_or_noise",
+   "guard_min_chain_px": 6.0,
+   "vote_valid_only": true,
+   "steger_noise_coef": {
+    "1.0": 0.745,
+    "1.2028130608117205": 0.4094820595436239,
+    "1.6037507477489605": 0.16644207627234214,
+    "2.0046884346862006": 0.08096365128204507,
+    "2.405626121623441": 0.048
+   },
+   "steger_noise_coef_id": "c2_exact_scales_fp1e-4_v1"
+  },
+  "m4_cfg": {
+   "focal_length_mm": 25.0,
+   "pixel_pitch_mm": 0.03,
+   "baseline_mm": 50.0,
+   "working_dist_mm": 150.0,
+   "image_size_px": 512,
+   "measurement_volume_mm": 20.0,
+   "search_z_min_mm": -16.0,
+   "search_margin_mm": 1e-06,
+   "pattern_peak": 1.0,
+   "psf_sigma_px": 1.0
+  }
+ },
+ "imaging": {
+  "batch_size": 512,
+  "noise_sigma": 0.0,
+  "psf_sigma_px": 1.0,
+  "albedo": 1.0,
+  "albedo_exposure": 1.0,
+  "specular_k": 0.0,
+  "mottle_amp": 0.0,
+  "outlier_frac": 0.0,
+  "mottle_seed": 0,
+  "seed_rule": "SEED_BASE + 1000 surface + 100 family + 10 phase + (sigma > 0)",
+  "seed_base": 10300000
+ },
+ "cases": [
+  {
+   "case_id": "A_curv_dots_ph0_s0",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10300000,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_dots_ph0_s40",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10300001,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_dots_ph1_s0",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10300010,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_dots_ph1_s40",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10300011,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_lines_ph0_s0",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10300100,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_lines_ph0_s40",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10300101,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_lines_ph1_s0",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10300110,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_lines_ph1_s40",
+   "tag": "main",
+   "surface": "A_curv",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10300111,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_dots_ph0_s0",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10301000,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_dots_ph0_s40",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10301001,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_dots_ph1_s0",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10301010,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_dots_ph1_s40",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10301011,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_lines_ph0_s0",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10301100,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_lines_ph0_s40",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10301101,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_lines_ph1_s0",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10301110,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "C_curv_lines_ph1_s40",
+   "tag": "main",
+   "surface": "C_curv",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10301111,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_dots_ph0_s0",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10302000,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_dots_ph0_s40",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10302001,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_dots_ph1_s0",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10302010,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_dots_ph1_s40",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10302011,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_lines_ph0_s0",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10302100,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_lines_ph0_s40",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10302101,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_lines_ph1_s0",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10302110,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "B_curv_lines_ph1_s40",
+   "tag": "main",
+   "surface": "B_curv",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10302111,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_dots_ph0_s0",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10303000,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_dots_ph0_s40",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "dots",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10303001,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_dots_ph1_s0",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10303010,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_dots_ph1_s40",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "dots",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10303011,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_lines_ph0_s0",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 0.0,
+   "seed": 10303100,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_lines_ph0_s40",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "lines",
+   "phase_index": 0,
+   "sigma": 40.0,
+   "seed": 10303101,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_lines_ph1_s0",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 0.0,
+   "seed": 10303110,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  },
+  {
+   "case_id": "A_curv_gauss_lines_ph1_s40",
+   "tag": "main",
+   "surface": "A_curv_gauss",
+   "family": "lines",
+   "phase_index": 1,
+   "sigma": 40.0,
+   "seed": 10303111,
+   "grid": [
+    0.25,
+    0.125
+   ]
+  }
+ ],
+ "source_sha256": {
+  "src/m1_tire_surface.py": "0bd0f777f066de7652f2ec1454baa3e3fae1676edd1308056dc0fac61eef10c8",
+  "src/m2_pattern.py": "0b51557627409ea2f0957d579abb042b186b6922d622f84a40c3b85497944c41",
+  "src/m3_virtual_camera.py": "9b988bf86285d9d52db7d6bf2af26f3e71aedea0ec397b616869ebe244e9a7c2",
+  "src/m4_reconstruction.py": "89839b562bc479ebc668912d378305d736847b43f2df514a79d142fdf2ff417b",
+  "src/m4_lines.py": "18dac31849eaac9c8de137a737c9fabaaa2bf700e69a831c917232223825f20e",
+  "src/surface_eval_r3.py": "4157c17bf696cb1489973792107f551670877b82bba45730e630a22d17113d29",
+  "src/m5_evaluation.py": "5231c006a77b212ff4e84f3071d792e226fef743389f51350b13b19338defb61",
+  "scripts/surface_revision/surf02/s2_common.py": "58318e404290ab9d8b627669f0533aa5d71d883c4d8ba1bfbb722bad1fffe0c8",
+  "scripts/surface_revision/surf02/s2_run.py": "7db6f2ce06e89aa342394c8a9c9d35a0f79713e3c470cf4eab0db70a3cec2bda",
+  "scripts/surface_revision/surf01/s1_model.py": "eeb83e100f11995a2724d60df452f8a84e38d414daaf9cb6a0a7669a74e907cd",
+  "scripts/pm014/pm014_surface.py": "f75f33f46499a1427003c3ceded236f01c683d200a491050c09100b4c3222a48",
+  "outputs/line01r/c3/config/paths_c3_validation.json": "da02f87e35291b18871b62c37f38a243e7f31b854f52a110786c7674e02bddd8"
+ }
+}

@@ -1,0 +1,5 @@
+family,phase_id,u,v,phase_frac,min_dist_frac,nearest_seen,min_dist_mm_R6x4,n_seen,min_dist_mm_s5_6
+dots,X0,0.5859375,0.0234375,,0.11611676073629991,S3 val8,0.5527497959507238,65,
+dots,X1,0.7890625,0.9296875,,0.1137517170200081,formal N4,0.5222117177208876,65,
+lines,X0,,,-0.423828125,0.013671875,line01r seen / formal / C2 / R2 / R4,,58,0.07656249999999999
+lines,X1,,,-0.267578125,0.013671875,line01r seen / formal / C2 / R2 / R4,,58,0.07656249999999999

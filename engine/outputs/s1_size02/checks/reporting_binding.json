@@ -1,0 +1,25 @@
+{
+  "corrections": "Filled inherited empty DF section label with S1; clearer reference mesh, uniform domain background and separate colorbar. Scientific numbers unchanged.",
+  "files": {
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\scripts\\s1_size02\\analyse.py": "484a48ebf3367d6ebbcbd15586b67dd947c2b64614f6eccf60d8d73b604217f7",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\scripts\\s1_size02\\audit.py": "7b6adf6f6b5eab40a79db4ec469dcd337211a4d62805b506437903cf2d07be5f"
+  },
+  "final_files": {
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\scripts\\s1_size02\\analyse.py": "3f16c4c224e8f5680a51ac7a1660cb44ece1a9e2988ca566a02d807582208820",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\scripts\\s1_size02\\audit.py": "7b6adf6f6b5eab40a79db4ec469dcd337211a4d62805b506437903cf2d07be5f"
+  },
+  "scope": "Reporting code follows pre-imaging protocol; full statistics not yet generated. Extra full-range D0/DF plot is restricted to the two newly measured radii.",
+  "time": "2026-10-22T02:55:06+0200",
+  "status": "analysis and visual review complete",
+  "completed_at": "2026-10-22T03:15:07+02:00",
+  "outputs": {
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\new_cases.csv": "32acde14f04040b46cfd3f9f82016f8387e6e48c949027e0b7da9d050b11795d",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\merged_D0_cases.csv": "c246b3b8df45f40bf88de2cd478fe87525fa22ed2ec2d6d5dae2213f5790fb06",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\merged_DF_key_cases.csv": "9dcfc415abf6004d7953976d793a88cd578937c3d3554a032eddec6c1a7b3368",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\conditions.csv": "27e6797b9b3ae5d36c25606cd48cd60e1431bb3fbf037569f23cd778fe32b0fa",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\paired_effects.csv": "0324e72205945859e9d78ddc1a80b9852d785a004f0e44772e6320d95fdebf50",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\figure_index.csv": "7d289c48220cb2e6778d0abef10960d8b1e2d3fe76240d90524c91a86d4f1974",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\README_study.md": "978ca40d19478a4ffa5b3d8c5cdb762a99a0886a7614ee7e788105d7f9584ceb",
+    "C:\\Users\\16944\\Desktop\\Masterarbeit\\outputs\\s1_size02\\checks\\independent_audit.json": "34ad9bf296ad3c1d1b9a60ddd7ccb6487519bdea934f5e38ed6cc6c299bacd16"
+  }
+}

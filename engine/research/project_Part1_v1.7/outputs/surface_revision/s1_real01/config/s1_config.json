@@ -1,0 +1,373 @@
+{
+ "task": "S1-REAL-01",
+ "task_file": "C:\\Users\\16944\\Desktop\\Masterarbeit\\protocols\\S1-REAL-01_protocol.md",
+ "task_file_sha256": "a09b15f602ceaba9ca0a35f6be48f6a17e3940d1d7d5c4d87884947cd8470dce",
+ "created_local": "2026-10-12T00:07:43+02:00",
+ "platform": {
+  "version": "SURF-02 v1.1 (2026-10-12)",
+  "release_record": "outputs/surface_revision/surf02/release/release_surf02.json",
+  "release_sha256": "e1b11fefdb85f1909db8e76115bca6a48001bb755858a92f94bc0d345d0ed144",
+  "dependency_manifest_sha256": "547c33d04f84699945b78cfce2c1547c3ccc4947b1ce31639793ece09f5722e0",
+  "binding_sha256": "95442e9153aba0896f7767ddca88744b99e5ee6fff77ba0805192b236839d50a",
+  "window_mm": [
+   -16.0,
+   4.0
+  ],
+  "c_ref_mm": 16.645465475819755,
+  "z_alignment": "absolute",
+  "sensor": {
+   "convention": "fixed nominal simulation device (SENSOR_DEFAULTS); not measured extrinsics",
+   "image_px": [
+    512,
+    512
+   ],
+   "focal_length_mm": 25.0,
+   "pixel_pitch_mm": 0.03,
+   "baseline_mm": 50.0,
+   "working_dist_mm": 150.0,
+   "K": [
+    [
+     833.3333333333334,
+     0.0,
+     255.5
+    ],
+    [
+     0.0,
+     833.3333333333334,
+     255.5
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "camera_center_mm": [
+    0.0,
+    25.0,
+    -150.0
+   ],
+   "projector_center_mm": [
+    0.0,
+    -25.0,
+    -150.0
+   ],
+   "camera_R": [
+    [
+     -0.0,
+     0.9863939238321437,
+     0.1643989873053573
+    ],
+    [
+     -1.0,
+     -0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -0.1643989873053573,
+     0.9863939238321437
+    ]
+   ],
+   "projector_R": [
+    [
+     0.0,
+     0.9863939238321437,
+     -0.1643989873053573
+    ],
+    [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.1643989873053573,
+     0.9863939238321437
+    ]
+   ],
+   "look_at_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "mm_per_px_at_wd": 0.18,
+   "triangulation_angle_deg": 18.924644416051233
+  },
+  "imaging": {
+   "batch_size": 512,
+   "noise_sigma": 0.0,
+   "psf_sigma_px": 1.0,
+   "albedo": 1.0,
+   "albedo_exposure": 1.0,
+   "specular_k": 0.0,
+   "mottle_amp": 0.0,
+   "outlier_frac": 0.0,
+   "mottle_seed": 0
+  }
+ },
+ "s1_dependencies_sha256": "7f5e1d3d0869f45bbf73d348d2dd9315e177ae23b423b58c8d2712eacc90973e",
+ "design": {
+  "source": "outputs/surface_revision/sections_adapter/candidates_s1s5.csv (section S1, priority core; registered phases / seeds of the old design; brightness re-derived)",
+  "dots": {
+   "radius_mm": [
+    0.5,
+    1.0,
+    1.5
+   ],
+   "lattice": "sn_lib S1 8 x 4 mm",
+   "phases": 3,
+   "sigma": [
+    0.0,
+    20.0,
+    40.0,
+    60.0,
+    80.0,
+    100.0
+   ],
+   "seeds_per_phase": 3,
+   "seed_rule": "9205000 + 10 phase + seed (surface independent)"
+  },
+  "lines": {
+   "width_mm": [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5
+   ],
+   "pitch_mm": 8.0,
+   "phi_deg": 0.0,
+   "phases": 8,
+   "sigma": [
+    0.0,
+    20.0,
+    40.0
+   ],
+   "reps_per_phase": 2,
+   "seed_rule": "l01rc1 seed_for arithmetic, base 10300000, new surface index (surface dependent)"
+  },
+  "brightness": {
+   "fixed_peak": 1.0,
+   "equal_integral": {
+    "rule": "peak = Q / sum(I0) on the actual binary raster; never clipped",
+    "Q_dot": 5850.0,
+    "Q_line": 11695.0
+   }
+  },
+  "decode": {
+   "point": "D0 (r5_detect candidates + D0 window + epipolar correspondence)",
+   "line": "P4_C3_cal (paths_c3_validation.json) with pattern_peak = actual peak"
+  },
+  "psf_px": 1.0,
+  "note": "phases / seeds re-used from the old design; geometry and every image are new; not a blind validation of old conclusions"
+ },
+ "manifest": {
+  "views_csv": "outputs/surface_revision/s1_real01/manifest/s1_views.csv",
+  "views_sha256": "3e94d533c4257087e1117c463c0a30432906dc92d962da3c50aa73006538254f",
+  "images_csv": "outputs/surface_revision/s1_real01/manifest/s1_images.csv",
+  "images_sha256": "6602e55815876ef545a59fb76b8fd7dfebc06899e8920d08e54820086dbad7de",
+  "counts": {
+   "views": 2752,
+   "unique_images": 2688,
+   "unique_decodes": 2688,
+   "unique_rasters": 49,
+   "images_main_ABC": 2016,
+   "images_gauss": 672,
+   "by_family": {
+    "point": 1088,
+    "line": 1600
+   },
+   "shared_images": 64,
+   "shared_detail": [
+    {
+     "family": "point",
+     "size_mm": 0.5,
+     "phase_label": "sn_phase2",
+     "n": 64
+    }
+   ]
+  }
+ },
+ "caps": {
+  "render": 2690,
+  "decode": 2720,
+  "rule": "renders <= unique images + 2 sigma-0 determinism renders; decodes <= unique decodes + 32 SURF-02 replay decodes; failed attempts count"
+ },
+ "evaluation": {
+  "local": "SURF-02 ROI r <= 15 mm (22605 scientific-grid nodes) via s2.evaluate",
+  "global_": {
+   "file": "outputs/surface_revision/s1_real01/domain/global_domain_step0p50.json",
+   "hash": "e240df004a66e58d8dfb12162a8a18ba6452c6a58c7664a860dd352b2b3b0ea3",
+   "n_nodes": 30947,
+   "area_mm2": 7736.75,
+   "step_mm": 0.5,
+   "fine_check": {
+    "file": "outputs/surface_revision/s1_real01/domain/global_domain_step0p25.json",
+    "hash": "f7332d2a4e31d1e0ba2c4868fbd07768ff3a4fac9da08a56debcb6a3de043632",
+    "n_nodes": 123860
+   }
+  },
+  "d_mm": 6.0,
+  "tau_mm": 0.15,
+  "gross_mm": 1.0,
+  "validity": "s2.point_validity: finite, window [-16, +4] mm, inside the grid (negative z valid)"
+ },
+ "first_batch": {
+  "rule": "<= 16 images fixed before rendering: all three main surfaces, both families, both size ends, dark equal-integral (dots r 1.5 at Q 5850 -> peak ~0.11), sigma 0 and noisy (20 / 40 / 100), shared-image case (dots r 0.5 equal integral = fixed peak where I0 = Q), and one complete panel group (M24, lines, equal integral, sigma 40, ph0 rep0, w 0.5 / 1.0 / 1.5) for the first real figure",
+  "rows": [
+   [
+    "M24_curv",
+    "line",
+    "equal_integral",
+    0.5,
+    40.0,
+    "ph0",
+    0
+   ],
+   [
+    "M24_curv",
+    "line",
+    "equal_integral",
+    1.0,
+    40.0,
+    "ph0",
+    0
+   ],
+   [
+    "M24_curv",
+    "line",
+    "equal_integral",
+    1.5,
+    40.0,
+    "ph0",
+    0
+   ],
+   [
+    "M10_curv",
+    "point",
+    "fixed_peak",
+    0.5,
+    0.0,
+    "sn_phase0",
+    0
+   ],
+   [
+    "M10_curv",
+    "point",
+    "equal_integral",
+    1.5,
+    100.0,
+    "sn_phase0",
+    0
+   ],
+   [
+    "M24_curv",
+    "point",
+    "equal_integral",
+    0.5,
+    40.0,
+    "sn_phase1",
+    1
+   ],
+   [
+    "M24_curv",
+    "point",
+    "fixed_peak",
+    1.5,
+    0.0,
+    "sn_phase2",
+    0
+   ],
+   [
+    "B_curv",
+    "point",
+    "fixed_peak",
+    1.5,
+    100.0,
+    "sn_phase0",
+    2
+   ],
+   [
+    "B_curv",
+    "point",
+    "equal_integral",
+    1.5,
+    0.0,
+    "sn_phase1",
+    0
+   ],
+   [
+    "B_curv",
+    "point",
+    "equal_integral",
+    0.5,
+    0.0,
+    "sn_phase2",
+    0
+   ],
+   [
+    "M10_curv",
+    "line",
+    "fixed_peak",
+    0.5,
+    0.0,
+    "ph0",
+    0
+   ],
+   [
+    "M10_curv",
+    "line",
+    "equal_integral",
+    1.5,
+    40.0,
+    "ph1",
+    0
+   ],
+   [
+    "B_curv",
+    "line",
+    "equal_integral",
+    0.5,
+    0.0,
+    "ph3",
+    0
+   ],
+   [
+    "B_curv",
+    "line",
+    "fixed_peak",
+    1.5,
+    20.0,
+    "ph6",
+    1
+   ]
+  ],
+  "image_keys": [
+   "S1I-835473b9bd2334b66efa3fb0",
+   "S1I-279849a55147c32a01646a79",
+   "S1I-6093aa2b9a9ba891b7791c75",
+   "S1I-0a6aa8c7ebb89835a658d9ee",
+   "S1I-c7354d8bc1a9594068490853",
+   "S1I-6ecc51c9d127c647fca217c8",
+   "S1I-a2517ce68fdc1fc8bfbf7817",
+   "S1I-a1bc0a014424070dc4507f56",
+   "S1I-b23850c28516daa003541696",
+   "S1I-8d65d7837864a29a6f77439c",
+   "S1I-ef4749d636cbc128bd050585",
+   "S1I-f09ccd35b4d723c9d0617b47",
+   "S1I-29c7c092bd75a8e022f70164",
+   "S1I-bb8fa43add850b7710307041"
+  ],
+  "determinism": {
+   "seed": 987654321,
+   "cases": "first-batch sigma-0 dot (M10 fixed r 0.5 sn_phase0) and line (M10 fixed w 0.5 ph0)"
+  }
+ },
+ "panels": {
+  "rule": "main surfaces x family x regime x sigma {0, 40}: sizes dots r 0.5 / 1.0 / 1.5, lines w 0.5 / 1.0 / 1.5; fixed example phase = first registered phase (sn_phase0 / ph0), rep 0; labelled \"feste Phase (Beispiel)\", never replaced by another phase; worst case: per family the main-surface view with the lowest global C_tau (ties: lower local C_tau, then key) is added as one extra group (its surface / regime / sigma / phase / rep, three sizes) only when its sigma is not 0 or 40"
+ },
+ "statistics": {
+  "rule": "reps averaged inside a phase, phases equally weighted; table = phase mean + median, range, defined / total phases, scientific failures; no-output -> coverage / recovery 0, errors undefined"
+ }
+}

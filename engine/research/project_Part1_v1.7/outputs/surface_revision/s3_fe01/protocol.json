@@ -1,0 +1,56 @@
+{
+ "task": "S3-FE-01",
+ "purpose": "section-3 front-end unification: frozen DF on every stored dot image of the section-3 studies; zero imaging",
+ "rule": {
+  "name": "DF",
+  "floor": "0.5 * pi * (r_min_mm / 0.18)^2 px^2 before the area-weighted median reference; r_min = smallest design radius",
+  "frozen_in": "S3-CODE-01 (s3c_dev.FLOOR)"
+ },
+ "regression": "per image: B0 (binding D0 call sequence) must reproduce the stored D0 record exactly and its re-evaluation must equal the stored metrics before DF is decoded",
+ "evaluators": {
+  "A": "s3c_dev.evaluate = s1r_eval.evaluate_case, Omega0 global domain (30947 nodes) + fixed local domain (not reported)",
+  "B": "s1r_eval.evaluate_case, Omega0 (as S1-SIZE-02)",
+  "C": "r2_eval.evaluate (symmetric_footprint boundary, Omega1 30986 nodes) as S4-REAL-02 / 07"
+ },
+ "caps": {
+  "decode_attempts_per_image": 2,
+  "new_imaging": 0
+ },
+ "plans": {
+  "A": {
+   "stage": "A_s12",
+   "inputs": 3360,
+   "with_old_df": 1143,
+   "by_layout": {
+    "R10x4": 264,
+    "R12x4": 264,
+    "R6x4": 264,
+    "R7.35x4": 264,
+    "R8x2.5": 264,
+    "R8x3": 264,
+    "R8x4": 264,
+    "R8x6": 264,
+    "R8x8": 264,
+    "S1_R8x4": 720,
+    "T8x4": 264
+   },
+   "by_sigma": {
+    "0.0": 285,
+    "20.0": 615,
+    "40.0": 615,
+    "60.0": 615,
+    "80.0": 615,
+    "100.0": 615
+   },
+   "by_view_regimes": {
+    "fixed_peak_1": 288,
+    "fixed_peak_1;resource_cap_11695": 144,
+    "resource_cap_11695": 2928
+   },
+   "digest": "723ef75fdb23ea853f98d383c37b1827",
+   "t": "2026-10-22T04:55:16+0200"
+  }
+ },
+ "created": "2026-10-22T04:57:20+0200",
+ "updated": "2026-10-22T04:57:20+0200"
+}

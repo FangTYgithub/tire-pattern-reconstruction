@@ -1,0 +1,643 @@
+[
+  {
+    "study": "CODE07",
+    "key": "C2I-0183ccc51c62fa830f2ba8f0",
+    "row": {
+      "Q": 11695.000544846058,
+      "Q0": 38414.0,
+      "budget_ok": true,
+      "class_map_fp": "a4753c5281a9f2b07a56",
+      "code_parity": 0,
+      "family": "dots",
+      "geometry_phase": "N0",
+      "image_key": "C2I-0183ccc51c62fa830f2ba8f0",
+      "layout": "R5x4",
+      "limit": "integral_limited",
+      "m3_digest": "a4e0d7f9f45c87a8b11bd8fffc0ec1ffaa90029fd68dc692d6d24c1d17c761e0",
+      "pair_key": "394fd1ea48981c5e",
+      "pattern": "mid",
+      "peak_f32": 0.3044463098049164,
+      "phase_frac": null,
+      "phase_id": "N0",
+      "phase_index": 0,
+      "platform_surface": "A_curv",
+      "raster_key": "R-d1a505ee6eebf835576d",
+      "ref_image_key": "C2I-da0476094b4f56c0efca100e",
+      "regime": "resource_cap_11695",
+      "rep": 0,
+      "seed": 11300000.0,
+      "sigma": 40.0,
+      "sizes_mm": "0.810998224909;1.15856889273",
+      "stage": "formal",
+      "surface": "M10_curv",
+      "transition_layout": false,
+      "u": 0.5390625,
+      "usage": 1.0000000465879486,
+      "v": 0.7109375,
+      "v_scale": 0.30444629562138803
+    },
+    "expected": [
+      {
+        "method": "B0",
+        "arm": "use",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": 10.847671908003864,
+          "glob_pt_p95": 16.942183073708005,
+          "glob_surf_rmse": 10.160505981483665,
+          "n_accepted": 6.0,
+          "n_valid": 6.0
+        }
+      },
+      {
+        "method": "B0",
+        "arm": "ignore",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": 10.847671908003864,
+          "glob_pt_p95": 16.942183073708005,
+          "glob_surf_rmse": 10.160505981483665,
+          "n_accepted": 6.0,
+          "n_valid": 6.0
+        }
+      },
+      {
+        "method": "DF",
+        "arm": "use",
+        "metrics": {
+          "glob_Ctau": 0.5660968753029373,
+          "glob_Cvalid": 0.8840921575596988,
+          "glob_pt_rmse": 0.2350230113945138,
+          "glob_pt_p95": 0.4997053420046465,
+          "glob_surf_rmse": 0.1722637618175041,
+          "n_accepted": 343.0,
+          "n_valid": 343.0
+        }
+      },
+      {
+        "method": "DF",
+        "arm": "ignore",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": null,
+          "glob_pt_p95": null,
+          "glob_surf_rmse": null,
+          "n_accepted": 0.0,
+          "n_valid": 0.0
+        }
+      },
+      {
+        "method": "DS",
+        "arm": "use",
+        "metrics": {
+          "glob_Ctau": 0.6934436294309626,
+          "glob_Cvalid": 0.8745274178434097,
+          "glob_pt_rmse": 0.1662795777293766,
+          "glob_pt_p95": 0.338976180305417,
+          "glob_surf_rmse": 0.1209718708711414,
+          "n_accepted": 325.0,
+          "n_valid": 325.0
+        }
+      },
+      {
+        "method": "DS",
+        "arm": "ignore",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": null,
+          "glob_pt_p95": null,
+          "glob_surf_rmse": null,
+          "n_accepted": 0.0,
+          "n_valid": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "study": "CODE07",
+    "key": "C2I-93fc50e4049012774b7102a3",
+    "row": {
+      "Q": 11694.999870300293,
+      "Q0": 56832.0,
+      "budget_ok": true,
+      "class_map_fp": "4177c22fd26ca2e1456a",
+      "code_parity": 0,
+      "family": "lines",
+      "geometry_phase": "N0",
+      "image_key": "C2I-93fc50e4049012774b7102a3",
+      "layout": "4.45",
+      "limit": "integral_limited",
+      "m3_digest": "a4e0d7f9f45c87a8b11bd8fffc0ec1ffaa90029fd68dc692d6d24c1d17c761e0",
+      "pair_key": "fc26e6ed57e03770",
+      "pattern": "plain",
+      "peak_f32": 0.205781951546669,
+      "phase_frac": -0.451171875,
+      "phase_id": "N0",
+      "phase_index": 0,
+      "platform_surface": "A_curv",
+      "raster_key": "R-5e0f16b037621bb3123b",
+      "ref_image_key": null,
+      "regime": "resource_cap_11695",
+      "rep": 0,
+      "seed": null,
+      "sigma": 0.0,
+      "sizes_mm": "1",
+      "stage": "formal",
+      "surface": "M10_curv",
+      "transition_layout": false,
+      "u": null,
+      "usage": 0.9999999889098156,
+      "v": null,
+      "v_scale": 0.20578195382882883
+    },
+    "expected": [
+      {
+        "method": "P4",
+        "arm": "P4",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": null,
+          "glob_pt_p95": null,
+          "glob_surf_rmse": null,
+          "n_accepted": 0.0,
+          "n_valid": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "study": "JOINT05",
+    "key": "S5X-960092d817673183bc6488f3",
+    "row": {
+      "Q0": 13230.0,
+      "clipped_bands": null,
+      "combo": "D_r0.75_p8x4",
+      "design_centre_uv": null,
+      "df_branch": "planned same-image DF",
+      "diameter_mm": 1.5,
+      "display_fixed": true,
+      "eval_domain_global": "e240df004a66e58d",
+      "existing_decode_key": null,
+      "existing_image_key": null,
+      "family": "point",
+      "groups": "candidate_r0.75",
+      "image_identity_fields": "93f3d63872f5162c2f36e234",
+      "integral": 11694.999884963036,
+      "limit_type": "integral (peak < 1)",
+      "line_pitch_mm": null,
+      "line_width_mm": null,
+      "lit_centroid_u_px": 256.66492819349963,
+      "lit_centroid_v_px": 258.9480725623583,
+      "lit_px": 13230.0,
+      "m3_digest": "a4e0d7f9f45c87a8b11bd8fffc0ec1ffaa90029fd68dc692d6d24c1d17c761e0",
+      "main_decode": "D0",
+      "manifest_key": "S5X-960092d817673183bc6488f3",
+      "n_elements": 242,
+      "n_elements_border_clipped": 0,
+      "noise_seed": 9421601.0,
+      "orientation_deg": null,
+      "p_parallel_mm": 8.0,
+      "p_perp_mm": 4.0,
+      "peak": 0.8839758125472411,
+      "phase_frac": null,
+      "phase_label": "ph0",
+      "phase_offset_par_mm": 0.25,
+      "phase_offset_perp_mm": 2.625,
+      "phase_u": 0.03125,
+      "phase_v": 0.65625,
+      "platform_surface": "B_curv",
+      "radius_mm": 0.75,
+      "raster_key": "R-2cd2533eaee95e2c7643",
+      "rep": 1,
+      "seed_rule": "sl_lib: 9420000 + 10 position_index + k (surface independent, unchanged)",
+      "seed_source": "registered sigma-40 rep 1 seed (amplitude scan)",
+      "sigma": 20.0,
+      "status": "to_image",
+      "surface": "B_curv"
+    },
+    "expected": [
+      {
+        "method": "D0",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.696642647106343,
+          "glob_Cvalid": 0.872782499111384,
+          "glob_pt_rmse": 0.0440341017944576,
+          "glob_pt_p95": 0.0884364367868799,
+          "glob_surf_rmse": 0.109233048599166,
+          "glob_n_valid": 232,
+          "n_accepted": 233,
+          "n_valid": 233
+        }
+      },
+      {
+        "method": "DF",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.696642647106343,
+          "glob_Cvalid": 0.872782499111384,
+          "glob_pt_rmse": 0.0440341017944576,
+          "glob_pt_p95": 0.0884364367868799,
+          "glob_surf_rmse": 0.109233048599166,
+          "glob_n_valid": 232,
+          "n_accepted": 233,
+          "n_valid": 233
+        }
+      }
+    ]
+  },
+  {
+    "study": "LAYOUT07",
+    "key": "R2I-05f6a29d9889dac3d4bbb480",
+    "row": {
+      "baseline": "R8x4",
+      "block": null,
+      "boundary": "symmetric_footprint",
+      "cand": null,
+      "clipped_band_lit": false,
+      "family": "point",
+      "image_key": "R2I-05f6a29d9889dac3d4bbb480",
+      "image_npz_sha": null,
+      "image_source": "new",
+      "j": 0.0,
+      "layout": "regular",
+      "lit_px": 23474.0,
+      "noise_seed": 3200000001.0,
+      "old_decode_key": null,
+      "peak_f32": 0.4982107877731323,
+      "phase": "R0",
+      "phase_frac": null,
+      "phase_source": "s4_real05 A2_reserve dots_phases[0] = holdout32[24]",
+      "phase_u": 0.3045498672872782,
+      "phase_v": 0.4321908559650183,
+      "platform_surface": "B_curv",
+      "psf_px": 1.0,
+      "raster_key": "R-9adff9d24d7d8f1d14ce",
+      "render_seed": 3200000001,
+      "set": "main",
+      "sigma": 40.0,
+      "surface": "B_curv"
+    },
+    "expected": [
+      {
+        "method": "D0",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.669463628735558,
+          "glob_Cvalid": 0.787613761053379,
+          "glob_pt_rmse": 0.1140284259386303,
+          "glob_pt_p95": 0.2143493995257303,
+          "glob_surf_rmse": 0.1063457200833717,
+          "glob_n_valid": 215,
+          "n_accepted": 215,
+          "n_valid": 215
+        }
+      },
+      {
+        "method": "DF",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.669463628735558,
+          "glob_Cvalid": 0.787613761053379,
+          "glob_pt_rmse": 0.1140284259386303,
+          "glob_pt_p95": 0.2143493995257303,
+          "glob_surf_rmse": 0.1063457200833717,
+          "glob_n_valid": 215,
+          "n_accepted": 215,
+          "n_valid": 215
+        }
+      }
+    ]
+  },
+  {
+    "study": "LAYOUT02",
+    "key": "R2I-f8cb477ff5686dcd8c6d0494",
+    "row": {
+      "arm": "SPAT_D0",
+      "baseline": "R8x4",
+      "block": null,
+      "boundary": "symmetric_footprint",
+      "cand": null,
+      "decode_code": "b970cdbb75b96c63d6bdfd39ad47d58b",
+      "decode_key": "R2D-3caf6fff3c5f90773d526abb",
+      "domain_bridge": "omega_star",
+      "domain_bridge_hash": "2454234e6f342be472e16f6207fdf994f618a65a367d08ab535dffd95e7f1e46",
+      "domain_main": "omega1",
+      "domain_main_hash": "3c87968d03dcc27c7cc23a92a6c9789249014550d556672362b64ce6b31f8c57",
+      "entry_subset": false,
+      "eval_code": "71f51b9f3ba0b018355e4c90e26a3186",
+      "eval_key": "R2E-73a648b792268cb11822253b",
+      "family": "point",
+      "image_code": "5e346f5eada0e849dfd6f07bd3e75464",
+      "image_key": "R2I-f8cb477ff5686dcd8c6d0494",
+      "integral_f32": 11695.00007480383,
+      "layout": "regular",
+      "layout_id": "R8x4:regular",
+      "lit_px": 23485.0,
+      "method": "D0",
+      "n_mask_candidates": null,
+      "n_raster_evaluated": null,
+      "n_views_of_image": 1,
+      "noise_seed": 3100000041.0,
+      "peak": 0.49797743240366193,
+      "peak_f32": 0.49797743558883667,
+      "phase": "H0",
+      "phase_frac": null,
+      "phase_u": 0.032230040058493614,
+      "phase_v": 0.26179790310561657,
+      "platform_surface": "B_curv",
+      "raster_key": "R-63cf9558627cb22678e5",
+      "render_seed": 3100000041,
+      "rep": 0,
+      "seed_rule": "registered S4 sigma-20 field of family x surface x phase, scaled by sigma",
+      "sigma": 40.0,
+      "sigma0_ref_key": "R2I-a227232673e427dc67b29d88",
+      "strategy": "S0",
+      "surface": "B_curv",
+      "view_id": "V-6fd3b01cb43e714c"
+    },
+    "expected": [
+      {
+        "method": "D0",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.6103078809785064,
+          "glob_Cvalid": 0.7981346414509779,
+          "glob_pt_rmse": 0.1202179666036155,
+          "glob_pt_p95": 0.224229345269781,
+          "glob_surf_rmse": 0.2450842617821769,
+          "glob_n_valid": 218,
+          "n_accepted": 219,
+          "n_valid": 219
+        }
+      },
+      {
+        "method": "DF",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.6103078809785064,
+          "glob_Cvalid": 0.7981346414509779,
+          "glob_pt_rmse": 0.1202179666036155,
+          "glob_pt_p95": 0.224229345269781,
+          "glob_surf_rmse": 0.2450842617821769,
+          "glob_n_valid": 218,
+          "n_accepted": 219,
+          "n_valid": 219
+        }
+      }
+    ]
+  },
+  {
+    "study": "SIZE02",
+    "key": "S12I-5569d1da6f9d09c05aea8052",
+    "row": {
+      "Q0": 13752.0,
+      "Q_actual": 11695.000405311584,
+      "Q_budget": 11695.0,
+      "active_limit": "integral_limited",
+      "budget_usage": 1.0000000346568263,
+      "diameter_mm": 1.5,
+      "entry_subset": false,
+      "family": "point",
+      "input_key": "S12I-5569d1da6f9d09c05aea8052",
+      "layout": "S1_R8x4",
+      "methods": "D0;DF",
+      "n_features_design": 253,
+      "noise_seed": 9205000.0,
+      "peak_f32": 0.8504217863082886,
+      "peak_target": 0.8504217568353694,
+      "phase_index": 0,
+      "phase_label": "sn_phase0",
+      "platform_surface": "B_curv",
+      "raster_key": "R-564417d983e7baa3520f",
+      "regime": "resource_cap_11695",
+      "rep": 0,
+      "section": "S1",
+      "sigma": 40,
+      "size_mm": 0.75,
+      "surface": "B_curv"
+    },
+    "expected": [
+      {
+        "method": "D0",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.7108281901315152,
+          "glob_Cvalid": 0.897793000937086,
+          "glob_pt_rmse": 0.06930915636473137,
+          "glob_pt_p95": 0.13433297851869352,
+          "glob_surf_rmse": 0.12392822381271558,
+          "glob_n_valid": 239,
+          "n_accepted": 243,
+          "n_valid": 243
+        }
+      },
+      {
+        "method": "DF",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.7108281901315152,
+          "glob_Cvalid": 0.897793000937086,
+          "glob_pt_rmse": 0.06930915636473137,
+          "glob_pt_p95": 0.13433297851869352,
+          "glob_surf_rmse": 0.12392822381271558,
+          "glob_n_valid": 239,
+          "n_accepted": 243,
+          "n_valid": 243
+        }
+      }
+    ]
+  },
+  {
+    "study": "S12",
+    "key": "S12I-00132d21acda2abbff8dedd4",
+    "row": {
+      "Q0": 59392.0,
+      "Q_actual": 11694.999603271484,
+      "decode_key": "S12D-c75bd202fa0d3f8f225b9e7c",
+      "eval_key": "S12E-318ce588fb9d902972f33855",
+      "family": "line",
+      "input_key": "S12I-00132d21acda2abbff8dedd4",
+      "layout": "s4.45_phi0",
+      "n_views": 1,
+      "noise_seed": null,
+      "peak_f32": 0.1969120353460312,
+      "peak_target": 0.19691204202586207,
+      "phase_frac": 0.15625,
+      "phase_label": "ph5",
+      "platform_surface": "A_curv",
+      "raster_key": "R-834e9612ced07fd9451b",
+      "raster_source": "s2_build",
+      "regimes": "resource_cap_11695",
+      "rep": 0,
+      "s1_decode_key": null,
+      "s1_image_key": null,
+      "s2_cand_id": "C018374",
+      "s2_decode_key": "S2D-6a22683ba62adccc3a93cc93",
+      "s2_has_record": true,
+      "s2_image_key": "S2I-5d7b7d573d731fb2e6a44ca6",
+      "sections": "S2",
+      "sigma": 0.0,
+      "size_mm": 1.0,
+      "source": "s2",
+      "stage": 1,
+      "surface": "M10_curv",
+      "surface_class": "main",
+      "template_cand_id": "C017952"
+    },
+    "expected": [
+      {
+        "method": "P4",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": null,
+          "glob_pt_p95": null,
+          "glob_surf_rmse": null,
+          "glob_n_valid": 0,
+          "n_accepted": 0,
+          "n_valid": 0
+        }
+      }
+    ]
+  },
+  {
+    "study": "LAYOUT07",
+    "key": "R2I-de8f0d5e10ff5c1aafd1a93c",
+    "row": {
+      "baseline": "L6.3",
+      "block": null,
+      "boundary": "symmetric_footprint",
+      "cand": null,
+      "clipped_band_lit": false,
+      "family": "line",
+      "image_key": "R2I-de8f0d5e10ff5c1aafd1a93c",
+      "image_npz_sha": null,
+      "image_source": "new",
+      "j": 0.0,
+      "layout": "regular",
+      "lit_px": 43008.0,
+      "noise_seed": null,
+      "old_decode_key": null,
+      "peak_f32": 0.2719261646270752,
+      "phase": "R0",
+      "phase_frac": -0.421875,
+      "phase_source": "s4_real05 A2_reserve lines_phases[0]",
+      "phase_u": null,
+      "phase_v": null,
+      "platform_surface": "B_curv",
+      "psf_px": 1.0,
+      "raster_key": "R-cb5c7b7ccc459902f998",
+      "render_seed": 0,
+      "set": "main",
+      "sigma": 0.0,
+      "surface": "B_curv"
+    },
+    "expected": [
+      {
+        "method": "P4TABLE",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.8645194604014717,
+          "glob_Cvalid": 0.8954043761698832,
+          "glob_pt_rmse": 0.0278250942017091,
+          "glob_pt_p95": 0.0606184059745598,
+          "glob_n_valid": 6380.0
+        }
+      },
+      {
+        "method": "CLIP",
+        "arm": null,
+        "metrics": {
+          "glob_Ctau": 0.8645194604014717,
+          "glob_Cvalid": 0.8954043761698832,
+          "glob_pt_rmse": 0.0278250942017091,
+          "glob_pt_p95": 0.0606184059745598,
+          "glob_n_valid": 6380.0
+        }
+      }
+    ]
+  },
+  {
+    "study": "CODE07",
+    "key": "C2I-5957419a7e416e5ed8764076",
+    "row": {
+      "Q": 11694.999633789062,
+      "Q0": 57344.0,
+      "budget_ok": true,
+      "class_map_fp": "165442416c10abbe1e54",
+      "code_parity": 0,
+      "family": "lines",
+      "geometry_phase": "N0",
+      "image_key": "C2I-5957419a7e416e5ed8764076",
+      "layout": "4.45",
+      "limit": "integral_limited",
+      "m3_digest": "a4e0d7f9f45c87a8b11bd8fffc0ec1ffaa90029fd68dc692d6d24c1d17c761e0",
+      "pair_key": "8a80ca80d290ef9c",
+      "pattern": "mid",
+      "peak_f32": 0.2039446085691452,
+      "phase_frac": -0.451171875,
+      "phase_id": "N0",
+      "phase_index": 0,
+      "platform_surface": "A_curv",
+      "raster_key": "R-8103033912314ce9a891",
+      "ref_image_key": null,
+      "regime": "resource_cap_11695",
+      "rep": 0,
+      "seed": 11310000.0,
+      "sigma": 40.0,
+      "sizes_mm": "0.725;1.275",
+      "stage": "formal",
+      "surface": "M10_curv",
+      "transition_layout": false,
+      "u": null,
+      "usage": 0.9999999686865381,
+      "v": null,
+      "v_scale": 0.20394461495535715
+    },
+    "expected": [
+      {
+        "method": "ignore",
+        "arm": "ignore",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": null,
+          "glob_pt_p95": null,
+          "glob_surf_rmse": null,
+          "n_accepted": 0.0
+        }
+      },
+      {
+        "method": "R@1.1247",
+        "arm": "R@1.1247",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": null,
+          "glob_pt_p95": null,
+          "glob_surf_rmse": null,
+          "n_accepted": 0.0
+        }
+      },
+      {
+        "method": "LB@1.0000",
+        "arm": "LB@1.0000",
+        "metrics": {
+          "glob_Ctau": 0.0,
+          "glob_Cvalid": 0.0,
+          "glob_pt_rmse": null,
+          "glob_pt_p95": null,
+          "glob_surf_rmse": null,
+          "n_accepted": 0.0
+        }
+      }
+    ]
+  }
+]

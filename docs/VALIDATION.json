@@ -1,0 +1,61 @@
+{
+  "checked": "2026-11-02T02:42:06+01:00",
+  "status": "passed",
+  "package_files": 599,
+  "python_files": 317,
+  "engine_files": 568,
+  "binding": "5c4c946b6bef72b7c18814cbe3579c13eb98744de7f0d895a48b6d145c38723d",
+  "structure": {
+    "syntax": 317,
+    "numerical_ast_checked": 298,
+    "numerical_input_files": 209,
+    "binary_inputs_unchanged": 60,
+    "registered_contrasts_unchanged": true
+  },
+  "regression": {
+    "cases": 21,
+    "backends": 18,
+    "comparisons": 458,
+    "tolerance": 1e-10,
+    "status": "passed"
+  },
+  "tables": {
+    "count": 3,
+    "rows": 27,
+    "comparisons": 78,
+    "exact": true
+  },
+  "figures": {
+    "entries_executed": 4,
+    "samples": 4,
+    "pixels_identical": 4
+  },
+  "contracts": {
+    "sibling_import": true,
+    "input_write_guard": true,
+    "incomplete_selection_rejected": true,
+    "incompatible_resume_rejected": true
+  },
+  "full_matrix_rerun": false,
+  "language_cleanup": {
+    "text_files_translated": 71,
+    "all_packaged_paths_ascii": true,
+    "visible_cjk_files": [
+      "engine/research/project_Part1_v1.7/outputs/surface_revision/surf02/config/surf02_config.json",
+      "engine/research/project_Part1_v1.7/scripts/surface_revision/sections_adapter/adp_common.py",
+      "engine/research/project_Part1_v1.7/scripts/surface_revision/surf02/s2_common.py"
+    ],
+    "original_surface_metadata_unchanged": true,
+    "legacy_label_parser_cases": 4,
+    "registration_labels": 5,
+    "registration_numerical_content_unchanged": true,
+    "registration_manifest_hash_checked": true,
+    "runtime_cases": 21,
+    "runtime_binding": "4622317a8b1832d5cad1b7e50701d53a2b7b063eb5eb0154d6cfe627c4ed26f2",
+    "final_binding_change": "Registration-manifest integrity reference only; numerical code unchanged after runtime checks.",
+    "plot_sample_pixels_identical": true,
+    "archive_round_trip_verified": true,
+    "encoding_check": "UTF8 mode off, cp1252 stdout, implicit text encoding rejected",
+    "actual_foreign_os_test": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "round": "NIGHT-01R3",
+  "registered_local": "2026-10-10T17:08+0200",
+  "registered_before_candidate_outputs": true,
+  "inputs": {
+    "images": "outputs/line01r/night01r2/lc/cases (120 stored records; 56 coded images are the replay material; 64 uncoded / 45 deg images stay as R2 controls, their front end is not touched)",
+    "front_end": "lc_pipeline.shared_front_end with the R2 snapshot parameters (scale 2.0046884346862006 px, class widths 4.1667 / 6.9444 px, P4_C3_cal thresholds); rebuilt once per coded image from the stored image and verified array-by-array against the stored R2 arrays",
+    "readout": "lc_readout.read_segments with the R2 snapshot read-out parameters (step 0.25 px, bg outer 20 % / quantile 25 %, half 0.5, peak = local maximum within +-1.5 px, contamination rule); verified against the stored readout_fwhm / readout_reason",
+    "old_threshold_px": 6.05,
+    "new_imaging": 0
+  },
+  "arms": {
+    "ignore": "R2 LC_ignore (inherited; re-finished only to verify bit equality)",
+    "use_replay": "R2 LC_use rule replayed (threshold 6.05 px, min_rows 5, margin 0.5 px); must equal the stored LC_use arrays bit-exactly",
+    "M": "A3 single-factor replay: identical to use_replay except margin = 0.5 x MAD of the segment rows (the rule written in the R2 protocol 2.2); not a selectable candidate",
+    "R": "per-image reliability check (two-peak rule below) + old threshold 6.05 px, which must lie strictly between the two accepted peaks; otherwise the whole image falls back to ignore",
+    "A": "same reliability check + per-image adaptive threshold = valley between the two accepted peaks; fallback identical to R"
+  },
+  "reliability_rule": {
+    "w_lo_px": 1.0, "w_hi_px": 14.0, "bin_px": 0.1, "smooth_bins": 3, "peak_min_frac": 0.05, "support_px": 0.5, "min_chains": 3, "min_sep_px": 1.5, "max_depth": 0.5,
+    "chain_weight": "every detection chain with >= 1 valid row has total weight 1, split equally over its valid rows",
+    "pair_choice": "all pairs of qualified peaks with separation >= min_sep_px and valley depth <= max_depth; largest smoothed height sum, tie -> larger separation, tie -> lower indices",
+    "fallback": "no valid row / empty histogram / fewer than two qualified peaks / no admissible pair -> image fallback (ignore for every segment)",
+    "class_hypothesis": "low peak = narrow (0.75 mm), high peak = wide (1.25 mm); runtime uses only the code dictionary (parity of the design line id)",
+    "segment_readable": "n_valid >= 5 and |median - threshold| >= 0.5 px (unchanged from R2 implementation)",
+    "numbering": "R2 use rule: per readable segment remove admissible candidates of the other parity; empty -> original row (fallback count); single geometric candidate never changed (conflict count); nothing propagates across segments",
+    "no_truth_input": "lc_r3_reliability has no truth parameter; the replay runs the runtime path once and the evaluation twice (true labels / shuffled labels) and asserts identical runtime output hashes"
+  },
+  "budgets": {"replay_cap": 224, "frontend_rebuild_cap": 56, "accounting": "56 images x 4 arms (use_replay, M, R, A); ignore and O layer inherited from the same front end"},
+  "gates_and_decision": {
+    "wrong_id_gate": 0.001,
+    "wrong_id_scope": "all confirmable accepted AND newly accepted (vs ignore), per image and per condition; unconfirmable share reported; new == 0 -> N/A",
+    "retention_requirement": "dense fixed-peak main set (s 4.45, 0 deg, fixed peak, sigma 0/20/40, 2 surfaces, 2 phases = 12 images): amplitude |dA| <= 10 % in 12/12 AND positive dCtau vs ignore in every image",
+    "equal_integral_report": "8 dense equal-integral images (sigma 0/20/40 incl. the 4 at sigma 0): safe positive gain or fallback; abstention and coverage cost reported",
+    "control_63": "s 6.3 mm images must not be changed by the protection (use == ignore there already)",
+    "selection_order": ["technical correctness (front end verified, use_replay bit-exact, no-truth check)", "wrong-id gate per image and per condition on all accepted and newly accepted", "retention requirement on the 12 dense fixed-peak images", "equal-integral: safe gain or fallback (limited scope allowed)", "if R and A both pass: min per-image dCtau on the dense fixed-peak set, then mean dCtau; identical -> R (simpler)", "if protection only works by giving up (nearly) all gain or amplitude passes, or both fail: stop, no third candidate, no gate relaxation"],
+    "meaning_of_pass": "development candidate admissible for a later unseen validation; not an independent validation; no population error bound"
+  },
+  "roi_r_mm": 15.0,
+  "evaluation_targets": {"ctau": "r3 dent domain, d 6 mm, tau 0.15", "cvalid": "r3 dent domain, d 6 mm", "amplitude": "M5 rel_err_pct, pass <= 10 %", "gross": "|dz| > 1 mm", "tails": "p95 / p99 / max of |dz| overall, ROI (r <= 15 mm) and newly accepted subset"}
+}

@@ -1,0 +1,2406 @@
+{
+  "schema_version": 2,
+  "figures": [
+    {
+      "id": "2.1",
+      "chapter": 2,
+      "label": "fig:2_1_profile",
+      "caption": "Digitalisierte Konturpunkte und bearbeitete Querprofile von EF, M10 und M24",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [
+        "SURF"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_2_01.pdf",
+          "sha256": "92e561ec45f0facc4044409b2558b1710be723a266c9384c6adcfbecce3b9583"
+        }
+      ],
+      "notes": "x_p = 0 column of the saved fine surfaces; raw digitised points"
+    },
+    {
+      "id": "2.2",
+      "chapter": 2,
+      "label": "fig:2_2_flaechen",
+      "caption": "Dreidimensionale Innenflächenmodelle von EF, M10 und M24",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [
+        "SURF"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_2_02.pdf",
+          "sha256": "01933e33686025156d3ddc7b6eff87855ef0499461fb283c6e97361c565eebd8"
+        }
+      ],
+      "notes": "all saved coarse cells; same view and physical aspect"
+    },
+    {
+      "id": "2.3",
+      "chapter": 2,
+      "label": "fig:2_3_geometrie",
+      "caption": "Geometrische Parameter von Punkt- und Linienmustern",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [],
+      "reference_files": [
+        {
+          "path": "Abb_2_03.pdf",
+          "sha256": "3228309c6eb19a176af0dda80ad54a22c64c297cb3c9e11816b0e95b2e05c7e9"
+        }
+      ],
+      "notes": "redraw_fig23 sketch; suptitle and footer moved to the caption"
+    },
+    {
+      "id": "2.4",
+      "chapter": 2,
+      "label": "fig:2_4_budget",
+      "caption": "Schematische Verteilung der Grauwertressource für Punkt- und durchgehende Linienmuster",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [],
+      "reference_files": [
+        {
+          "path": "Abb_2_04.pdf",
+          "sha256": "7a13035f8b162945eb6dbb1f0ef96e9c7c09be984dbcbfb79528b7491e3ef589"
+        }
+      ],
+      "notes": "{\"patterns\": [{\"pattern\": \"Punkte 8\\u00d74 mm\\n$r$ = 1,5 mm\", \"unit_peak_pixel_sum\": 55264, \"illustrative_budget\": 45430, \"normalized_peak\": 0.8220541401273885}, {\"pattern\": \"Punkte 6\\u00d74 mm\\n$r$ = 1,5 mm\", \"unit_peak_pixel_sum\": 75380, \"illustrative_budget\": 45430, \"normalized_peak\": 0.6026797559034227}, {\"pattern\": \"Linien $s$ = 8 mm\\n$w$ = 1,5 mm\", \"unit_peak_pixel_sum\": 47104, \"illustrative_budget\": 45430, \"normalized_peak\": 0.964461616847826}], \"basis\": \"Eq. 2-4/2-5, pixel centres, s_nom = 0.18 mm/px, no camera rendering\"}"
+    },
+    {
+      "id": "2.5",
+      "chapter": 2,
+      "label": "fig:2_5_anordnung",
+      "caption": "Feste Kamera-Projektor-Anordnung und Koordinatenverhältnisse",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [
+        "SURF"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_2_05.pdf",
+          "sha256": "1ef994624d7ca93d39dfa8259008dab9ef597420b484c23aa175f94986bb3a9e"
+        }
+      ],
+      "notes": "redraw_fig25; cross-section x_p = 0; c_ref = 16.645465475819755 mm"
+    },
+    {
+      "id": "2.6",
+      "chapter": 2,
+      "label": "fig:2_6_rauschen",
+      "caption": "Simulierte Kamerabilder von Punkt- und Linienmuster auf der Innenfläche M10 bei den Rauschstandardabweichungen $\\sigman=0$, 40 und 100",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [
+        "S12"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_2_06.pdf",
+          "sha256": "46239ced5ff875922421f0213a51b9dc3724d8e0f24170977f6c44f93657bad0"
+        }
+      ],
+      "notes": "{\"Punkte 0.0\": \"S12I-ca1ad78ce9c8bdb5ca01faf8\", \"Linien 0.0\": \"S12I-1e475cbfd6bcc958097b6357\", \"Punkte 40.0\": \"S12I-dd642004d2fe046677ce422a\", \"Linien 40.0\": \"S12I-6dde06a4d8a9efcf61a14e89\", \"Punkte 100.0\": \"S12I-87450fcbdee59157ebd16d80\", \"Linien 100.0\": \"S12I-47b3048daa51b0c0c8dc2f2a\"}"
+    },
+    {
+      "id": "2.7",
+      "chapter": 2,
+      "label": "fig:2_7_zuordnung",
+      "caption": "Prinzip der Merkmalszuordnung für Punkt- und Linienmuster (schematisch, nicht maßstäblich)",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [],
+      "reference_files": [
+        {
+          "path": "Abb_2_07.pdf",
+          "sha256": "367e8e7364012362ef63fcd8b3535d6a90cda37252c406dbbd51d68cf9af3c18"
+        }
+      ],
+      "notes": "schematic; footer moved to the caption"
+    },
+    {
+      "id": "2.8",
+      "chapter": 2,
+      "label": "fig:2_8_rekonstruktion",
+      "caption": "Referenzfläche M10 (links) sowie rekonstruierte Punktwolken von Punktmuster (Mitte) und Linienmuster (rechts) unter Rauschfreiheit",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [],
+      "reference_files": [
+        {
+          "path": "Abb_2_08.pdf",
+          "sha256": "980f07aa0ee4404308a597cc706259842141ad4f13baee0dd37d600bac0fd5ec"
+        }
+      ],
+      "notes": "{\"cases\": [{\"combo\": \"D_r1_p8x4\", \"eval_record\": \"outputs/surface_revision/s345_ready/run/eval/S2D-caa539801aaaff1f795721bf.npz\", \"n_valid\": 221, \"sigma\": 0}, {\"combo\": \"L_w0.5_s8\", \"eval_record\": \"outputs/surface_revision/s345_ready/run/eval/S2D-a6e49000a7e9e39956ab0b2f.npz\", \"n_valid\": 5466, \"sigma\": 0}]}"
+    },
+    {
+      "id": "2.9",
+      "chapter": 2,
+      "label": "fig:2_9_bewertung",
+      "caption": "Definition der Bewertungsgrößen",
+      "script": "plots/kap2_redraw.py",
+      "data_groups": [],
+      "reference_files": [
+        {
+          "path": "Abb_2_09.pdf",
+          "sha256": "643769426b708ede971f2acda626eca9b83ea6aff5cb68d52025b539e28c1423"
+        }
+      ],
+      "notes": "definition sketch; footer moved to the caption"
+    },
+    {
+      "id": "3.1",
+      "chapter": 3,
+      "label": "fig:3_1",
+      "caption": "Rauschantwort der fünf Punktradien über sechs Stufen unter der gemeinsamen Ressourcengrenze",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_01.pdf",
+          "sha256": "8e73f96db854581bd5a3604aef419a8c70ac1c8df6f8b9fe675a66a5867a34a9"
+        }
+      ],
+      "notes": "band = range of phase means; DF"
+    },
+    {
+      "id": "3.2",
+      "chapter": 3,
+      "label": "fig:3_2",
+      "caption": "Höhenfehler der fünf Punktradien unter der gemeinsamen Grenze",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_02.pdf",
+          "sha256": "fbf2be51a1e7b23efda18c6374669bd84d7976c1d66ac3a6f77c43df98eb9731"
+        }
+      ],
+      "notes": "phase means; log axis; DF"
+    },
+    {
+      "id": "3.3",
+      "chapter": 3,
+      "label": "fig:3_3",
+      "caption": "Rekonstruktionsbeispiel dreier Punktradien bei fester Phase auf M24 bei $\\sigman=40$ unter der gemeinsamen Grenze",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_03.pdf",
+          "sha256": "3b99a3ca4299347cff64a22fd527ab60eeb5162fcdf04b55c0dfb8e0e3dd86e0"
+        }
+      ],
+      "notes": "M24, sigma 40, sn_phase0, rep 0"
+    },
+    {
+      "id": "3.4",
+      "chapter": 3,
+      "label": "fig:3_4",
+      "caption": "Rauschantwort der fünf Linienbreiten über sechs Stufen unter der gemeinsamen Ressourcengrenze",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "S12"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_04.pdf",
+          "sha256": "c3d2b65b7077f90bcb96b2eca672ae6b067d8dad73d938eac1e541c9b86186fe"
+        }
+      ],
+      "notes": "[C] phase mean, band min-max; hollow: error defined for 1-7 of 8 phases; P4"
+    },
+    {
+      "id": "3.5",
+      "chapter": 3,
+      "label": "fig:3_5",
+      "caption": "Radiuswahl unter zwei Ressourcenbedingungen",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_05.pdf",
+          "sha256": "2849f30e437515832f089ca9def9847263350226a1d1b4d7b2ecaa1f8900e613"
+        }
+      ],
+      "notes": "equal-weight mean of three surfaces; DF"
+    },
+    {
+      "id": "3.6",
+      "chapter": 3,
+      "label": "fig:3_6",
+      "caption": "Vollständige Rauschantwort für den Abstand entlang der Epipolarlinie",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_06.pdf",
+          "sha256": "c87f22362c269085e2556b43e5ad8c58d4ac482d1fb1b8be11d2db22b84d5d60"
+        }
+      ],
+      "notes": "phase means, band = range; DF"
+    },
+    {
+      "id": "3.7",
+      "chapter": 3,
+      "label": "fig:3_7",
+      "caption": "Vollständige Rauschantwort für den Querabstand",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_07.pdf",
+          "sha256": "679a10ab4e2fb11fef67a58e6304ef82a9aecf0d5b544698053bc23c9049ac11"
+        }
+      ],
+      "notes": "phase means, band = range; DF"
+    },
+    {
+      "id": "3.8",
+      "chapter": 3,
+      "label": "fig:3_8",
+      "caption": "Rauschantwort des 0°-Linienmusters über sechs Stufen bei sieben Abständen",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "S12"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_08.pdf",
+          "sha256": "aca542692ce6e7572399ff74958e83c3b73443a2d396f629d30f7e6ac86b75c0"
+        }
+      ],
+      "notes": "[B/s12_report] phi 0; phase mean, bars phase min-max, x offset 1.2 per group; hollow = error defined for part of the phases"
+    },
+    {
+      "id": "3.9",
+      "chapter": 3,
+      "label": "fig:3_9",
+      "caption": "Antwort des 45°-Linienmusters im gleichen Bereich",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "S12"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_09.pdf",
+          "sha256": "b19d92445c3889fce0deb619c5edd47d0d783753a601ad50575a9acde49ab87c"
+        }
+      ],
+      "notes": "[B/s12_report] phi 45; phase mean, bars phase min-max, x offset 1.2 per group; hollow = error defined for part of the phases"
+    },
+    {
+      "id": "3.10",
+      "chapter": 3,
+      "label": "fig:3_10",
+      "caption": "Ideale Abtastreferenz und tatsächliche Genauigkeitsabdeckung der Punktanordnungen",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "SAMPLE",
+        "DF12"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_10.pdf",
+          "sha256": "a4a69730addb5beec915a612725912bbfac00e5b4f5f71d909102681e0a8f281"
+        }
+      ],
+      "notes": "bars: ideal sampling reference (thesis_check01); dots: DF mean"
+    },
+    {
+      "id": "3.11",
+      "chapter": 3,
+      "label": "fig:3_11",
+      "caption": "Formvergleich der Linienabstände 10 und \\SI{8}{\\milli\\metre} unter neuen Phasen",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "TR5"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_11.pdf",
+          "sha256": "38510361526c099d656ab1db6f92656904ef68c98c607e9f90f52d28ed3f499c"
+        }
+      ],
+      "notes": "{\"selection\": {\"contrast\": \"C5\", \"method\": \"P4\", \"sigma\": 60.0, \"median_value\": 8.647041716483017, \"n_candidates\": 24, \"note\": null, \"median\": {\"kind\": \"median\", \"surface\": \"M10_curv\", \"block\": 0, \"noise_k\": 1, \"sigma\": 60.0, \"method\": \"P4\", \"forward_key_left\": \"S12I-b4fbeec0c38ff70be9269f6e\", \"forward_key_right\": \"S12I-a990efe8bcf418d377417d7e\", \"oriented_diff_pp\": 8.899085533331174, \"d_glob_Ctau_pp\": 8.899085533331174, \"state_left\": \"ok\", \"state_right\": \"ok\"}, \"worst\": {\"kind\": \"worst\", \"surface\": \"M24_curv\", \"block\": 0, \"noise_k\": 0, \"sigma\": 60.0, \"method\": \"P4\", \"forward_key_left\": \"S12I-6c33ea8b070665a9a35e5796\", \"forward_key_right\": \"S12I-1fe22e64bdd8d1b176939d59\", \"oriented_diff_pp\": 2.4590428797621717, \"d_glob_Ctau_pp\": 2.4590428797621717, \"state_left\": \"ok\", \"state_right\": \"ok\"}}, \"cases\": [{\"forward_key\": \"S12I-b4fbeec0c38ff70be9269f6e\", \"kind\": \"median\", \"n_valid\": 2635, \"global_Ctau\": 0.39212201505800237}, {\"forward_key\": \"S12I-a990efe8bcf418d377417d7e\", \"kind\": \"median\", \"n_valid\": 2109, \"global_Ctau\": 0.3031311597246906}, {\"forward_key\": \"S12I-6c33ea8b070665a9a35e5796\", \"kind\": \"worst\", \"n_valid\": 1807, \"global_Ctau\": 0.23504701586583512}, {\"forward_key\": \"S12I-1fe22e64bdd8d1b176939d59\", \"kind\": \"worst\", \"n_valid\": 1478, \"global_Ctau\": 0.2104565870682134}]}"
+    },
+    {
+      "id": "3.12",
+      "chapter": 3,
+      "label": "fig:3_12",
+      "caption": "Bildgleicher Klassenbeitrag der Punktmuster auf drei Oberflächen, drei Anordnungen und sechs Rauschstufen",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "CODE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_12.pdf",
+          "sha256": "205391cd67eece4ea81dfce7fde779f09179bfe5d681ae6bd393ba7267642c99"
+        }
+      ],
+      "notes": "[B/c7 f01] DF use - ignore; band 2.5-97.5 % block bootstrap (stored); own y scale per panel"
+    },
+    {
+      "id": "3.13",
+      "chapter": 3,
+      "label": "fig:3_13",
+      "caption": "Gesamte Genauigkeitsabdeckung ungestufter und kodierter Punktmuster",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "CODE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_13.pdf",
+          "sha256": "b61776713f5eb2dd5c2d8d0d962c3c3f6a21329aa48e1c486b3323d6844018f2"
+        }
+      ],
+      "notes": "[B/c7 f03] plain DF single vs coded DF use; own y scale per panel"
+    },
+    {
+      "id": "3.14",
+      "chapter": 3,
+      "label": "fig:3_14",
+      "caption": "Bildgleicher Klassenbeitrag der Hauptregel R und der Diagnoseregel \\code{LB} für Linienmuster",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "CODE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_14.pdf",
+          "sha256": "5f9867339be2e57e7a91ef94bef4596a056ce6a698de554d5f1f0405f2cb28a3"
+        }
+      ],
+      "notes": "[B/c7 f02] R and LB minus ignore; band only for R"
+    },
+    {
+      "id": "3.15",
+      "chapter": 3,
+      "label": "fig:3_15",
+      "caption": "Fall der mittleren Kodierung bei \\code{R6$\\times$4} auf M24 bei $\\sigman=100$",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "CODE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_15.pdf",
+          "sha256": "ee8ae6e3230c28286124a648e7b49b2557f41af7439e7b61605cb8cb538a0c36"
+        }
+      ],
+      "notes": "{\"cases\": [{\"eval_key\": \"C4E-97b4e0b0f927b4bf9514ede5\", \"n_accepted\": 154, \"c\": 57, \"w\": 0, \"u\": 97, \"Ctau\": 0.14230781658965327, \"points_outside_color\": 57}]}"
+    },
+    {
+      "id": "3.16",
+      "chapter": 3,
+      "label": "fig:3_16",
+      "caption": "Fall des \\num{5.6}-mm-Linienmusters mit starker Kodierung auf M24 bei $\\sigman=40$ und $\\sigman=60$",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "CODE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_16.pdf",
+          "sha256": "bdf1dc909836f28726dec9818d966c875e3141190299499734bf61bfb7f2f87d"
+        }
+      ],
+      "notes": "{\"cases\": [{\"eval_key\": \"C4E-7c927fbe6cefdd96cc0aba69\", \"n_accepted\": 2487, \"c\": 2487, \"w\": 0, \"u\": 0, \"Ctau\": 0.22809965424758458, \"points_outside_color\": 162}, {\"eval_key\": \"C4E-cefc070d2c1e07307328548e\", \"n_accepted\": 594, \"c\": 594, \"w\": 0, \"u\": 0, \"Ctau\": 0.03557695414741332, \"points_outside_color\": 91}]}"
+    },
+    {
+      "id": "3.17",
+      "chapter": 3,
+      "label": "fig:3_17",
+      "caption": "Nominelle Anordnungen unter Positionsanpassung und geometrischen Nebenbedingungen",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "LAY7"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_17.pdf",
+          "sha256": "3f28215cb5a463c8f8b9014b2dcab67d73a51da159f215d59cdcf4674b132d15"
+        }
+      ],
+      "notes": "{\"block\": 26, \"geometry\": [{\"baseline\": \"R8x4\", \"arm\": \"S0\", \"g_min_mm\": 8.0, \"h_mm\": 4.472135954999594, \"rms_mm\": 0}, {\"baseline\": \"R8x4\", \"arm\": \"S1\", \"g_min_mm\": 3.997447783776086, \"h_mm\": 5.149588174983351, \"rms_mm\": 1.1348035512520789}, {\"baseline\": \"R8x4\", \"arm\": \"S2*\", \"g_min_mm\": 6.611904670860803, \"h_mm\": 5.612526611347464, \"rms_mm\": 0.8691521495093665}, {\"baseline\": \"R8x4\", \"arm\": \"S3\", \"g_min_mm\": 5.265102012499327, \"h_mm\": 5.134326474888341, \"rms_mm\": 1.1890501842349797}, {\"baseline\": \"R8x4\", \"arm\": \"S4*\", \"g_min_mm\": 6.404701365048093, \"h_mm\": 5.051059358397181, \"rms_mm\": 0.7783852142921223}, {\"baseline\": \"L6.3\", \"arm\": \"S0\", \"g_min_mm\": 6.3, \"h_mm\": 3.15, \"rms_mm\": 0}, {\"baseline\": \"L6.3\", \"arm\": \"S1\", \"g_min_mm\": 4.2274215844363505, \"h_mm\": 4.214412589090183, \"rms_mm\": 1.148381746001727}, {\"baseline\": \"L6.3\", \"arm\": \"S2*\", \"g_min_mm\": 5.414147499864713, \"h_mm\": 3.8792677096446866, \"rms_mm\": 0.4653896803730161}, {\"baseline\": \"L6.3\", \"arm\": \"S3\", \"g_min_mm\": 4.6855763029116435, \"h_mm\": 3.531504630560684, \"rms_mm\": 0.7091508102230254}, {\"baseline\": \"L6.3\", \"arm\": \"S4*\", \"g_min_mm\": 5.231094811117665, \"h_mm\": 3.567840133665921, \"rms_mm\": 0.624084175249738}], \"note\": \"nominal positions from generation.json; central three dot rows shown; no camera image\"}"
+    },
+    {
+      "id": "3.18",
+      "chapter": 3,
+      "label": "fig:3_18",
+      "caption": "Genauigkeitsabdeckung der Punktmuster über den vollständigen Rauschbereich",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF4",
+        "LAY2"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_18.pdf",
+          "sha256": "f009db56419ca4d2c843b7db7cf49ac01e0cbaf9a3d89db9c888c793c370ad85"
+        }
+      ],
+      "notes": "median over layout blocks; S0 median and range of four phases; DF; j = 0.20"
+    },
+    {
+      "id": "3.19",
+      "chapter": 3,
+      "label": "fig:3_19",
+      "caption": "Ergebnis der Linienmuster im gleichen Bereich",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "LAY2"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_19.pdf",
+          "sha256": "ebfc253cccf8eb7f27b11dcb55aa2ccb97f6d88d37873c27e83d42d6aaabbeb7"
+        }
+      ],
+      "notes": "[B] median and range of block medians; S0 four phases; S3/S4 same layouts; P4, j = 0.20"
+    },
+    {
+      "id": "3.20",
+      "chapter": 3,
+      "label": "fig:3_20",
+      "caption": "Formkosten der freien Anpassung auf M10 bei $\\sigman=0$",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF4",
+        "LAY7",
+        "BOUND"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_20.pdf",
+          "sha256": "1523f6232744cedb379b506fad998416302c4346e2f3e95fa982a664ec83093b"
+        }
+      ],
+      "notes": "M10, sigma 0, B024, R1"
+    },
+    {
+      "id": "3.21",
+      "chapter": 3,
+      "label": "fig:3_21",
+      "caption": "Restliniendiagnose auf M10 unter der Phase H0",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "LAY7",
+        "BOUND"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_21.pdf",
+          "sha256": "941a1be95e4fe7c543a1babcbd2954e022b032e03f2cf3f93452f3ce2385fcef"
+        }
+      ],
+      "notes": "{\"cases\": [{\"eval_key\": \"R7E-32aaa0e2250b5ce974a36964\", \"n_valid\": 3520, \"Ctau\": 0.3119796036919899, \"supported_RMSE\": 0.04865626055526578}, {\"eval_key\": \"R7E-b15a18e82fbdfdd594f42d34\", \"n_valid\": 3054, \"Ctau\": 0.3119796036919899, \"supported_RMSE\": 0.04865626055526577}], \"axis_min\": [-45.669612380714, -43.5, -14.761746252208127], \"axis_max\": [45.66961238071399, 45.0, 3.071143434034786], \"colour_scale\": \"log, common over the three stored pairs\"}"
+    },
+    {
+      "id": "3.22",
+      "chapter": 3,
+      "label": "fig:3_22",
+      "caption": "Kosten des Restlinienschutzes auf M24 unter der Phase H0",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "LAY7",
+        "BOUND"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_22.pdf",
+          "sha256": "16649eed17c8bcca0836c6c86513874839277e968f8550a71f7eaa36d7267251"
+        }
+      ],
+      "notes": "{\"cases\": [{\"eval_key\": \"R7E-c308dc0d74b7963913b0a557\", \"n_valid\": 5456, \"Ctau\": 0.550571225714839, \"supported_RMSE\": 0.08162433536589242}, {\"eval_key\": \"R7E-1beff84016228c4154f2dfd7\", \"n_valid\": 4988, \"Ctau\": 0.5206544891241206, \"supported_RMSE\": 0.07254342726860312}], \"axis_min\": [-45.0, -43.5, -13.360777211501869], \"axis_max\": [45.0, 45.0, 1.8160282055814285], \"colour_scale\": \"log, common over the three stored pairs\"}"
+    },
+    {
+      "id": "3.23",
+      "chapter": 3,
+      "label": "fig:3_23",
+      "caption": "Rauschantwort der neun Punktmusterkombinationen über sechs Stufen",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "JOINT"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_23.pdf",
+          "sha256": "e336de1761b5d8e00fef63026595b93e697e6c56a50dd33ea122e2114260d44b"
+        }
+      ],
+      "notes": "coverage phase means + range; RMSE median of defined cases; hollow = partly defined"
+    },
+    {
+      "id": "3.24",
+      "chapter": 3,
+      "label": "fig:3_24",
+      "caption": "Vollständige Rauschantwort der sechs Linienmusterkombinationen",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "JOINT"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_24.pdf",
+          "sha256": "66625f8938a7d7b6915a937da5c9f3b9f42b3c02ecc596dc689c44e303c0216b"
+        }
+      ],
+      "notes": "[A] coverage: equal-weight phase means (no output = 0); errors: median of defined cases; hollow = partly defined"
+    },
+    {
+      "id": "3.25",
+      "chapter": 3,
+      "label": "fig:3_25",
+      "caption": "Vier-Zellen-Effekt Größe–Abstand",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "JOINT"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_25.pdf",
+          "sha256": "3848df64bb953a429c11d9086d679736d7783db91595567e8d7dffd8c9031a4e"
+        }
+      ],
+      "notes": "bands: descriptive 5-95 % block intervals; dots DF, lines P4"
+    },
+    {
+      "id": "3.26",
+      "chapter": 3,
+      "label": "fig:3_26",
+      "caption": "Korrekte Rückgewinnungsrate und Genauigkeitsabdeckung repräsentativer Punktmusterkombinationen",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_26.pdf",
+          "sha256": "6daae568a40fef5a732986ed49c775e298f7a9996bdad33ec0dac484dad3f7eb"
+        }
+      ],
+      "notes": "phase means, band = range; DF"
+    },
+    {
+      "id": "3.27",
+      "chapter": 3,
+      "label": "fig:3_27",
+      "caption": "Ergebnisse an derselben Position auf M10 für Radius \\SI{0.75}{\\milli\\metre}, \\code{R8$\\times$4} bei $\\sigman=0$, $\\sigman=40$ und $\\sigman=100$, Phase 0",
+      "script": "plots/kap3_redraw.py",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_27.pdf",
+          "sha256": "3caba8da49c78ba797e6c910e2204e910048dbfa521d3a1774758f487a797b14"
+        }
+      ],
+      "notes": "M10, r 0.75 R8x4, phase 0"
+    },
+    {
+      "id": "3.28",
+      "chapter": 3,
+      "label": "fig:3_28",
+      "caption": "Ergebnis bei gleicher Phase auf EF für Linienbreite \\SI{0.5}{\\milli\\metre} und Linienabstand \\SI{8}{\\milli\\metre}",
+      "script": "plots/kap3b_redraw.py",
+      "data_groups": [
+        "JOINT"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_3_28.pdf",
+          "sha256": "40d193e4f8641ec39fc5b3f6e862f89c2f1c29ac089efa1868085656c728359e"
+        }
+      ],
+      "notes": "{\"cases\": [{\"eval_record\": \"outputs/surface_revision/s345_ready/run/eval/S2D-c4b1c1fc2901b3bd8e5db9c4.npz\", \"image\": \"C:\\\\Users\\\\16944\\\\Desktop\\\\Masterarbeit\\\\research\\\\project_Part1_v1.7\\\\outputs\\\\surface_revision\\\\s345_ready\\\\run\\\\images\\\\S2G-12dfb283bca4d3026299310e.npz\", \"sigma\": 0, \"n_valid\": 5477, \"Ctau\": 0.7697030406824571}, {\"eval_record\": \"outputs/surface_revision/s345_ready/run/eval/S2D-36fba87f955a0500872e2a79.npz\", \"image\": \"C:\\\\Users\\\\16944\\\\Desktop\\\\Masterarbeit\\\\research\\\\project_Part1_v1.7\\\\outputs\\\\surface_revision\\\\s345_ready\\\\run\\\\images\\\\S2G-1b93ddb27242632c41325b6f.npz\", \"sigma\": 40, \"n_valid\": 3790, \"Ctau\": 0.6659126894367791}, {\"eval_record\": \"outputs/surface_revision/s5_six_formal/store/eval/S5X-b449befc5a1b85b531fe9069__P4.npz\", \"image\": \"C:\\\\Users\\\\16944\\\\Desktop\\\\Masterarbeit\\\\research\\\\project_Part1_v1.7\\\\outputs\\\\surface_revision\\\\s5_six_formal\\\\store\\\\image\\\\S5X-b449befc5a1b85b531fe9069.npz\", \"sigma\": 100, \"n_valid\": 0, \"Ctau\": 0.0}]}"
+    },
+    {
+      "id": "4.1",
+      "chapter": 4,
+      "label": "fig:4_1",
+      "caption": "Musterwahl über den vollständigen Umgebungs- und Rauschbereich",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_01.pdf",
+          "sha256": "eaf186c1df64550b5e5a3a205cfccb22e76685ca3bad84e6769b804888b02262"
+        }
+      ],
+      "notes": "selected representative and its own J; '-' no admissible candidate; '*' < 2 pp above the 50 % floor"
+    },
+    {
+      "id": "4.2",
+      "chapter": 4,
+      "label": "fig:4_2",
+      "caption": "Vollständige Bewertungskurven der 10 Punktmuster unter Unschärfe und Rauschen",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_02.pdf",
+          "sha256": "fe3076370a7925ec002adc47e6cc3f5c51d8bdd8544515140067c1255941ca4f"
+        }
+      ],
+      "notes": "J = min of surface phase means; band = four phase means on the fixed worst surface; dotted 50/70 %"
+    },
+    {
+      "id": "4.3",
+      "chapter": 4,
+      "label": "fig:4_3",
+      "caption": "Abtastposition, Messhöhe und Flächenabdeckung",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "MECH4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_03.pdf",
+          "sha256": "dd7c5dcecf2be6948d6e1a1a94bd2c40370562241286da7defd722b233d00905"
+        }
+      ],
+      "notes": "three-surface and four-phase means (CH4-BRIDGE-01 mechanism_summary)"
+    },
+    {
+      "id": "4.4",
+      "chapter": 4,
+      "label": "fig:4_4",
+      "caption": "Tatsächliche Formerfassung unter der nominellen Bedingung bei $\\sigman=20$",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_04.pdf",
+          "sha256": "65d4965babd4001fd34051e8289d0fe0e6cb1695c94abb4f3ea8672d3a36f3a9"
+        }
+      ],
+      "notes": "fixed V1/rep1; all valid global points; gray wireframe = true surface"
+    },
+    {
+      "id": "4.5",
+      "chapter": 4,
+      "label": "fig:4_5",
+      "caption": "Tatsächliche Punktwolken bei Anpassung von Punktgröße und Abstand unter $\\sigman=60$ und 80",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_05.pdf",
+          "sha256": "d0ba8fd8d33c7eba2fa688527bae7a401e3969b2359765510be5dbf5664dd0d7"
+        }
+      ],
+      "notes": "fixed V1/rep1; all valid global points"
+    },
+    {
+      "id": "4.6",
+      "chapter": 4,
+      "label": "fig:4_6",
+      "caption": "Größen-Abstands-Wechselwirkung bei Punkt- und Linienmustern",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_06.pdf",
+          "sha256": "427c8d14f7bb4773f431aa0d48397c80f32c4faa8fa7fcb2bad31b3b2613df78"
+        }
+      ],
+      "notes": "four-candidate qualification marker kept"
+    },
+    {
+      "id": "4.7",
+      "chapter": 4,
+      "label": "fig:4_7",
+      "caption": "Bewertung des Linienmusters über fünf PSF-Stufen und sechs Rauschstufen",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_07.pdf",
+          "sha256": "db9200fc4b9fb7357de219448e15c2eb701b9f6150ce7322edcedd9d42791a5f"
+        }
+      ],
+      "notes": "J = min of surface phase means; band = four phase means on the fixed worst surface; dotted 50/70 %"
+    },
+    {
+      "id": "4.8",
+      "chapter": 4,
+      "label": "fig:4_8",
+      "caption": "Punktwolken des Linienmusters bei PSF \\num{2.5} und \\SI{3}{\\px} und $\\sigman=20$",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_08.pdf",
+          "sha256": "cdecdc953a546266394e88a179531f91f7ac1b3bfdf3616c6d51c12cd1aafe50"
+        }
+      ],
+      "notes": "fixed V1/rep1; all valid global points"
+    },
+    {
+      "id": "4.9",
+      "chapter": 4,
+      "label": "fig:4_9",
+      "caption": "Bewertung der Punktmuster unter homogener Abschwächung und Helligkeitsgradienten",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_09.pdf",
+          "sha256": "bb12d7e58bf6f7cda03420c3a51c2d40c5020515f48bbd803a61f44dd5816928"
+        }
+      ],
+      "notes": "J = min of surface phase means; band = four phase means on the fixed worst surface; dotted 50/70 %"
+    },
+    {
+      "id": "4.10",
+      "chapter": 4,
+      "label": "fig:4_10",
+      "caption": "Bewertung der Linienmuster unter homogener Abschwächung und Helligkeitsgradienten",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_10.pdf",
+          "sha256": "f5458c847d9a327add1d0c271af9c1b2b1399236ee6b3280ca987ed0ae4263a5"
+        }
+      ],
+      "notes": "J = min of surface phase means; band = four phase means on the fixed worst surface; dotted 50/70 %"
+    },
+    {
+      "id": "4.11",
+      "chapter": 4,
+      "label": "fig:4_11",
+      "caption": "Zerlegung der Flächenabdeckung bei $\\sigman=40$",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_11.pdf",
+          "sha256": "da683c80b1aca4f6e418146d9240902b9f82b36ba0a27a5ae0ba527ecc1eb90d"
+        }
+      ],
+      "notes": "three-surface equal means; common 30947-node denominator; sigma_n = 40"
+    },
+    {
+      "id": "4.12",
+      "chapter": 4,
+      "label": "fig:4_12",
+      "caption": "Einfluss der Gradientenrichtung auf die Messposition",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_12.pdf",
+          "sha256": "88703449f556648ab907d334813fd7fec564174db647f053169d1ecd6c193a12"
+        }
+      ],
+      "notes": "fixed V1/rep1, all global valid points; camera image 0-255"
+    },
+    {
+      "id": "4.13",
+      "chapter": 4,
+      "label": "fig:4_13",
+      "caption": "Einfluss der Höhentoleranz auf die Wahl zwischen Punkt- und Linienmuster",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4",
+        "SCAN4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_13.pdf",
+          "sha256": "e5dee34adcfd0c205063fae0e565ca92e18c0298236411506a0cd0bd5bee1455"
+        }
+      ],
+      "notes": "solid: independent phases; dotted: parameter sweep; d = 6 mm; floor 50 %"
+    },
+    {
+      "id": "4.14",
+      "chapter": 4,
+      "label": "fig:4_14",
+      "caption": "Bewertung der repräsentativen Konfigurationen der 49 Musterfamilien-Umgebungs-Rausch-Einheiten im Parametersweep und in der unabhängigen Validierung",
+      "script": "plots/kap4_redraw.py",
+      "data_groups": [
+        "VALID4",
+        "SCAN4"
+      ],
+      "reference_files": [
+        {
+          "path": "Abb_4_14.pdf",
+          "sha256": "1511d8c878bd420fcd9293eba66f295db237c6ac540e7b5c8fa0ccbf680c5750"
+        }
+      ],
+      "notes": "each point one original recommendation; 49/49 qualified, 45/49 near-optimal"
+    }
+  ],
+  "tables": [
+    {
+      "id": "2.1",
+      "chapter": 2,
+      "label": "tab:2_1_module",
+      "caption": "Module, Funktionen und Ausgaben der Simulationsplattform",
+      "data_groups": [
+        "SURF"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/surf01/s1_model.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/surf02/s2_common.py"
+      ],
+      "notes": "Module responsibilities; manually compiled."
+    },
+    {
+      "id": "2.2",
+      "chapter": 2,
+      "label": "tab:2_2_parameter",
+      "caption": "Wesentliche Parameter der Merkmalsdetektion und Zuordnungsentscheidung",
+      "data_groups": [
+        "SURF"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_code01/s3c_dev.py",
+        "engine/research/project_Part1_v1.7/src/m4_lines.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/sections_adapter/s1r_eval.py"
+      ],
+      "notes": "Detection, correspondence and identity tolerances from code and settings; preserve units."
+    },
+    {
+      "id": "3.1",
+      "chapter": 3,
+      "label": "tab:3_1",
+      "caption": "Merkmalsgröße und Helligkeitsbedingungen",
+      "data_groups": [
+        "S12",
+        "SIZE"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s12_resource01/s12_run.py",
+        "engine/scripts/s1_size02/run.py"
+      ],
+      "notes": "Sizes, resource conditions, phases and repetitions from manifests."
+    },
+    {
+      "id": "3.2",
+      "chapter": 3,
+      "label": "tab:3_2",
+      "caption": "Tatsächliche Grauwertverteilung von Punkt- und Linienmustern unter der gemeinsamen Ressourcengrenze",
+      "data_groups": [
+        "S12",
+        "SIZE"
+      ],
+      "scripts": [
+        "engine/scripts/s1_size02/analyse.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s12_resource01/s12_stats.py"
+      ],
+      "notes": "Raster integrals and peak amplitudes, calculated separately by family."
+    },
+    {
+      "id": "3.3",
+      "chapter": 3,
+      "label": "tab:3_3",
+      "caption": "Abdeckung des Radius \\SI{0.75}{\\milli\\metre} und Gewinn gegenüber Radius \\SI{1}{\\milli\\metre}",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "scripts": [
+        "tools/chapter3_tables.py",
+        "plots/chapter3_figures.py"
+      ],
+      "notes": "Aggregate within phase first; DF, common-cap r0.75 and fixed-peak r1.25."
+    },
+    {
+      "id": "3.4",
+      "chapter": 3,
+      "label": "tab:3_4",
+      "caption": "Abdeckung des Radius \\SI{1.25}{\\milli\\metre} bei festem Spitzenwert und Gewinn gegenüber Radius \\SI{1}{\\milli\\metre}",
+      "data_groups": [
+        "DF12",
+        "SIZE"
+      ],
+      "scripts": [
+        "tools/chapter3_tables.py",
+        "plots/chapter3_figures.py"
+      ],
+      "notes": "Aggregate within phase first; DF, common-cap r0.75 and fixed-peak r1.25."
+    },
+    {
+      "id": "3.5",
+      "chapter": 3,
+      "label": "tab:3_5",
+      "caption": "Vollständiger Sweep über Abstände und Anordnungen",
+      "data_groups": [
+        "S12"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s12_resource01/s12_run.py"
+      ],
+      "notes": "Full spacing and arrangement manifest."
+    },
+    {
+      "id": "3.6",
+      "chapter": 3,
+      "label": "tab:3_6",
+      "caption": "Differenzen der globalen Genauigkeitsabdeckung für die wesentlichen Kompromisse unter neuen Phasen (Prozentpunkte)",
+      "data_groups": [
+        "TR5"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/thesis_reinforce05/tr5_closeout.py"
+      ],
+      "notes": "New-phase paired effects and intervals from closeout/effects.csv."
+    },
+    {
+      "id": "3.7",
+      "chapter": 3,
+      "label": "tab:3_7",
+      "caption": "Ungestuftes Muster und drei Stufen der Größenkodierung",
+      "data_groups": [
+        "CODE"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_code04/c4_plan.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_code07/c7_plan.py"
+      ],
+      "notes": "Coding levels and phases from s3_code04/formal/manifest.csv, levels() and precheck_levels.json; c7_plan defines case pairs."
+    },
+    {
+      "id": "3.8",
+      "chapter": 3,
+      "label": "tab:3_8",
+      "caption": "Arbeitsteilung der drei Vergleiche",
+      "data_groups": [
+        "CODE"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_code07/c7_plan.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_code07/c7_tables.py"
+      ],
+      "notes": "Separate same-image class contribution from between-pattern effects."
+    },
+    {
+      "id": "3.9",
+      "chapter": 3,
+      "label": "tab:3_9",
+      "caption": "Abdeckung und Identitätsrisiko bei \\code{R5$\\times$4} und $\\sigman=40$ (über drei Oberflächen summiert)",
+      "data_groups": [
+        "CODE"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_code07/c7_tables.py"
+      ],
+      "notes": "R5x4, sigma40, all surfaces; distinguish accepted-point, wrong-point and image denominators."
+    },
+    {
+      "id": "3.10",
+      "chapter": 3,
+      "label": "tab:3_10",
+      "caption": "Vollständiger Rauschbereich und aktuelle Identitätszählungen des \\num{5.6}-mm-Linienmusters mit starker Kodierung",
+      "data_groups": [
+        "CODE",
+        "IDFIX"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_code07/c7_tables.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/thesis_reinforce01/tr_a4.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/thesis_reinforce01/tr_a4sum.py"
+      ],
+      "notes": "CODE07 strong code at 5.6 mm, R@1.1247; join corrected A4 identities by input_key."
+    },
+    {
+      "id": "3.11",
+      "chapter": 3,
+      "label": "tab:3_11",
+      "caption": "Die fünf Generierungsstrategien",
+      "data_groups": [
+        "LAY2",
+        "LAY7"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s4_real02/r2_main.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s4_real07/s4r7_main.py"
+      ],
+      "notes": "Five layout strategies; shared layouts are not independent samples."
+    },
+    {
+      "id": "3.12",
+      "chapter": 3,
+      "label": "tab:3_12",
+      "caption": "Arbeitsteilung zwischen Sechsstufen-Rauschgruppe, Validierung neuer Anordnungen und Randdiagnose",
+      "data_groups": [
+        "LAY2",
+        "LAY7",
+        "BOUND"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s4_real06/s4r6_main.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s4_real07/s4r7_main.py"
+      ],
+      "notes": "Separate six-noise-level, layout-validation and boundary-diagnostic experiments."
+    },
+    {
+      "id": "3.13",
+      "chapter": 3,
+      "label": "tab:3_13",
+      "caption": "Gewinn und verbleibende Kosten der Nebenbedingungen bei Punktmustern (Prozentpunkte, Median der blockgepaarten Differenzen)",
+      "data_groups": [
+        "DF4",
+        "LAY7"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s3_fe01/fe_report.py",
+        "tools/chapter3_tables.py"
+      ],
+      "notes": "Median block-paired effects for the DF point view."
+    },
+    {
+      "id": "3.14",
+      "chapter": 3,
+      "label": "tab:3_14",
+      "caption": "Änderung der Linienmusterstrategien gegenüber der regelmäßigen Basis (Prozentpunkte)",
+      "data_groups": [
+        "LAY7"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s4_real07/s4r7_main.py"
+      ],
+      "notes": "P4 line changes relative to regular layouts."
+    },
+    {
+      "id": "3.15",
+      "chapter": 3,
+      "label": "tab:3_15",
+      "caption": "Hauptversuchsmatrix",
+      "data_groups": [
+        "JOINT"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s5_align05/s5u_entry.py"
+      ],
+      "notes": "Entry: s5_align modules; results: s5_six_formal."
+    },
+    {
+      "id": "3.16",
+      "chapter": 3,
+      "label": "tab:3_16",
+      "caption": "Kompromiss auf M10 bei $\\sigman=40$, wenn der Querabstand der Punkte von 4 auf \\SI{6}{\\milli\\metre} erhöht wird",
+      "data_groups": [
+        "JOINT"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s5_align05/s5u_entry.py",
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s5_align06/s5v_entry.py"
+      ],
+      "notes": "M10, sigma40; retain mean coverage and median defined errors separately."
+    },
+    {
+      "id": "3.17",
+      "chapter": 3,
+      "label": "tab:3_17",
+      "caption": "Wechselwirkung $I$ der globalen Genauigkeitsabdeckung bei $\\sigman=40$ (Prozentpunkte)",
+      "data_groups": [
+        "JOINT"
+      ],
+      "scripts": [
+        "engine/research/project_Part1_v1.7/scripts/surface_revision/s5_align06/s5v_entry.py"
+      ],
+      "notes": "Four-cell sign convention and 5-95% intervals from paired_effects.csv."
+    },
+    {
+      "id": "4.1",
+      "chapter": 4,
+      "label": "tab:4_1",
+      "caption": "Abbildungsfaktoren, physikalische Bedeutung und Versuchskontrolle",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_prepare.py"
+      ],
+      "notes": "Environment conditions from registration.json and manifest.csv."
+    },
+    {
+      "id": "4.2",
+      "chapter": 4,
+      "label": "tab:4_2",
+      "caption": "Vollständige Musterkandidaten",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_bridge01/cb_common.py",
+        "engine/scripts/ch4_valid02/cv_prepare.py"
+      ],
+      "notes": "Registered candidate sizes, spacing and arrangements."
+    },
+    {
+      "id": "4.3",
+      "chapter": 4,
+      "label": "tab:4_3",
+      "caption": "Hauptmessanforderung und Prüfebenen",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/mp06d_blur/core.py"
+      ],
+      "notes": "Main thresholds, sensitivity levels and admissibility gates from POLICY and registration."
+    },
+    {
+      "id": "4.4",
+      "chapter": 4,
+      "label": "tab:4_4",
+      "caption": "Repräsentative Konfigurationen unter der Hauptmessanforderung und ihre Bewertung in der unabhängigen Validierung",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_analyse.py"
+      ],
+      "notes": "New-phase choices and J; distinguish reselection from validation of fixed prior choices."
+    },
+    {
+      "id": "4.5",
+      "chapter": 4,
+      "label": "tab:4_5",
+      "caption": "Diagnose der Abtastgeometrie unter der nominellen Bedingung ohne Rauschen",
+      "data_groups": [
+        "MECH4"
+      ],
+      "scripts": [
+        "engine/outputs/ch4_bridge01/analysis/independent_check/ic_analyse.py"
+      ],
+      "notes": "Truth-height substitution as a sampling reference."
+    },
+    {
+      "id": "4.6",
+      "chapter": 4,
+      "label": "tab:4_6",
+      "caption": "Nahezu optimaler Bereich der Punktmuster bei $\\sigman=40$",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_analyse.py"
+      ],
+      "notes": "Point near-optimal range at sigma40; shared feasibility gates and a 2 pp band."
+    },
+    {
+      "id": "4.7",
+      "chapter": 4,
+      "label": "tab:4_7",
+      "caption": "Linienbreitenwahl bei $\\sigman=20$ und einem Linienabstand von \\SI{8}{\\milli\\metre}",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_analyse.py"
+      ],
+      "notes": "Line-width selection at sigma20 and fixed 8 mm line spacing."
+    },
+    {
+      "id": "4.8",
+      "chapter": 4,
+      "label": "tab:4_8",
+      "caption": "Zwei Parameteranpassungen unter homogener Abschwächung und ihre unabhängige Validierung",
+      "data_groups": [
+        "VALID4",
+        "SCAN4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_analyse.py"
+      ],
+      "notes": "Paired illumination effects and worst-surface J are different summaries."
+    },
+    {
+      "id": "4.9",
+      "chapter": 4,
+      "label": "tab:4_9",
+      "caption": "Bevorzugte Musterfamilie in den 10 Umgebungen",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_analyse.py"
+      ],
+      "notes": "Family wins across ten environments, separated by tau."
+    },
+    {
+      "id": "4.10",
+      "chapter": 4,
+      "label": "tab:4_10",
+      "caption": "Zahl zulässiger Einheiten unter den 60 Umgebungs-Rausch-Einheiten nach Aufnahme weiterer Anpassungsrichtungen",
+      "data_groups": [
+        "VALID4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_analyse.py"
+      ],
+      "notes": "Recount feasible environment cells from config_scores for the specified candidate subset."
+    },
+    {
+      "id": "4.11",
+      "chapter": 4,
+      "label": "tab:4_11",
+      "caption": "Wesentliche Ergebnisse im Parametersweep und in der vollständigen unabhängigen Validierung",
+      "data_groups": [
+        "VALID4",
+        "SCAN4"
+      ],
+      "scripts": [
+        "engine/scripts/ch4_valid02/cv_analyse.py"
+      ],
+      "notes": "validation_table/key_effects evaluate the fixed scan choices; distinguish later reselection."
+    },
+    {
+      "id": "4.12",
+      "chapter": 4,
+      "label": "tab:4_12",
+      "caption": "Parameterwahl und Anpassungsregeln am Prüfstand",
+      "data_groups": [
+        "VALID4",
+        "SCAN4"
+      ],
+      "scripts": [],
+      "notes": "Summary of established selection rules; no separate simulation."
+    }
+  ],
+  "data_groups": {
+    "SURF": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/data/raw/1405Fig14M10_Default_Dataset.csv",
+          "sha256": "d15f390c08e3f71aee0b85b9744d842e5302e627bf4e60b52cea8da73298e520"
+        },
+        {
+          "path": "research/project_Part1_v1.7/data/raw/Fig13_M24_Default_Dataset.csv",
+          "sha256": "809e6d3929090979c0a5fb41dd209269ebeeb8d62c5b6dfda54b542ce249de7d"
+        },
+        {
+          "path": "research/project_Part1_v1.7/data/raw/Fig9_Flat_Default_Dataset.csv",
+          "sha256": "1300d487f9209aa66cf83fc1bdc90fe45397c8e9985c5fa238bab84c32dcd07d"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/surf02/release/release_surf02.json",
+          "sha256": "8a255eb0ce93b66e2443d99db316cd593356c805753ffb7aa06cd6239cabc869"
+        }
+      ]
+    },
+    "S12": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s12_resource01/results/conditions.csv",
+          "sha256": "5cf40582e5a4ef667b1dce5972449143470d9991cebc4cd8a3d1629dd6bdc7eb"
+        }
+      ]
+    },
+    "SIZE": {
+      "files": [
+        {
+          "path": "outputs/s1_size02/resource_table.csv",
+          "sha256": "f5d900f6748aff0fb7aa23b732b324f84054013ae18364e48fee848a8586dc22"
+        },
+        {
+          "path": "outputs/s1_size02/conditions.csv",
+          "sha256": "27e6797b9b3ae5d36c25606cd48cd60e1431bb3fbf037569f23cd778fe32b0fa"
+        }
+      ]
+    },
+    "DF12": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/results/A_s12_views.csv",
+          "sha256": "61786a635c03e7dd70fec13151a80ddbb3dbe2f8702dc75f2b77ee7a92297d04"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/results/B_size02_cases.csv",
+          "sha256": "812cacf10ca1584af63991a4558e14061d9a6e1e36516b49a70f127113074b1a"
+        }
+      ]
+    },
+    "DF4": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/results/C_s4_cases.csv",
+          "sha256": "4d4196acf215b8c7173360c675aacfec17ab4b25c0842940c4b49314a7223545"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/results/R_34_neue_layouts_block_differenzen.csv",
+          "sha256": "b88603eabbfc733ec515bafdd50edeaaeb16ea180a6c1a92c3287d7b1ae83508"
+        }
+      ]
+    },
+    "SAMPLE": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_check01/_parts/B_results.csv",
+          "sha256": "afd491b20995c9c6fac9586a3736fd060d5f9216c3ba8428c240701545e8a2c5"
+        }
+      ]
+    },
+    "TR5": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/manifest.csv",
+          "sha256": "f0e26a9b8ec785e801526586c54bb5d8dea6faba7550a0a5bf76fbdc7ac9748d"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/results.csv",
+          "sha256": "be10567943b1fab27c6dbf768b422d4b51989121670eafc9207da1ebd055b955"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/closeout/effects.csv",
+          "sha256": "1ac51ed73d70cfcbc36e6ac5cdc39ba24ea724f5a3921d297c2fc8ee236c73a8"
+        }
+      ]
+    },
+    "CODE": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/cases.csv",
+          "sha256": "1a15a7c54464f6a49bcbda5cbdb72fea2a2c0129aacc75d98ca0c5aad0f1453f"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/pair_phase_summary.csv",
+          "sha256": "ac65427e86f598fbe906e29618b8adccc3e0434711eaaa08afc2aaa252de3157"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/case_phase_summary.csv",
+          "sha256": "ebed79b99e4fd602af52a2dd13893d0de279f8e2661021bd68167ad1aac16b94"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/bootstrap.csv",
+          "sha256": "57e3cb9ec045482b8b2f9994ad28e24d6eda247d4989863987028a292defd4cf"
+        }
+      ]
+    },
+    "IDFIX": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce01/identity_geometry.csv",
+          "sha256": "f1f751db1add6223f09c6efc2c131f5650758cba1167ebe5acba2c1284576c7e"
+        }
+      ]
+    },
+    "LAY2": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real02/manifest.csv",
+          "sha256": "c9689e279f089ba7f42e337a1300394131fee7a3add8115a9392e7d9956980a1"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real02/paired_summary.csv",
+          "sha256": "667515e83ca18aa7cf142cf855b76bc796947af75861f28eceae49d3ee261618"
+        }
+      ]
+    },
+    "LAY7": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/manifest.csv",
+          "sha256": "8437443b89173a4361763304e35cef93fb6fd28923c69d472a9768c070c3f444"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/generation.json",
+          "sha256": "0a7f3f1562dddc93c4bbfe6bef2135ab0cc8ab45fdc2eda459880d254e163df2"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/results.csv",
+          "sha256": "6b948fb15a89ec02d8190a6771e032986312c3354ec78a73b0f58f8a0a11a5fa"
+        }
+      ]
+    },
+    "BOUND": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/pix_bound01/domains/omega1.npz",
+          "sha256": "cc6dd47dbab7186b87d9fd7f73b01f3007035a2e626b05098da9faa2655c7358"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/pix_bound01/domains/omega1.json",
+          "sha256": "d6d763ffc0b1dee20e4a18ca8f6b5b1d27a144f2c3d17e80a6b97a91ef2f1610"
+        }
+      ]
+    },
+    "JOINT": {
+      "files": [
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_align05/case_results.csv",
+          "sha256": "6a4e6c57d1c698a3af6686bb92dd481674d28adeee3f7f5524e8a43c9f9e9948"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_align05/condition_summary.csv",
+          "sha256": "96eebbfac19e799de981877171e48406e2738081cfe2ac4deb96e01bbcbe2194"
+        },
+        {
+          "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_align06/paired_effects.csv",
+          "sha256": "4b1ef58e224b0d7a79ac24e66618b1775ebb6372b9f1bd96f0eb4c8f2c44117a"
+        }
+      ]
+    },
+    "SCAN4": {
+      "files": [
+        {
+          "path": "outputs/ch4_bridge01/analysis/results_all.csv.gz",
+          "sha256": "c18b939429d3e34271aad5563734553e03829066a845ded3836821955ca0e63d"
+        },
+        {
+          "path": "outputs/ch4_bridge01/analysis/config_scores.csv.gz",
+          "sha256": "1975db73ae6af88070c26818b5c4873dac10b5fc1e84283426245623e29f3290"
+        },
+        {
+          "path": "outputs/ch4_bridge01/analysis/choices_all.csv",
+          "sha256": "828ba5a426d3c7dd227e4c97306400eee381a93dc638010e5c38771dbde1a9c5"
+        }
+      ]
+    },
+    "VALID4": {
+      "files": [
+        {
+          "path": "outputs/ch4_valid02/results.csv.gz",
+          "sha256": "d4fda1adb221d9cb122b7b59f6eb6414bca02d674b0b4644da4347f34ea7a589"
+        },
+        {
+          "path": "outputs/ch4_valid02/analysis/config_scores.csv.gz",
+          "sha256": "66f31e7c2e6416bf983e0e13db5f02fabde2fed7d1fcf29c6b53172a71bf0e82"
+        },
+        {
+          "path": "outputs/ch4_valid02/analysis/choices_new.csv",
+          "sha256": "9f0f6684527120cc9791bf4c6b033804b9ab7d79e4549ad5c03189790388782a"
+        },
+        {
+          "path": "outputs/ch4_valid02/key_effects.csv",
+          "sha256": "fd44633ded3524d1aa8489bc8237a19d9c51b8312809fe00f43156ed9e490135"
+        },
+        {
+          "path": "outputs/ch4_valid02/validation_table.csv",
+          "sha256": "c0f3c6a099c004df8c03f07187c8d02cd0be8f796060ee3a1c76b8fccf8e9971"
+        },
+        {
+          "path": "outputs/ch4_valid02/analysis/surfaces.csv.gz",
+          "sha256": "1fed6da3d44d11005e484487a2572c8e7e9ac46aab8d4efd7bcfe052371e0f38"
+        }
+      ]
+    },
+    "MECH4": {
+      "files": [
+        {
+          "path": "outputs/ch4_bridge01/analysis/independent_check/mechanism_summary.csv",
+          "sha256": "5bbdb49f501e609548ccf0930c7d9b5de8a3d1d126d3b41f7a766f6fdf94cefb"
+        }
+      ]
+    }
+  },
+  "figure_inputs": [
+    {
+      "path": "research/project_Part1_v1.7/data/raw/Fig9_Flat_Default_Dataset.csv",
+      "sha256": "1300d487f9209aa66cf83fc1bdc90fe45397c8e9985c5fa238bab84c32dcd07d",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/surf01/surfaces/B_curv_fine.npz",
+      "sha256": "80c64bd486ad59459051f62663ab204fc121e1ca8bbd56a14cf2e8b7d9e33d9a",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/data/raw/1405Fig14M10_Default_Dataset.csv",
+      "sha256": "d15f390c08e3f71aee0b85b9744d842e5302e627bf4e60b52cea8da73298e520",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/surf01/surfaces/A_curv_fine.npz",
+      "sha256": "691c6ef3f5cf2f97b33c4264c7b2bd04d7b343d455a5c61333fb2f0ae18960fd",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/data/raw/Fig13_M24_Default_Dataset.csv",
+      "sha256": "809e6d3929090979c0a5fb41dd209269ebeeb8d62c5b6dfda54b542ce249de7d",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/surf01/surfaces/C_curv_fine.npz",
+      "sha256": "57d303fe80e2d1b17aae1c0a1949b3bf0be6c7636086f6e04e67a8d60a507121",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/surf01/surfaces/B_curv_coarse.npz",
+      "sha256": "48a6f6445d72d717b5748c2389f6aa8ad82ac6a0e10f1b90c317e1eb794d22b3",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/surf01/surfaces/A_curv_coarse.npz",
+      "sha256": "0cd4f20e4e35876d1e57cba5d165ecb95ee852eabdbc3e44e5e96bcb07c4a626",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/surf01/surfaces/C_curv_coarse.npz",
+      "sha256": "e9b63aeb84e26e8d85e7e1c9644a7cfbe99f5109af86e841a01ae300b61261df",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/surf02/config/surf02_config.json",
+      "sha256": "5b8eed1823d953aeb3e257a99bdf5ca4f3549ce48cb4166587b52ae3d7561c51",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s12_resource01/manifest.csv",
+      "sha256": "9c2c9371a479e95d72385bb1ba3806051bc4be50f729976790f187892a378c19",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s12_resource01/results/inputs_metrics.csv",
+      "sha256": "83fc84ca73c68f690e0de3823f5851d1c6d86a4f9fa5170c063965f2183f8c3d",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s2_prepare/run/images/S2I-3adaa26dd2bc889a1eb99974.npz",
+      "sha256": "548ad465ace5ec18f5ebb35a0fca1597d70fedc9c0f0079cc5999aa8fb815e82",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s1_real01/images/S1I-83f0fcec1d8e167d22b19a12.npz",
+      "sha256": "a0eab99c59390e3e7b09934b7fbcfd2211fc309f934cd7ca6b4e91a895834feb",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s2_prepare/run/images/S2I-9d5dbc66f8a3a91e28212fab.npz",
+      "sha256": "571a6884157470c381e0f8e460182b7c86c29868a87ef5862c1f1002f9b7d6f2",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s1_real01/images/S1I-93947d5cfc2b16eedbcd4f16.npz",
+      "sha256": "51c10fc9aaf5b185db8929cd3f23c23b4e23a25a2258e028f12bf4a608218164",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s12_resource01/images/S12I-87450fcbdee59157ebd16d80.npz",
+      "sha256": "c78614b7ba15d5509d925ba3932d88dcb428e58fc6b7fe79e5af9807b423f039",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s12_resource01/images/S12I-47b3048daa51b0c0c8dc2f2a.npz",
+      "sha256": "e88d8c649e0914c4d1e9d853d6c7cd6453aa476c52849f9f23f4bc0b02dc20e5",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s1_real01/domain/global_domain_step0p50.npz",
+      "sha256": "6c191c249ea3682966a38c4b8ba7721a81bae10f9005fe24847a27795fa53500",
+      "readers": [
+        "kap2_redraw",
+        "kap3_redraw",
+        "kap3b_redraw",
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_align05/case_results.csv",
+      "sha256": "6a4e6c57d1c698a3af6686bb92dd481674d28adeee3f7f5524e8a43c9f9e9948",
+      "readers": [
+        "chapter3_figures",
+        "kap2_redraw",
+        "kap3_redraw",
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s345_ready/run/eval/S2D-caa539801aaaff1f795721bf.npz",
+      "sha256": "c9f66702af0bf9354926af6a6c05d577cad8bd1adbde9ce7dcccf47897d30429",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s345_ready/run/eval/S2D-a6e49000a7e9e39956ab0b2f.npz",
+      "sha256": "a39a4fdc759ae2965f7102d9c1931c811f041457271ebb46756fccee5b048ad2",
+      "readers": [
+        "kap2_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s12_resource01/results/conditions.csv",
+      "sha256": "5cf40582e5a4ef667b1dce5972449143470d9991cebc4cd8a3d1629dd6bdc7eb",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/pair_phase_summary.csv",
+      "sha256": "ac65427e86f598fbe906e29618b8adccc3e0434711eaaa08afc2aaa252de3157",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/bootstrap.csv",
+      "sha256": "57e3cb9ec045482b8b2f9994ad28e24d6eda247d4989863987028a292defd4cf",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/case_phase_summary.csv",
+      "sha256": "ebed79b99e4fd602af52a2dd13893d0de279f8e2661021bd68167ad1aac16b94",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real02/paired_summary.csv",
+      "sha256": "667515e83ca18aa7cf142cf855b76bc796947af75861f28eceae49d3ee261618",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_align05/condition_summary.csv",
+      "sha256": "96eebbfac19e799de981877171e48406e2738081cfe2ac4deb96e01bbcbe2194",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/run.json",
+      "sha256": "3fd7bece2cdbb2c5f0fafcfd768eeebcf9cceed183e1cd054e31516ad619a2b4",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/data/S12I-b4fbeec0c38ff70be9269f6e.npz",
+      "sha256": "401e0f6481917bb674ecab002489bd45df77c6d262a73abefb15e6b537a68b10",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/data/S12I-a990efe8bcf418d377417d7e.npz",
+      "sha256": "7f6eb6f69b030eff4d65cd1d33c6e82b568d9826ad64be6d95e5a17a4698bcd4",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/data/S12I-6c33ea8b070665a9a35e5796.npz",
+      "sha256": "cacc9dcb43b88ad5920cff61fda8c7919a773748e588e8ebc3d0f5ed435f86f0",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/data/S12I-1fe22e64bdd8d1b176939d59.npz",
+      "sha256": "e5fd58e885ad1ab57d051ab09b8201783ceb1aa10d8cec3babcf972f0cb59470",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/analysis/formal/current/case_board.json",
+      "sha256": "b6432db47b46d7be12dc68a6d3063f5ea10bcb99bc874566c52b76993b3c24aa",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/formal_run/records/eval/C4E-97b4e0b0f927b4bf9514ede5.npz",
+      "sha256": "f68948044a34b8ea1d4853498a18176ecf435112dfced53120a029c9a256f4a4",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/formal_run/records/eval/C4E-7c927fbe6cefdd96cc0aba69.npz",
+      "sha256": "6f70d4d5c6d9aec12fefecc3fce35304953c65d52585aafb42cf6536bd1b1e84",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_code07/formal_run/records/eval/C4E-cefc070d2c1e07307328548e.npz",
+      "sha256": "dc0cc7d99a301efba08423ae65e39d4cfea6fba7a7710c9b05b5e27656e9feab",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/pix_bound01/domains/omega1.npz",
+      "sha256": "cc6dd47dbab7186b87d9fd7f73b01f3007035a2e626b05098da9faa2655c7358",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-4772d06a571fb22a7b1f1854.npz",
+      "sha256": "43a2f28696793ae113e535a20b0140633bf90b27553131825433c11000e53158",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-4772d06a571fb22a7b1f1854.json",
+      "sha256": "de3a3a7f951e15c35a729adda95fd6b599becdaff88d18afa1eec2699bc28bba",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-b4eca56f794c4c54c1cb14a4.npz",
+      "sha256": "c9aee06ccb1b53fa43c1b85d9e288268aef2b564ca7b4bed379caeeb93fc1242",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-b4eca56f794c4c54c1cb14a4.json",
+      "sha256": "c2d40f530ae50e2e003d94e161833a2d7a0944eec05b02265b884c460073b372",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-32aaa0e2250b5ce974a36964.npz",
+      "sha256": "619c26caa0ea6172a6dce6d663af37ce0dda2c6ec6c8e625da7dbc4eb7f351d8",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-32aaa0e2250b5ce974a36964.json",
+      "sha256": "1fd7f5dbb74c36833f2d8a5f0289e4e51502c3371b5395e54ac9e97939026e98",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-b15a18e82fbdfdd594f42d34.npz",
+      "sha256": "04e17ed4f9451f181109aeeffcd84196f818c212443b20594d7a4844f8d0f13c",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-b15a18e82fbdfdd594f42d34.json",
+      "sha256": "a5cfb2dee179bd126f431b2d9995536a6484244bfdd3488c5b9477281b8f1ad8",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-c308dc0d74b7963913b0a557.npz",
+      "sha256": "b618a557628c6283909b6c9ebf034e68ac3db747da66de3f40090ddccc90d216",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-c308dc0d74b7963913b0a557.json",
+      "sha256": "e2a34491f836048979f11b6247708e8f8b028fba3a4abd01b5ed624602d93fe5",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-1beff84016228c4154f2dfd7.npz",
+      "sha256": "23321e3b9fd384c46e4c6511f72874e38969a76555443833174e6cefc436aabd",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/evals/R7E-1beff84016228c4154f2dfd7.json",
+      "sha256": "f783e7a73ab14653d421f282847dbe211b50989ed5f3fc152d22a312140c3023",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s345_ready/run/eval/S2D-c4b1c1fc2901b3bd8e5db9c4.npz",
+      "sha256": "383c5508a07139ad126b42babde169bf1876a4f98af3d91cb4726a65877f5e5c",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s345_ready/run/images/S2G-12dfb283bca4d3026299310e.npz",
+      "sha256": "d18322b15540c8799fbb63a93940a5e07a59fec4e6fcf2501d14045f41987757",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s345_ready/run/eval/S2D-36fba87f955a0500872e2a79.npz",
+      "sha256": "d7ad7a6094348f9a95bed3c76ef30d492d7482e85a001df19268f950a679214c",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s345_ready/run/images/S2G-1b93ddb27242632c41325b6f.npz",
+      "sha256": "b96e138aeb1b93cc4f1ee80d5844f321bb2edda144de04a765e994c53d15e2ae",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_six_formal/store/eval/S5X-b449befc5a1b85b531fe9069__P4.npz",
+      "sha256": "d17b950c636f608946f80a496b09b08e5bb485e54c8e88dfa25e9f2ae88108eb",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_six_formal/store/image/S5X-b449befc5a1b85b531fe9069.npz",
+      "sha256": "9011e9fcc49d1c53d35aa1ff93239e9e8454ada8da33f1134ebab7e42a5e5c6d",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/generation.json",
+      "sha256": "0a7f3f1562dddc93c4bbfe6bef2135ab0cc8ab45fdc2eda459880d254e163df2",
+      "readers": [
+        "kap3b_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/analysis/surfaces.csv.gz",
+      "sha256": "1fed6da3d44d11005e484487a2572c8e7e9ac46aab8d4efd7bcfe052371e0f38",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_bridge01/analysis/independent_check/mechanism_summary.csv",
+      "sha256": "5bbdb49f501e609548ccf0930c7d9b5de8a3d1d126d3b41f7a766f6fdf94cefb",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/3d7df728a6aa2d76fde2a864.npz",
+      "sha256": "f67e56aaa0c214eb3294557f3b069de1263351fff6388ad07f004147dfe9f22f",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/c6363c835d1dc9eb40c10434.npz",
+      "sha256": "4dc3efe491f651e34b175a1a7533eb7292e77c13423be119d5fafa933935d28c",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/cb6d5b8b76950c7c18e0695f.npz",
+      "sha256": "78a61882c3da476db723d1f14706df5eb1794ad8f373cf7178788e613cae3d96",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/d15572760f17fe889dede4a8.npz",
+      "sha256": "a4302ebea055a72890bbedfe8ac77c56ed76e271ec6d90e5c5fa94516e736a98",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/3df0ce01ede62dcb2fc19548.npz",
+      "sha256": "9799025b8b7e5ba732e26b18ba821bae88a4389268ca01c7309eb567a2f26fdd",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/b8d143f7e0855e50be897fe8.npz",
+      "sha256": "2d7c74e2c84ae34383faa8089aa03c328ab9044a32593d5f8f50428eb70715c9",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/bacb7f8d156f5094650aba47.npz",
+      "sha256": "a2f0548ccfcdb6bf3d563c98264e4acf36f03b878ec341afa2098d4bebbb74d6",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/053ded344742d81cc5bd116c.npz",
+      "sha256": "38939c14c37615ae9c53fea07c6d635425fabe2507a1483c95514cec0000b6d0",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/c953ff5943ed23781de34877.npz",
+      "sha256": "60ebe4d6e35e0d9eabc5ca8528e975af5f359144b8f43cb8e7eeb9b1ec284c32",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/b2e9c4adca8d8d45eb2e2b01.npz",
+      "sha256": "225caa0feaf9295728eeda068b128ceced340d1fc5240c7b6e5a393102dd0486",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/1c82be6c525b5853af0340b0.npz",
+      "sha256": "5c220e4bbbb8efda346f6a10e4f0bdfbef98cc480b07dcd7736dc60418f7a1d5",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/53bf5dc9d4300aeb5ad9880c.npz",
+      "sha256": "c6f02f4d92fa23810d48deb63c8a33bcc0a1b53946fb3ea7501ac5d72c96114a",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/b3c093dc0d0c13407ff60077.npz",
+      "sha256": "718d7d7bd38bb40cee8782e7331f40698494f958f5ea96f0cf1c4bc29c9c4a04",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/380103ca78a74b5871abfd99.npz",
+      "sha256": "57abfa5cfaea67d2e7cd941bb275fb7f97e601ae94ce5c56cb517064cf5c5812",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/7ed80811331f1949c7d416ec.npz",
+      "sha256": "5401adff05ee010e7687370c3f30f7ce6a3b0e4576d5458b81c9f1087cede2af",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/7bf3f6f0f33e86025500b68b.npz",
+      "sha256": "2844e9304f192cef4804f88ebe640cb7cfb9da9f6c73123cd01f67bcc65e2e90",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/646b66b1592088fab1e170a7.npz",
+      "sha256": "e8272fcb42b6be22edbe05875a992ac53f701f02aecd1f7b582199aa906dda95",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/b3d36481472bac4df4dcff7f.npz",
+      "sha256": "9f27790e219006b4b603adab1916c82411dd6710d67edee9854f36fec4e511f8",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/be8bd4f08f7dcbb002adfc07.npz",
+      "sha256": "80ef4cc4d81357159859d866a359c9e44336cc3a55dd6043c03973b9a04f734b",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/bef24e5ddaf2f2569c05b63a.npz",
+      "sha256": "5b1375fe7bb2a6f52a52ebdb281154b0e20c0eb3e9c1e43776567d5194ce93a4",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/889c07e47699bb5992a8395e.npz",
+      "sha256": "b001e450064c7e0b05daba0855197e70988a508bbc5a7d50f768a4abb1ed7cc2",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/3b8c91fab2f309d872afb278.npz",
+      "sha256": "900aa1dcdc2a69f9c871a2e98a1c623e267dd4a8badeb03c6f82d3d5fdbbf69c",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/f1cb037ecbc7e1e0026e3b33.npz",
+      "sha256": "e70b980c75386c65fa15c3ed125a67e60db6e38e9e4dcb050f7c3ee2ccdffa6c",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/489fd53c9338ad6d3373ec92.npz",
+      "sha256": "f3cf0ec14ffe14cea1864c3b207c41c65045aefe22e74852b564aff01bdb8808",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/d95ca2a0d16aed73d20a307f.npz",
+      "sha256": "270305201aca127934a0cadf7a6168d1b0eafb28ed8258a73ae287213e55d830",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/744dde98ef07245d33efa656.npz",
+      "sha256": "641ed55c3733556d0de3971f0fffa0096bb2e4676e10242d291fc7ab488b7fa7",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/b9a5610d0109916beb59e793.npz",
+      "sha256": "a3767ca3a6036fea4c51a064423ad20b82b6f2cea5b77063cc99310b7cf2f9f1",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/3c6f8981eb761a9f6c37753b.npz",
+      "sha256": "e89e0229ae749c6e374019d0f96e45492bd071fd41ddfbe7d3d76b4d1b0d0bee",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/ad3bd0bdf27872bce58c66eb.npz",
+      "sha256": "9b3d28d7375a5a634e59355e3cc22472ca3689e8bb37df44af17cb6f065ea164",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/dc6c41cd0ac45ddb0c73f48c.npz",
+      "sha256": "863770a9617feb0654588251d697f7e9b3f74d3517324a2db37bdc635eb0394a",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/4d99320d98120dc446230c1c.npz",
+      "sha256": "647af6c9ff4d426943c523f08b9d15d54c8dc8fc2b8380f5395c4059e07b82bb",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/532a4969c457446a4690d0be.npz",
+      "sha256": "487235e9da87541d226aadf4157b85da6fc6f02d25ce3875c7bba705cea35d6b",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/7241f7c6adcb51da306ecfae.npz",
+      "sha256": "0bd90bcfb2fa9e41ad3001abfe3d8d5a1876bc2761526d3548816d605627bf53",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/bc1ec63a1baa4c6b6276c9f5.npz",
+      "sha256": "e897ba2de41ee6028b5a997d11901a0d6987634ec3d7d71e48c3a9dced7913fe",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/29a611fbc736ad556c841239.npz",
+      "sha256": "c28606c6cd3a09b74178db93dd79114740cc6463071e8ee31d214a11ceb94e50",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/731854dcbec0d162087f4208.npz",
+      "sha256": "881c280547d40b44028a79cc286ccac548beb36095cf2a9efabb1e170a03d2e2",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/6e7d816fdbf1b457a476417d.npz",
+      "sha256": "759bd8a3ff45a04063e58c297679db7f1c5af122c489974773a3b25c9f70427f",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/main/data/0c4ff1a61746504d46a9d26c.npz",
+      "sha256": "f80403e11e124b03d470eea657fe78a65c0daedeaed18788209cdf10ac5c5ed9",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/results/A_s12_views.csv",
+      "sha256": "61786a635c03e7dd70fec13151a80ddbb3dbe2f8702dc75f2b77ee7a92297d04",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/results/B_size02_cases.csv",
+      "sha256": "812cacf10ca1584af63991a4558e14061d9a6e1e36516b49a70f127113074b1a",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/results/C_s4_cases.csv",
+      "sha256": "4d4196acf215b8c7173360c675aacfec17ab4b25c0842940c4b49314a7223545",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real02/manifest.csv",
+      "sha256": "c9689e279f089ba7f42e337a1300394131fee7a3add8115a9392e7d9956980a1",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s4_real07/results.csv",
+      "sha256": "6b948fb15a89ec02d8190a6771e032986312c3354ec78a73b0f58f8a0a11a5fa",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_align06/paired_effects.csv",
+      "sha256": "4b1ef58e224b0d7a79ac24e66618b1775ebb6372b9f1bd96f0eb4c8f2c44117a",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/thesis_check01/_parts/B_results.csv",
+      "sha256": "afd491b20995c9c6fac9586a3736fd060d5f9216c3ba8428c240701545e8a2c5",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/size02/cache/S12I-9e9d4047654d2c15fe0b7da6.npz",
+      "sha256": "15e3ad33f97ce1da8789d8b2942103bf434acb1674811ae3842fc3c30dd33734",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/s12/cache/S12I-4ba2f9bc120a32be168fa726.npz",
+      "sha256": "88b3e72730cd282b3736391d2578db0760bff2e26ce7cddbf251ae63c9f76abc",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/size02/cache/S12I-f59c83dba2ecd479e5f731f5.npz",
+      "sha256": "7bd0c050327071a747fcd7ddfe6e493675a4b27ce5cf26f32ff924ae7ba31193",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_align02/df/df_D_r0.75_p8x4.npz",
+      "sha256": "3bafb42040e3e11ae173b66b5f6084cb1415b5a0a758c040308f4ce04d89299d",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s5_six_formal/store/eval/S5X-b702a642de1200f2de65a831__DF.npz",
+      "sha256": "7b2cbdc44f5d8a1bb54160bb8023d53b6ca559564489f3e705ebc36ae9dac494",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/s4/cache/R2I-816d834eda6f1be41b6b80fc.npz",
+      "sha256": "9ecd2fb01088c20590543ff37f0d8f886270a7d34f2741f74ed0a2daf217d5cf",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "research/project_Part1_v1.7/outputs/surface_revision/s3_fe01/s4/cache/R2I-0bab6034e6ca0bb58693a12d.npz",
+      "sha256": "74482acec47421deab273f9d1e28792dda703f955e7d47bc3721165f41aa75ba",
+      "readers": [
+        "chapter3_figures",
+        "kap3_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/results.csv.gz",
+      "sha256": "d4fda1adb221d9cb122b7b59f6eb6414bca02d674b0b4644da4347f34ea7a589",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/sensitivity.csv.gz",
+      "sha256": "745d2b750e376f037489ef1bd1544da3f1a8291d56b326694ee38e15e1f0ac05",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/validation_table.csv",
+      "sha256": "c0f3c6a099c004df8c03f07187c8d02cd0be8f796060ee3a1c76b8fccf8e9971",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/key_effects.csv",
+      "sha256": "fd44633ded3524d1aa8489bc8237a19d9c51b8312809fe00f43156ed9e490135",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/analysis/config_scores.csv.gz",
+      "sha256": "66f31e7c2e6416bf983e0e13db5f02fabde2fed7d1fcf29c6b53172a71bf0e82",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_valid02/analysis/choices_new.csv",
+      "sha256": "9f0f6684527120cc9791bf4c6b033804b9ab7d79e4549ad5c03189790388782a",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_bridge01/analysis/results_all.csv.gz",
+      "sha256": "c18b939429d3e34271aad5563734553e03829066a845ded3836821955ca0e63d",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_bridge01/analysis/config_scores.csv.gz",
+      "sha256": "1975db73ae6af88070c26818b5c4873dac10b5fc1e84283426245623e29f3290",
+      "readers": [
+        "kap4_redraw"
+      ]
+    },
+    {
+      "path": "outputs/ch4_bridge01/analysis/choices_all.csv",
+      "sha256": "828ba5a426d3c7dd227e4c97306400eee381a93dc638010e5c38771dbde1a9c5",
+      "readers": [
+        "kap4_redraw"
+      ]
+    }
+  ],
+  "plot_sources": {
+    "plots/chapter3_figures.py": "031ab0044ccf2a6c077e2502e5fbdcfade68cfa2f94e37e4ce4846d45d153d26",
+    "plots/kap2_redraw.py": "55f4cd279721cca85424b3a8d09f8d6360cc5a1c0f8f317974e4e4a017c4f1e0",
+    "plots/kap3_redraw.py": "354e57326bc4b73a1db58def5ec59b8d3e8be86caa13741a05ade323c433a317",
+    "plots/kap3b_redraw.py": "fecf789b4a0ae889b6cb40022c6471403e4a9776624c099c4bdeb8fa7390246e",
+    "plots/kap4_redraw.py": "185ef59c9f6cebb0e4796f1232402a56180a2204fbfe171b91e7cbafae60c1b7",
+    "plots/layout_figures.py": "40868f6c2047e610331b217143e4bf8e62d4aef634902b882a29411fbe262219",
+    "plots/layout_helpers.py": "5fb4c894cb91cc8eaf969f7bcf951ab04a8f7827fe6bdeb7fa88dea1de545b80",
+    "plots/plot_io.py": "c1a79d1fba3495cf33773cf38f46eafeef6c81b49ec8652769f80689392240e9",
+    "plots/thesis_figstyle.py": "dc502a664b61dd20f92e9b05db27b7631292dabfccb186667d904c18fed14d40"
+  }
+}

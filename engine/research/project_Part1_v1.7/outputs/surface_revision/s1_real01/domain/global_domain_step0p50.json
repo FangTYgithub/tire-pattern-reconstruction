@@ -1,0 +1,97 @@
+{
+ "definition": "fixed XY lattice inside the registered FOV square (|x|, |y| <= 46.08 mm -> nodes -46..46 mm); a node belongs to the common observable region when, for ALL four surfaces, its true surface point (bilinear on the scientific grid) lies inside the grid and the common window [-16, +4] mm, projects inside the camera AND the projector image, and re-casting both rays through these pixels returns the node itself (|hit - node| < 0.0001 mm: no occlusion). Pattern-, result- and hull-independent; one region for every case.",
+ "step_mm": 0.5,
+ "x0_mm": -46.0,
+ "y0_mm": -46.0,
+ "nx": 185,
+ "ny": 185,
+ "n_nodes": 30947,
+ "node_area_mm2": 0.25,
+ "area_mm2": 7736.75,
+ "bounds_mm": {
+  "x": [
+   -45.0,
+   44.5
+  ],
+  "y": [
+   -43.0,
+   45.0
+  ]
+ },
+ "window_mm": [
+  -16.0,
+  4.0
+ ],
+ "vis_tol_mm": 0.0001,
+ "per_surface": {
+  "A_curv": {
+   "adapter_surface": "M10_curv",
+   "n_lattice": 34225,
+   "n_in_grid": 34225,
+   "n_in_window": 34225,
+   "n_in_camera_image": 33328,
+   "n_camera_visible_recast": 33328,
+   "n_in_projector_image": 33590,
+   "n_projector_visible_recast": 33590,
+   "n_projected_but_occluded": 0,
+   "n_ok": 32693,
+   "z_range_ok_mm": [
+    -2.949191000451634,
+    3.1002328026764747
+   ]
+  },
+  "C_curv": {
+   "adapter_surface": "M24_curv",
+   "n_lattice": 34225,
+   "n_in_grid": 34225,
+   "n_in_window": 34225,
+   "n_in_camera_image": 32004,
+   "n_camera_visible_recast": 32004,
+   "n_in_projector_image": 31854,
+   "n_projector_visible_recast": 31854,
+   "n_projected_but_occluded": 0,
+   "n_ok": 31043,
+   "z_range_ok_mm": [
+    -13.261633092100006,
+    1.8160282055814285
+   ]
+  },
+  "B_curv": {
+   "adapter_surface": "B_curv",
+   "n_lattice": 34225,
+   "n_in_grid": 34225,
+   "n_in_window": 34225,
+   "n_in_camera_image": 33352,
+   "n_camera_visible_recast": 33352,
+   "n_in_projector_image": 33135,
+   "n_projector_visible_recast": 33135,
+   "n_projected_but_occluded": 0,
+   "n_ok": 32277,
+   "z_range_ok_mm": [
+    -2.982675398113127,
+    1.2021225860335
+   ]
+  },
+  "A_curv_gauss": {
+   "adapter_surface": "M10_curv_gauss",
+   "n_lattice": 34225,
+   "n_in_grid": 34225,
+   "n_in_window": 34225,
+   "n_in_camera_image": 33328,
+   "n_camera_visible_recast": 33328,
+   "n_in_projector_image": 33590,
+   "n_projector_visible_recast": 33590,
+   "n_projected_but_occluded": 0,
+   "n_ok": 32693,
+   "z_range_ok_mm": [
+    -4.167250431405122,
+    3.1002287929699044
+   ]
+  }
+ },
+ "hash": "e240df004a66e58d8dfb12162a8a18ba6452c6a58c7664a860dd352b2b3b0ea3",
+ "platform_version": "SURF-02 v1.1 (2026-10-12)",
+ "created_local": "2026-10-12T00:03:20+02:00",
+ "npz_sha256": "6c191c249ea3682966a38c4b8ba7721a81bae10f9005fe24847a27795fa53500",
+ "complete": true
+}

@@ -1,0 +1,631 @@
+{
+ "task": "S345-PREP-03",
+ "generated_local": "2026-10-12T03:20:39+02:00",
+ "authorised_by": "task book S345-PREP-03_protocol.md and the user instruction of 2026-10-12",
+ "plan": {
+  "notes": [
+   "S3 dots: coded2 R5x4 sigma 30 at the common budget is registered as cell coded_high (v 0.4743 = common_11695, same sigma-0 reference); it is used as the sigma-30 coded2 image",
+   "S3 lines: s 4.45 mm coded (fixed peak V1 sigma 0 / 40, equal integral V3 sigma 0 + V2 sigma 40) and the 45 deg uncoded equal-integral sigma-40 reference V5, phase x32_-16",
+   "S4 R5x4: S0 + the registered displaced layout shared by the most strategies at H0 (R5x4:R5x4_s3_j0.20_B008_c0; 4 strategy views)",
+   "S4 L4.45: S0 + the registered displaced layout shared by the most strategies at H0 (L4.45:L4.45_s3_j0.20_B006_c1; 3 strategy views)",
+   "S5: M10 ph0 sigma 0 (dots parallel and lines four cells); M24 ph0 sigma 40 realisation 1 (dots perpendicular four cells)",
+   "Other surfaces: B and M10 + Gauss, regular line L_w1.5_s8 ph0 sigma 0 (S5 row; surface loading, common domains, amplitude applicability)"
+  ],
+  "joint": {
+   "counts": {
+    "images": 44,
+    "decodes": 76,
+    "views": 86
+   },
+   "s4_s0_equivalence_decodes": 4,
+   "total_planned_decodes": 80,
+   "by_block": {
+    "S3_dots_M10_curv": {
+     "images": 6,
+     "decodes": 10,
+     "views": 10
+    },
+    "S3_dots_M24_curv": {
+     "images": 6,
+     "decodes": 10,
+     "views": 10
+    },
+    "S3_lines_M10_curv": {
+     "images": 5,
+     "decodes": 17,
+     "views": 17
+    },
+    "S3_lines_M24_curv": {
+     "images": 5,
+     "decodes": 17,
+     "views": 17
+    },
+    "S4_L4.45": {
+     "images": 4,
+     "decodes": 4,
+     "views": 8
+    },
+    "S4_R5x4": {
+     "images": 4,
+     "decodes": 4,
+     "views": 10
+    },
+    "S5_dots_parallel_M10_curv": {
+     "images": 4,
+     "decodes": 4,
+     "views": 4
+    },
+    "S5_dots_perp_M24_curv": {
+     "images": 4,
+     "decodes": 4,
+     "views": 4
+    },
+    "S5_lines_M10_curv": {
+     "images": 4,
+     "decodes": 4,
+     "views": 4
+    },
+    "surface_B_curv": {
+     "images": 1,
+     "decodes": 1,
+     "views": 1
+    },
+    "surface_M10_curv_gauss": {
+     "images": 1,
+     "decodes": 1,
+     "views": 1
+    }
+   },
+   "cand_ids": [
+    "C030846",
+    "C030847",
+    "C031128",
+    "C031575",
+    "C031576",
+    "C031589",
+    "C032752",
+    "C032753",
+    "C032912",
+    "C032913",
+    "C033573",
+    "C033574",
+    "C033942",
+    "C033943",
+    "C034243",
+    "C034244",
+    "C034273",
+    "C034605",
+    "C034606",
+    "C034650",
+    "C034708",
+    "C034709",
+    "C034710",
+    "C034711",
+    "C034728",
+    "C034729",
+    "C034730",
+    "C034731",
+    "C034808",
+    "C034809",
+    "C034810",
+    "C034811",
+    "C034836",
+    "C034837",
+    "C034838",
+    "C034839",
+    "C034884",
+    "C034885",
+    "C034886",
+    "C034887",
+    "C034944",
+    "C034945",
+    "C034946",
+    "C034947",
+    "C034996",
+    "C034997",
+    "C034998",
+    "C034999",
+    "C035032",
+    "C035033",
+    "C035034",
+    "C035035",
+    "C035172",
+    "C035194",
+    "C036271",
+    "C036272",
+    "C036273",
+    "C036394",
+    "C036403",
+    "C036679",
+    "C036680",
+    "C036681",
+    "C039265",
+    "C039479",
+    "C039583",
+    "C039584",
+    "C039585",
+    "C039586",
+    "C039742",
+    "C039743",
+    "C039744",
+    "C039745",
+    "C044668",
+    "C044770",
+    "C044773",
+    "C044792",
+    "C044814",
+    "C044953",
+    "C045467",
+    "C045495",
+    "C045556",
+    "C045560",
+    "C045844",
+    "C045894",
+    "C045898",
+    "C046052"
+   ],
+   "matches_task_table": true,
+   "in_reduced_sets": 78
+  },
+  "dependency_missing": {
+   "joint": 0,
+   "S3-reduced": 0,
+   "S4-reduced": 0,
+   "S5-main": 0,
+   "S5-gauss": 0
+  },
+  "counts": {
+   "S3": {
+    "all": {
+     "images": 2144,
+     "decodes": 3616,
+     "views": 3616,
+     "matches_task_table": true
+    },
+    "main": {
+     "images": 1608,
+     "decodes": 2712,
+     "views": 2712,
+     "matches_task_table": true
+    },
+    "gauss": {
+     "images": 536,
+     "decodes": 904,
+     "views": 904,
+     "matches_task_table": true
+    },
+    "by_surface": {
+     "B_curv": {
+      "images": 536,
+      "decodes": 904,
+      "views": 904
+     },
+     "M10_curv": {
+      "images": 536,
+      "decodes": 904,
+      "views": 904
+     },
+     "M10_curv_gauss": {
+      "images": 536,
+      "decodes": 904,
+      "views": 904
+     },
+     "M24_curv": {
+      "images": 536,
+      "decodes": 904,
+      "views": 904
+     }
+    },
+    "by_family": {
+     "line": {
+      "images": 160,
+      "decodes": 544,
+      "views": 544
+     },
+     "point": {
+      "images": 1984,
+      "decodes": 3072,
+      "views": 3072
+     }
+    }
+   },
+   "S4": {
+    "all": {
+     "images": 3520,
+     "decodes": 3520,
+     "views": 6208,
+     "matches_task_table": true
+    },
+    "main": {
+     "images": 2640,
+     "decodes": 2640,
+     "views": 4656,
+     "matches_task_table": true
+    },
+    "gauss": {
+     "images": 880,
+     "decodes": 880,
+     "views": 1552,
+     "matches_task_table": true
+    },
+    "by_surface": {
+     "B_curv": {
+      "images": 880,
+      "decodes": 880,
+      "views": 1552
+     },
+     "M10_curv": {
+      "images": 880,
+      "decodes": 880,
+      "views": 1552
+     },
+     "M10_curv_gauss": {
+      "images": 880,
+      "decodes": 880,
+      "views": 1552
+     },
+     "M24_curv": {
+      "images": 880,
+      "decodes": 880,
+      "views": 1552
+     }
+    },
+    "by_family": {
+     "line": {
+      "images": 1888,
+      "decodes": 1888,
+      "views": 3104
+     },
+     "point": {
+      "images": 1632,
+      "decodes": 1632,
+      "views": 3104
+     }
+    }
+   },
+   "S5": {
+    "all": {
+     "images": 1536,
+     "decodes": 1536,
+     "views": 1536,
+     "matches_task_table": true
+    },
+    "main": {
+     "images": 1152,
+     "decodes": 1152,
+     "views": 1152,
+     "matches_task_table": true
+    },
+    "gauss": {
+     "images": 384,
+     "decodes": 384,
+     "views": 384,
+     "matches_task_table": true
+    },
+    "by_surface": {
+     "B_curv": {
+      "images": 384,
+      "decodes": 384,
+      "views": 384
+     },
+     "M10_curv": {
+      "images": 384,
+      "decodes": 384,
+      "views": 384
+     },
+     "M10_curv_gauss": {
+      "images": 384,
+      "decodes": 384,
+      "views": 384
+     },
+     "M24_curv": {
+      "images": 384,
+      "decodes": 384,
+      "views": 384
+     }
+    },
+    "by_family": {
+     "line": {
+      "images": 576,
+      "decodes": 576,
+      "views": 576
+     },
+     "point": {
+      "images": 960,
+      "decodes": 960,
+      "views": 960
+     }
+    }
+   }
+  },
+  "reduction": {
+   "task": "S345-PREP-03A (2026-10-12, user-confirmed)",
+   "s3_dot_phases": [
+    "val0",
+    "val2",
+    "val4",
+    "val6",
+    "val8",
+    "val10",
+    "val12",
+    "val14"
+   ],
+   "s3_dot_rep": 0,
+   "s4_blocks": [
+    "B000",
+    "B003",
+    "B006",
+    "B009",
+    "B012",
+    "B015",
+    "B018",
+    "B021"
+   ],
+   "surfaces": [
+    "M10_curv",
+    "M24_curv",
+    "B_curv"
+   ],
+   "rule_s3": "S3 dots: core rows on M10 / M24 / B with phase_label in val0, val2, ..., val14 and rep 0 (all registered conditions of these phases); S3 lines: all core rows on M10 / M24 / B",
+   "rule_s4": "S4: core rows on M10 / M24 / B whose registered block (pair_role \"strategy|Bxxx\") is B000, B003, ..., B021, plus EVERY S0 row (shared reference per surface x baseline x phase x sigma)",
+   "s5": "unchanged (S5-main, S5-gauss)",
+   "gauss": "S3 / S4 Gaussian supplement closed (rows kept)",
+   "S3-reduced": {
+    "images": 552,
+    "decodes": 1080,
+    "views": 1080,
+    "by_family": {
+     "line": {
+      "images": 120,
+      "decodes": 408,
+      "views": 408
+     },
+     "point": {
+      "images": 432,
+      "decodes": 672,
+      "views": 672
+     }
+    },
+    "by_surface": {
+     "B_curv": {
+      "images": 184,
+      "decodes": 360,
+      "views": 360
+     },
+     "M10_curv": {
+      "images": 184,
+      "decodes": 360,
+      "views": 360
+     },
+     "M24_curv": {
+      "images": 184,
+      "decodes": 360,
+      "views": 360
+     }
+    },
+    "s0_images": null,
+    "matches_03A_table": true,
+    "surfaces_equal": true
+   },
+   "S4-reduced": {
+    "images": 888,
+    "decodes": 888,
+    "views": 1584,
+    "by_family": {
+     "line": {
+      "images": 504,
+      "decodes": 504,
+      "views": 792
+     },
+     "point": {
+      "images": 384,
+      "decodes": 384,
+      "views": 792
+     }
+    },
+    "by_surface": {
+     "B_curv": {
+      "images": 296,
+      "decodes": 296,
+      "views": 528
+     },
+     "M10_curv": {
+      "images": 296,
+      "decodes": 296,
+      "views": 528
+     },
+     "M24_curv": {
+      "images": 296,
+      "decodes": 296,
+      "views": 528
+     }
+    },
+    "s0_images": 48,
+    "matches_03A_table": true,
+    "surfaces_equal": true
+   },
+   "S3_S4_total": {
+    "images": 1440,
+    "decodes": 1968,
+    "views": 2664,
+    "matches_03A": true
+   },
+   "s3_dot_phase_offsets": {
+    "val12": {
+     "u": 0.771332704462111,
+     "v": 0.3476669192314148
+    },
+    "val2": {
+     "u": 0.2732430072501302,
+     "v": 0.11719268001616001
+    },
+    "val6": {
+     "u": 0.20207048300653696,
+     "v": 0.29807925689965487
+    },
+    "val0": {
+     "u": 0.02729973942041397,
+     "v": 0.6733483709394932
+    },
+    "val14": {
+     "u": 0.10854933317750692,
+     "v": 0.8945216992869973
+    },
+    "val4": {
+     "u": 0.8797187749296427,
+     "v": 0.18886056635528803
+    },
+    "val10": {
+     "u": 0.3815985005348921,
+     "v": 0.4662141455337405
+    },
+    "val8": {
+     "u": 0.70019028801471,
+     "v": 0.04415953066200018
+    }
+   },
+   "s3_dot_phase_note": "phases chosen by their registered number (every second val index); the offsets are listed, equal index spacing does NOT imply spatially uniform offsets",
+   "S5_unchanged": {
+    "S5-main": {
+     "images": 1152,
+     "decodes": 1152,
+     "views": 1152
+    },
+    "S5-gauss": {
+     "images": 384,
+     "decodes": 384,
+     "views": 384
+    }
+   },
+   "closed": {
+    "S3-main-full": {
+     "images": 1608,
+     "decodes": 2712,
+     "views": 2712
+    },
+    "S3-gauss": {
+     "images": 536,
+     "decodes": 904,
+     "views": 904
+    },
+    "S4-main-full": {
+     "images": 2640,
+     "decodes": 2640,
+     "views": 4656
+    },
+    "S4-gauss": {
+     "images": 880,
+     "decodes": 880,
+     "views": 1552
+    }
+   }
+  },
+  "plan_csv": "outputs/surface_revision/s345_ready/plan_s345.csv",
+  "plan_sha256": "99cfd1bab4c7a13d4724fcecc8caf9e7750e3c2f2d3dcfbd3d4e9ab05f387c8c",
+  "rows": 16608
+ },
+ "sources": {
+  "candidates_s345": {
+   "path": "outputs/surface_revision/s345_prepare/candidates_s345.csv",
+   "sha256": "84a69e185edb41a9266555f6d47b7f386172ace657a12ca13f89b8e64f784d23"
+  },
+  "candidates_s1s5": {
+   "path": "outputs/surface_revision/sections_adapter/candidates_s1s5.csv",
+   "sha256": "8bf872d2d30e530f6113bb91595b458fdba570510fcada06ec6c4894aff57f95"
+  }
+ },
+ "platform": {
+  "version": "SURF-02 v1.1 (2026-10-12)",
+  "window_mm": [
+   -16.0,
+   4.0
+  ],
+  "margin_mm": 1e-06,
+  "c_ref_mm": 16.645465475819755,
+  "alignment": "absolute",
+  "negative_z_valid": true,
+  "psf_px": 1.0,
+  "surfaces": {
+   "M10_curv": "A_curv",
+   "M24_curv": "C_curv",
+   "B_curv": "B_curv",
+   "M10_curv_gauss": "A_curv_gauss"
+  },
+  "main": [
+   "M10_curv",
+   "M24_curv",
+   "B_curv"
+  ],
+  "gauss": "M10_curv_gauss"
+ },
+ "contract": {
+  "local": "SURF-02 ROI r <= 15 mm, scientific grid nodes (s2.roi_domain), evaluated by s2.evaluate",
+  "global_domain": "outputs/surface_revision/s1_real01/domain/global_domain_step0p50.json",
+  "global_nodes": 30947,
+  "global_hash": "e240df004a66e58d8dfb12162a8a18ba6452c6a58c7664a860dd352b2b3b0ea3",
+  "global_json_sha256": "bf69cb787a2029a3640ea242943c79ee2bd8caddf02810c56e30eb7ae3895f12",
+  "global_npz_sha256": "6c191c249ea3682966a38c4b8ba7721a81bae10f9005fe24847a27795fa53500",
+  "d_mm": 6.0,
+  "tau_mm": 0.15,
+  "gross_mm": 1.0,
+  "validity": "s2.point_validity: finite, window [-16, +4] mm (+- 1e-6), (x, y) inside the grid; negative z valid",
+  "evaluator": "sections_adapter/s1r_eval.evaluate_case (S1-REAL-01 contract; loc_* / glob_* fields)"
+ },
+ "methods": {
+  "ENC": "r5_detect.candidates -> select D0 (k 1) | ep_detect.select_coded (k > 1) -> ep_detect.reconstruct_from x2 on the same features (coded / ignore_class), platform window injected",
+  "LC": "lc_pipeline.shared_front_end -> lc_readout.read_segments -> lc_r4_runtime.run_arms (ignore / use / R / A), s2.line_cfg(peak), lc_r4_common.runtime_params()",
+  "P4REF": "lc_pipeline.run_lc(P4_ref params of lc_r4_common.runtime_params(), modes=ignore), s2.line_cfg(peak)",
+  "D0": "binding adp_surf02.decode(\"D0\") (s2.dot_cfg, actual raster)",
+  "P4": "binding adp_surf02.decode(\"P4_C3_cal\") (s2.line_cfg(actual peak), s2.P4)",
+  "P4TABLE": "sp2_lines_table.run_p4_table(table spec, s2.line_cfg(peak), pattern, sp_regression.p4_params())"
+ },
+ "arm_method": {
+  "ENC_coded": "ENC",
+  "ENC_ignore": "ENC",
+  "LC_ignore": "LC",
+  "LC_use": "LC",
+  "LC_R": "LC",
+  "LC_A": "LC",
+  "P4_ref": "P4REF",
+  "SPAT_D0": "D0",
+  "SPAT_P4table": "P4TABLE",
+  "D0": "D0",
+  "P4_C3_cal": "P4"
+ },
+ "frozen_parameters": {
+  "enc_guard": "M4.SIZE_DPRIME_MIN / SIZE_BALANCE_MIN / SIZE_SPAN_MIN_FRAC..MAX_FRAC (unchanged)",
+  "lc": "lc_r4_common.runtime_params(): margin 0.5 px as implemented (protocol text 0.5 * MAD not carried), threshold 6.05 px, min_rows 5 (not re-tuned)",
+  "s4": "SPAT-03 formal layouts / strategies / phases H0-H3 (no new layouts)",
+  "s5": "Q 11695 per actual raster; peak > 1 = not realisable (not clipped)"
+ },
+ "pairing": {
+  "S3": "same image: ENC_coded vs ENC_ignore, LC_use / LC_R / LC_A vs LC_ignore; different images: coded2 vs plain (common budget), coded_high vs coded_low, V5 vs coded R",
+  "S4": "strategy view vs S0 at the same surface / baseline / sigma / phase (layouts shared by strategies = one decode)",
+  "S5": "four cells within the same surface / phase / sigma / realisation; realisations averaged per phase"
+ },
+ "dependencies": "S3 / S4 noisy dot images: sigma-0 image of the same configuration (dependency_fk), scheduled first; S4: S0 equivalence before displaced layouts; S3: old-image equivalence before new S3 cases",
+ "caps": {
+  "joint": {
+   "render": 48,
+   "decode": 112
+  }
+ },
+ "reuse": {
+  "S5": "0 (no exact forward-input match with S1 / S2; phases and seeds not changed)"
+ },
+ "not_authorised": [
+  "S3-reduced",
+  "S4-reduced",
+  "S5-main",
+  "S5-gauss"
+ ],
+ "extension": "closed",
+ "env": {
+  "LINE01RB_OUT_DIR": "research\\project_Part1_v1.7\\outputs\\surface_revision\\s345_ready\\sandbox\\line_out",
+  "LINE01RB_CASES_DIR": "research\\project_Part1_v1.7\\outputs\\surface_revision\\s345_ready\\sandbox\\line_cases",
+  "LINE01RB_LEDGER_DIR": "research\\project_Part1_v1.7\\outputs\\surface_revision\\s345_ready\\sandbox\\line_ledger",
+  "LINE01RB_RENDER_CAP": "0",
+  "LINE01RB_PATHS_JSON": null,
+  "LINE01RB_FREEZE_JSON": null
+ }
+}

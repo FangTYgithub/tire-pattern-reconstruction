@@ -1,0 +1,24 @@
+{
+ "identity": "omega_star",
+ "boundary": "intersection",
+ "n_nodes": 30876,
+ "hash": "2454234e6f342be472e16f6207fdf994f618a65a367d08ab535dffd95e7f1e46",
+ "step": 0.5,
+ "x0": -46.0,
+ "y0": -46.0,
+ "nx": 185,
+ "ny": 185,
+ "bounds": {
+  "x": [
+   -45.0,
+   44.5
+  ],
+  "y": [
+   -43.0,
+   45.0
+  ]
+ },
+ "npz_sha256": "0aee8912211cc5979b4aa44885854268019e280ceeb27b9fa1e93cc5ef1d839e",
+ "complete": true,
+ "t_local": "2026-10-16T18:06:41+0200"
+}

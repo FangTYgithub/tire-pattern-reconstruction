@@ -1,0 +1,28 @@
+{
+ "image_key": "S1I-4fb78f03c696420ae184ec23",
+ "raster_key": "R-16a1e5acd55c05ae4701",
+ "surface": "M24_curv",
+ "platform_surface": "C_curv",
+ "family": "line",
+ "size_mm": 1.0,
+ "sigma": 0.0,
+ "noise_seed": null,
+ "m3_seed_passed": 0,
+ "psf_px": 1.0,
+ "peak": 0.34092234141791045,
+ "peak_f32": 0.34092235565185547,
+ "integral_I0": 34304.0,
+ "integral_actual": 11695.00048828125,
+ "render_meta": {
+  "z_alignment": "absolute",
+  "n_hits": 34304,
+  "noise_sigma": 0.0,
+  "mottle_seed": 0
+ },
+ "platform_version": "SURF-02 v1.1 (2026-10-12)",
+ "pattern_reference": "rasters/<raster_key>.npz (binary) x float32(peak)",
+ "seconds": 0.561,
+ "npz_sha256": "d881706ba23dbf4bf3b0455b7331f2ea61a14e64e26377e56bf1c65d73870083",
+ "complete": true,
+ "t_local": "2026-10-12T00:32:23+02:00"
+}

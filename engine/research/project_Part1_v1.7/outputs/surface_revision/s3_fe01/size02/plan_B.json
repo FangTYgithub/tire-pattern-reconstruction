@@ -1,0 +1,25 @@
+{
+ "stage": "B_size02",
+ "inputs": 576,
+ "packs_present": 576,
+ "by_regime_sigma": {
+  "fixed_peak_1|0": 18,
+  "fixed_peak_1|20": 54,
+  "fixed_peak_1|40": 54,
+  "fixed_peak_1|60": 54,
+  "fixed_peak_1|80": 54,
+  "fixed_peak_1|100": 54,
+  "resource_cap_11695|0": 18,
+  "resource_cap_11695|20": 54,
+  "resource_cap_11695|40": 54,
+  "resource_cap_11695|60": 54,
+  "resource_cap_11695|80": 54,
+  "resource_cap_11695|100": 54
+ },
+ "by_size": {
+  "0.75": 288,
+  "1.25": 288
+ },
+ "digest": "b3c9788b8ba6c56f2eff5d9a51e7b223",
+ "t": "2026-10-22T05:01:53+0200"
+}

@@ -1,0 +1,11 @@
+{
+ "kind": "decode",
+ "cap": 180,
+ "used": 150,
+ "by_purpose": {
+  "entry_regression": 6,
+  "science_p4": 36,
+  "science_clip": 60,
+  "science_dot": 48
+ }
+}

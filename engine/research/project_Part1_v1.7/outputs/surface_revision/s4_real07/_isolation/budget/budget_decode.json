@@ -1,0 +1,8 @@
+{
+ "kind": "decode",
+ "cap": 2,
+ "used": 1,
+ "by_purpose": {
+  "test": 1
+ }
+}

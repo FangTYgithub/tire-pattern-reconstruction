@@ -1,0 +1,22 @@
+{
+ "stage": "C_s4",
+ "inputs": 1380,
+ "by_dataset": {
+  "S4-REAL-02": 1152,
+  "S4-REAL-07": 228
+ },
+ "by_strategy": {
+  "S4-REAL-02|S0": 72,
+  "S4-REAL-02|S1": 576,
+  "S4-REAL-02|S2": 144,
+  "S4-REAL-02|S3": 360,
+  "S4-REAL-07|S0": 12,
+  "S4-REAL-07|S1": 72,
+  "S4-REAL-07|S2*": 72,
+  "S4-REAL-07|S3": 48,
+  "S4-REAL-07|S4*": 24
+ },
+ "missing_decode_key": 0,
+ "digest": "d489b53abb3dcff8f733dd65669ed519",
+ "t": "2026-10-22T05:06:29+0200"
+}

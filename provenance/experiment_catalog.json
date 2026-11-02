@@ -1,0 +1,467 @@
+{
+  "format": "source-only",
+  "input_root": "engine",
+  "studies": [
+    {
+      "id": "S12",
+      "chapter": "3.1 / 3.2",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/s12_resource01/inputs.csv",
+      "views": 13088,
+      "key": "input_key",
+      "backend": "s12",
+      "entry": "run.py run S12",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 13088,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "SIZE02",
+      "chapter": "3.1",
+      "manifest": "engine/outputs/s1_size02/manifest.csv",
+      "views": 576,
+      "key": "input_key",
+      "backend": "size",
+      "entry": "run.py run SIZE02",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 576,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "CODE07",
+      "chapter": "3.3",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/s3_code04/formal/manifest.csv",
+      "views": 6336,
+      "key": "image_key",
+      "backend": "coding",
+      "entry": "run.py run CODE07",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 6336,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "LAYOUT02",
+      "chapter": "3.4",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/s4_real02/manifest.csv",
+      "views": 4752,
+      "key": "image_key",
+      "backend": "layout",
+      "entry": "run.py run LAYOUT02",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 2520,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "LAYOUT07",
+      "chapter": "3.4",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/s4_real07/manifest.csv",
+      "views": 510,
+      "key": "image_key",
+      "backend": "layout_validation",
+      "entry": "run.py run LAYOUT07",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 510,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "JOINT05",
+      "chapter": "3.5",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/s5_align02/manifest_next.csv",
+      "views": 3960,
+      "key": "manifest_key",
+      "backend": "joint",
+      "entry": "run.py run JOINT05",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 3960,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "CH4-BLUR",
+      "chapter": "4",
+      "manifest": "engine/outputs/mp06c_zero_close_2026-10-21/blur_manifest_7920.csv",
+      "views": 7920,
+      "key": "case_key",
+      "backend": "ch4",
+      "entry": "run.py run CH4-BLUR",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 7920,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "CH4-LIGHT",
+      "chapter": "4",
+      "manifest": "engine/outputs/mp06f_lighting/manifest.csv",
+      "views": 9504,
+      "key": "case_key",
+      "backend": "ch4",
+      "entry": "run.py run CH4-LIGHT",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 9504,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "CH4-BRIDGE",
+      "chapter": "4",
+      "manifest": "engine/outputs/ch4_bridge01/manifest_main.csv",
+      "views": 6600,
+      "key": "case_key",
+      "backend": "ch4",
+      "entry": "run.py run CH4-BRIDGE",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 6600,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "CH4-VALID",
+      "chapter": "4",
+      "manifest": "engine/outputs/ch4_valid02/manifest.csv",
+      "views": 22440,
+      "key": "case_key",
+      "backend": "ch4",
+      "entry": "run.py run CH4-VALID",
+      "verification": "existing bounded tests inherited",
+      "unique_cases": 22440,
+      "rendering": "fresh camera image; paired methods share that image"
+    },
+    {
+      "id": "TR5",
+      "chapter": "3.1 / 3.2",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/manifest.csv",
+      "views": 480,
+      "unique_cases": 480,
+      "key": "forward_key",
+      "backend": "new_phases",
+      "entry": "run.py run TR5",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "SUBRAY-CH2",
+      "chapter": "2 / 3",
+      "manifest": "engine/delivery_inputs/subray_ch2.csv",
+      "views": 48,
+      "unique_cases": 48,
+      "key": "case_key",
+      "backend": "subray2",
+      "entry": "run.py run SUBRAY-CH2",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "SAMPLING-S12",
+      "chapter": "3.1 / 3.2",
+      "manifest": "engine/delivery_inputs/sampling_s12.csv",
+      "views": 699,
+      "unique_cases": 699,
+      "key": "input_key",
+      "backend": "sampling",
+      "entry": "run.py run SAMPLING-S12",
+      "rendering": "none; expected sampling positions and true heights",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "MP05",
+      "chapter": "4",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/model_prep05/formal_manifest.csv",
+      "views": 2450,
+      "unique_cases": 2450,
+      "key": "case_key",
+      "backend": "pilot",
+      "entry": "run.py run MP05",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "PSF-DIAG",
+      "chapter": "4",
+      "manifest": "engine/delivery_inputs/psf_diagnostic.csv",
+      "views": 392,
+      "unique_cases": 392,
+      "key": "case_key",
+      "backend": "psf_diagnostic",
+      "entry": "run.py run PSF-DIAG",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "MP06C",
+      "chapter": "4",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/model_prep06ar/manifest.csv",
+      "views": 4136,
+      "unique_cases": 4136,
+      "key": "case_key",
+      "backend": "environment_extension",
+      "entry": "run.py run MP06C",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "MP06C-HOLDOUT",
+      "chapter": "4",
+      "manifest": "engine/research/project_Part1_v1.7/outputs/surface_revision/model_prep06c/holdout_manifest.csv",
+      "views": 216,
+      "unique_cases": 216,
+      "key": "case_key",
+      "backend": "environment_extension",
+      "entry": "run.py run MP06C-HOLDOUT",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "MP06E-HOLDOUT",
+      "chapter": "4",
+      "manifest": "engine/outputs/mp06e_holdout/manifest.csv",
+      "views": 288,
+      "unique_cases": 288,
+      "key": "case_key",
+      "backend": "ch4",
+      "entry": "run.py run MP06E-HOLDOUT",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "BRIDGE-HOLDOUT",
+      "chapter": "4",
+      "manifest": "engine/outputs/ch4_bridge01/manifest_holdout.csv",
+      "views": 264,
+      "unique_cases": 264,
+      "key": "case_key",
+      "backend": "ch4",
+      "entry": "run.py run BRIDGE-HOLDOUT",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "SUBRAY-CH4",
+      "chapter": "4",
+      "manifest": "engine/outputs/ch4_bridge01/manifest_subray.csv",
+      "views": 36,
+      "unique_cases": 36,
+      "key": "case_key",
+      "backend": "subray4",
+      "entry": "run.py run SUBRAY-CH4",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "S12-IDENTITY",
+      "chapter": "2 / 3.1 / 3.2",
+      "manifest": "engine/delivery_inputs/line_identity.csv",
+      "views": 8096,
+      "unique_cases": 8096,
+      "key": "input_key",
+      "backend": "identity",
+      "entry": "run.py run S12-IDENTITY",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "LAYOUT-DIAG",
+      "chapter": "3.4",
+      "manifest": "engine/delivery_inputs/layout_diagnostic.csv",
+      "views": 198,
+      "unique_cases": 105,
+      "key": "image_key",
+      "backend": "layout_diagnostic",
+      "entry": "run.py run LAYOUT-DIAG",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "CODE-IDENTITY",
+      "chapter": "2 / 3.3",
+      "manifest": "engine/delivery_inputs/code_identity.csv",
+      "views": 3168,
+      "unique_cases": 3168,
+      "key": "image_key",
+      "backend": "coding_identity",
+      "entry": "run.py run CODE-IDENTITY",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    },
+    {
+      "id": "SUBRAY-MP05",
+      "chapter": "4",
+      "manifest": "engine/delivery_inputs/subray_pilot.csv",
+      "views": 96,
+      "unique_cases": 96,
+      "key": "case_key",
+      "backend": "subray_pilot",
+      "entry": "run.py run SUBRAY-MP05",
+      "rendering": "fresh camera image; paired methods share that image",
+      "verification": "added entry branches sampled; aliases checked by registered input reconstruction"
+    }
+  ],
+  "additional_original_workflows": [
+    {
+      "id": "TR5",
+      "chapter": "3.1/3.2",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce05/results.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/thesis_reinforce05/tr5_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "TR5"
+      ]
+    },
+    {
+      "id": "SAMPLING-REF",
+      "chapter": "3",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/thesis_check01/results.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/thesis_check01/tc_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "SAMPLING-S12",
+        "LAYOUT-DIAG"
+      ],
+      "note": "S12 ideal reference is zero-imaging. For other newly generated clouds, use --save-details and the retained tc_ref.ref_from_eval/eval_cloud functions with the registered domain. LAYOUT-DIAG includes the original S4-REAL-04 reference layers."
+    },
+    {
+      "id": "IDENTITY-FIX",
+      "chapter": "2/3",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce01/identity_geometry.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/thesis_reinforce01/tr_a4sum.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "S12-IDENTITY",
+        "CODE-IDENTITY"
+      ]
+    },
+    {
+      "id": "LAYOUT-DIAG",
+      "chapter": "3.4",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/s4_real04/diagnostics.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/s4_real04/s4r4_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "LAYOUT-DIAG"
+      ]
+    },
+    {
+      "id": "MP05",
+      "chapter": "4",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/model_prep05/formal_manifest.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/model_prep05/mp5_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "MP05"
+      ]
+    },
+    {
+      "id": "MP06C-NEW",
+      "chapter": "4",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/model_prep06c/results_new.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/model_prep06c/c_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "MP06C"
+      ]
+    },
+    {
+      "id": "MP06C-HOLDOUT",
+      "chapter": "4",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/model_prep06c/results_holdout.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/model_prep06c/c_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "MP06C-HOLDOUT"
+      ]
+    },
+    {
+      "id": "BRIDGE-HOLDOUT",
+      "chapter": "4",
+      "historical_table": "outputs/ch4_bridge01/manifest_holdout.csv",
+      "entrypoint": "scripts/ch4_bridge01/cb_run.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "BRIDGE-HOLDOUT"
+      ]
+    },
+    {
+      "id": "MP06E-HOLDOUT",
+      "chapter": "4",
+      "historical_table": "outputs/mp06e_holdout/manifest.csv",
+      "entrypoint": "scripts/mp06e_holdout/holdout.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "MP06E-HOLDOUT"
+      ]
+    },
+    {
+      "id": "SUBRAY-TR4",
+      "chapter": "2/3",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/thesis_reinforce04/results.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/thesis_reinforce04/tr4_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "SUBRAY-CH2"
+      ]
+    },
+    {
+      "id": "SUBRAY-BRIDGE",
+      "chapter": "4",
+      "historical_table": "outputs/ch4_bridge01/manifest_subray.csv",
+      "entrypoint": "scripts/ch4_bridge01/cb_run.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "SUBRAY-CH4"
+      ]
+    },
+    {
+      "id": "MP06A-DIAG",
+      "chapter": "4",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/model_prep06a/metrics.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/model_prep06a/m6_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "MP05",
+        "PSF-DIAG",
+        "SUBRAY-MP05",
+        "CH4-BLUR",
+        "CH4-LIGHT"
+      ],
+      "note": "Four-arm and sub-ray diagnostics have direct entries. Main d/tau sensitivity is included in the complete chapter-4 entries; original m6_platform/r_stats evaluation functions remain available for saved detail arrays."
+    },
+    {
+      "id": "MP06AR-PSF",
+      "chapter": "4",
+      "historical_table": "research/project_Part1_v1.7/outputs/surface_revision/model_prep06ar/tables/a3_paired.csv",
+      "entrypoint": "research/project_Part1_v1.7/scripts/surface_revision/model_prep06ar/r_main.py",
+      "public_batch_status": "mapped to reusable numerical entry paths; historical scheduling not restored",
+      "public_entries": [
+        "PSF-DIAG"
+      ]
+    }
+  ],
+  "df_rules": "D0 and DF are computed from the same fresh image by S12, SIZE02, JOINT05, LAYOUT02 and LAYOUT07; CODE07 retains original registered arms",
+  "overlap": "No global sum: studies share conditions and strategy views",
+  "thesis_binding": [
+    {
+      "path": "Thesis_LaTeX/chapters/01_einleitung.tex",
+      "unchanged": true
+    },
+    {
+      "path": "Thesis_LaTeX/chapters/02_plattform.tex",
+      "unchanged": true
+    },
+    {
+      "path": "Thesis_LaTeX/chapters/03_musterparameter.tex",
+      "unchanged": true
+    },
+    {
+      "path": "Thesis_LaTeX/chapters/04_abbildungsbedingungen.tex",
+      "unchanged": true
+    },
+    {
+      "path": "Thesis_LaTeX/chapters/05_zusammenfassung.tex",
+      "unchanged": true
+    },
+    {
+      "path": "Thesis_LaTeX/thesis.pdf",
+      "unchanged": true
+    },
+    {
+      "path": "Thesis_LaTeX/thesis.tex",
+      "unchanged": true
+    }
+  ],
+  "delivery_policy": "Source, raw profiles, registration inputs and small numerical references; no historical camera/cloud archive, no full scientific matrix rerun during packaging."
+}

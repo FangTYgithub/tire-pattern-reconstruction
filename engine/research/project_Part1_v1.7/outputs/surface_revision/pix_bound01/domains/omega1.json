@@ -1,0 +1,24 @@
+{
+ "identity": "omega1",
+ "boundary": "symmetric_footprint",
+ "n_nodes": 30986,
+ "hash": "3c87968d03dcc27c7cc23a92a6c9789249014550d556672362b64ce6b31f8c57",
+ "step": 0.5,
+ "x0": -46.0,
+ "y0": -46.0,
+ "nx": 185,
+ "ny": 185,
+ "bounds": {
+  "x": [
+   -45.0,
+   45.0
+  ],
+  "y": [
+   -43.5,
+   45.0
+  ]
+ },
+ "npz_sha256": "cc6dd47dbab7186b87d9fd7f73b01f3007035a2e626b05098da9faa2655c7358",
+ "complete": true,
+ "t_local": "2026-10-16T18:06:41+0200"
+}

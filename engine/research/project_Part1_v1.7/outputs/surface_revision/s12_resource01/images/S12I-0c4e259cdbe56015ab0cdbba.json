@@ -1,0 +1,36 @@
+{
+ "identity": "S12I-0c4e259cdbe56015ab0cdbba",
+ "input_key": "S12I-0c4e259cdbe56015ab0cdbba",
+ "raster_key": "R-1647964840338693bf7d",
+ "surface": "B_curv",
+ "platform_surface": "B_curv",
+ "family": "point",
+ "size_mm": 1.0,
+ "layout": "S1_R8x4",
+ "phase_label": "sn_phase0",
+ "sigma": 0.0,
+ "rep": 0,
+ "noise_seed": null,
+ "m3_seed_passed": 0,
+ "psf_px": 1.0,
+ "peak_target": 0.4758707682291667,
+ "peak_f32": 0.4758707582950592,
+ "Q0": 24576.0,
+ "Q_actual": 11694.999755859375,
+ "regimes": "resource_cap_11695",
+ "sections": "S1",
+ "end_grey": {
+  "frac_0": 0.8070144653320312,
+  "frac_255": 0.0
+ },
+ "render_meta": {
+  "z_alignment": "absolute",
+  "n_hits": 24576,
+  "noise_sigma": 0.0,
+  "mottle_seed": 0
+ },
+ "platform_version": "SURF-02 v1.1 (2026-10-12)",
+ "npz_sha256": "b595a0babe558dbee23619d247e5e712357f5a24e95fa1b356072a0066140c3a",
+ "complete": true,
+ "t_local": "2026-10-14T17:39:13+02:00"
+}

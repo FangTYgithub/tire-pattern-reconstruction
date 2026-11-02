@@ -1,0 +1,164 @@
+{
+ "name": "c_replay",
+ "evidence": "Gesehen: S3-CODE-02 C-Stufe (576 Bilder, Phasen C0/C1, je eine Rauschrealisierung), nach Einsicht neu ausgewertet - keine ungesehene Validierung",
+ "evidence_kind": "seen",
+ "record_source": "c34_files",
+ "key_scheme": "c3",
+ "data_root": "outputs/surface_revision/s3_code03",
+ "inputs": {
+  "manifest": {
+   "file": "outputs/surface_revision/s3_code03/results/replay_manifest_C.csv",
+   "sha256": "006ec7b62958e0a66134f4c00277e51a3855fe1744ff8e283f20b315a770820d"
+  },
+  "freeze": {
+   "file": "outputs/surface_revision/s3_code03/frozen_work.json",
+   "sha256": "91f9c761c8f6e455c50e2f72e6304d4996f1ab02900d03547a5f1cf39d3074da"
+  },
+  "supplementary": {
+   "file": "outputs/surface_revision/s3_code04/results/B_C_metrics_full.csv",
+   "sha256": "4166788a2138d9526564ab20c7892085ad0230f2525a25c5465681c6784408ac"
+  }
+ },
+ "fingerprints_from": "freeze",
+ "freeze_closure": "known_gap",
+ "freeze_note": "S3-CODE-03 work freeze: c3_common.py / c3_run.py were edited after it (known provenance gap, S3-CODE-04 errata); it is NOT re-validated. Every record file is hash-checked on its own; the keys come from the fingerprints stored in the freeze file.",
+ "supplementary_note": "S3-CODE-04 re-evaluation of the stored point clouds (no decode): fields the stored rows never had (domain counts, surface P95, local surface error)",
+ "denominators": "supplementary+npz",
+ "profile": "c34",
+ "structure": {
+  "name": "C_replay_2_phases_1_realisation",
+  "stratum": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "pattern",
+   "sigma"
+  ],
+  "phase_col": "phase_id",
+  "phases": {
+   "*": [
+    "C0",
+    "C1"
+   ]
+  },
+  "reps": {
+   "*": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0
+    ]
+   }
+  },
+  "rep_source": "constant_0",
+  "rep_note": "the C manifest has no repetition column: one realisation per phase and sigma (S3-CODE-02 design); declared here, records are not relabelled",
+  "seed_col": "seed",
+  "pair_block": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "phase_id",
+   "sigma"
+  ],
+  "pair_key_col": null,
+  "patterns": [
+   "plain",
+   "weak",
+   "mid",
+   "strong"
+  ],
+  "geometry_cols": [
+   "u",
+   "v",
+   "phase_frac"
+  ],
+  "parity_rule": "all_zero",
+  "block_layers": null,
+  "ref_col": "ref_image_key",
+  "ref_same": [
+   "surface",
+   "layout",
+   "pattern",
+   "phase_id"
+  ]
+ },
+ "pairs": {
+  "dots_rules": [
+   "B0",
+   "DF",
+   "DS"
+  ],
+  "dots_front_ends": [
+   [
+    "DF",
+    "B0"
+   ],
+   [
+    "DS",
+    "B0"
+   ],
+   [
+    "DF",
+    "DS"
+   ]
+  ],
+  "lines_coded_rules": [
+   "R@1.1247",
+   "LB@1.0000"
+  ],
+  "lines_reference": "ignore",
+  "lines_scheme": [
+   "R@1.1247",
+   "P4"
+  ]
+ },
+ "bootstrap": null,
+ "figures": [
+  "F1",
+  "F2",
+  "F5"
+ ],
+ "cases": [
+  {
+   "family": "dots",
+   "layout": "R5x4",
+   "pattern": "mid",
+   "surface": "M24_curv",
+   "phase_id": "C0",
+   "rep": 0,
+   "rule": "DF",
+   "arm": "use",
+   "sigmas": [
+    0.0,
+    40.0,
+    100.0
+   ]
+  },
+  {
+   "family": "lines",
+   "layout": "4.45",
+   "pattern": "strong",
+   "surface": "M24_curv",
+   "phase_id": "C0",
+   "rep": 0,
+   "rule": "R@1.1247",
+   "arm": "R@1.1247",
+   "sigmas": [
+    0.0,
+    20.0,
+    60.0
+   ]
+  }
+ ],
+ "case_states": {
+  "no_output": "0 accepted points",
+  "degraded": "C_tau below 0.5 x C_tau of the first sigma of the same case row",
+  "normal": "otherwise",
+  "not_found": "no record satisfies the registered condition (never replaced by another case)"
+ },
+ "output": "outputs/surface_revision/s3_code05/batches/c_replay",
+ "package_freeze": "outputs/surface_revision/s3_code05/formal/frozen.json"
+}

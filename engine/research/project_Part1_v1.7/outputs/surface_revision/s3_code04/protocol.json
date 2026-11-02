@@ -1,0 +1,598 @@
+{
+ "task": "S3-CODE-04",
+ "task_file": "S3-CODE-04_protocol.md",
+ "task_sha256": "c50ab1914f0ae2268dfdd83b0f10ffb41b622b4eba0f7fa271f758174f0c57d7",
+ "review_read": "S3-CODE-03_review.md",
+ "review_sha256": "cc99053c02e6dfbcbcca66c5a333c48c1f12c32fba4ddb33547cb4aca05ced5c",
+ "created": "2026-10-15T12:47:51+02:00",
+ "scope": {
+  "order": "registered before any processing (design factors only)",
+  "C1": {
+   "file": "outputs/surface_revision/s3_code04/results/scope_C1_dots.csv",
+   "sha256": "1fd364039fd02a8b4714e0e1d008396681c0f43eaa76e1f995a8ed1711634673"
+  },
+  "C2": {
+   "file": "outputs/surface_revision/s3_code04/results/scope_C2_lines.csv",
+   "sha256": "86bec4cc24f7cdd62099394c487641a4621411dfbb6ae701c307ffd64bc4a634"
+  },
+  "input_sha": {
+   "file": "outputs/surface_revision/s3_code04/results/scope_inputs_sha.csv",
+   "sha256": "828606d867d05691a646449a224f414287854549c5811c84a9bfb1da891496a9"
+  },
+  "counts": {
+   "views_balanced": 1236,
+   "unique_balanced": 1140,
+   "by_part_views": {
+    "S1_cap": 288,
+    "S1_fixed_peak": 288,
+    "S2_cap": 660
+   },
+   "by_part_unique": {
+    "S1_cap": 288,
+    "S1_fixed_peak": 288,
+    "S2_cap": 660
+   },
+   "fixed_peak_new_unique": 192,
+   "sigma0_refs_in_set": 90,
+   "refs_missing": 0,
+   "refs_outside_set": 0,
+   "counterexample": {
+    "views": 4,
+    "unique": 4,
+    "new_vs_balanced": 4
+   },
+   "unique_total": 1144,
+   "lines": {
+    "views": 72,
+    "unique": 72,
+    "by_part": {
+     "S1_lines": 36,
+     "S2_lines": 36
+    }
+   },
+   "sources": {
+    "new": 676,
+    "s1": 288,
+    "s2": 180
+   },
+   "files": 6308,
+   "files_missing": 0
+  },
+  "expected": {
+   "views_balanced": 1236,
+   "unique_balanced": 1140,
+   "S1_cap": 288,
+   "S1_fixed_peak_views": 288,
+   "fixed_peak_new": 192,
+   "S2_cap": 660,
+   "sigma0_refs": 90,
+   "lines": 72
+  },
+  "matches_task": true,
+  "budgets": {
+   "decode_total": 3480,
+   "decode_C": 3456,
+   "decode_B": 24,
+   "unique_old_dot_inputs": 1152,
+   "new_imaging": 0
+  },
+  "attempts_plan": {
+   "C": "1140 x 3 front ends + 3 x 3 counterexample (its sigma-0 reference: label extraction only)",
+   "B": "<= 24 decode attempts on stored C images (adapter / reference / recovery checks)"
+  },
+  "s3_code03_inputs": {
+   "outputs/surface_revision/s3_code03/formal/manifest.csv": "3ee9510f10064e37458b03b261c2c9382c8e8115462556c2446743cae426968d",
+   "outputs/surface_revision/s3_code03/formal/frozen.json": "cc22c97526c49d9f01eb5a6a007b80cc8026fb6ea5e823ce04ed0c898e1ffcac"
+  },
+  "t_local": "2026-10-15T12:47:51+02:00"
+ },
+ "A_parity": {
+  "definition": {
+   "geometry_phase": "N0..N7 geometric position of the pattern (u, v for dots; phase_frac for lines), unchanged from S3-CODE-03",
+   "code_parity": "class placement: 0 = old placement, 1 = classes swapped; N0/N2/N4/N6 -> 0, N1/N3/N5/N7 -> 1 for every surface, layout, sigma and level; weak / mid / strong share the placement of a block; plain patterns have no parity (always 0) and are stored once",
+   "implementation": "integer-pitch shift in the new adapter c4_parity.py: dots u + 1 pitch, lines phase_frac + 1 pitch (line ids shift by -1); class 1 = large dot / wide line in both parities; parity 0 = old generator call (checked array by array)",
+   "limitation": "balanced placement sample (4 blocks per placement); no estimate of the class-swap effect at fixed geometry; not an exhaustive code-phase coverage"
+  },
+  "checks": {
+   "configurations": {
+    "file": "outputs/surface_revision/s3_code04/results/A_parity_checks.csv",
+    "sha256": "d96c9d4e24f71811eaab5c740fdfe62e648984cb7c4aa497c2b9cf4b9fea2861"
+   },
+   "resources": {
+    "file": "outputs/surface_revision/s3_code04/results/A_resources.csv",
+    "sha256": "e8bb56356482786edc04a1989b7d30d0c54b2d95fed151d7e6fc9dab3fea497f"
+   },
+   "summary": {
+    "n": 144,
+    "ok": 144,
+    "centre_max_diff_mm": 2.0463630789890885e-14,
+    "parity0_equals_old": 144,
+    "classes_swapped": 144,
+    "double_swap": 144,
+    "semantic_class1_large_or_wide": 144,
+    "line_negative_ids_covered": 72,
+    "line_clipped_edge_lines": {
+     "p0": {
+      "wide": 0,
+      "narrow": 10
+     },
+     "p1": {
+      "wide": 17,
+      "narrow": 0
+     }
+    },
+    "Q0_change_range": {
+     "dots": [
+      -19.0,
+      16.0
+     ],
+     "lines": [
+      -2560.0,
+      3584.0
+     ]
+    }
+   },
+   "first_run_superseded": "semantic width check without clipping exclusion; 6 line configurations flagged by a border-cut wide line"
+  },
+  "manifest": {
+   "file": {
+    "file": "outputs/surface_revision/s3_code04/formal/manifest.csv",
+    "sha256": "98a01c564aeb75e01c44e7b08552290bb9075a8bc1c11bff24c1ef64984315c7"
+   },
+   "class_map": {
+    "file": "outputs/surface_revision/s3_code04/formal/class_map.csv",
+    "sha256": "d74571228b49870fd9fd1be304bdbdf47f54fb8428475ba160263b7b1b48efb1"
+   },
+   "summary": {
+    "rows": 6336,
+    "unique_images": 6336,
+    "rasters": 192,
+    "sigma0": 576,
+    "odd_coded_changed": 2376,
+    "even_phases_unchanged": true,
+    "budget_rel_err_max": 5.2189103249251814e-08,
+    "residual_max": {
+     "dots/R5x4": 0.0014899428855226216,
+     "dots/R6x4": 0.0041101383412417425,
+     "dots/R8x4": 0.002809227887971444,
+     "lines/4.45": 0.034482758620689724,
+     "lines/5.6": 0.04210526315789476,
+     "lines/8": 0.049180327868852514
+    },
+    "refs_same_parity": true,
+    "sigma0_self_reference": true,
+    "pairing_complete": true,
+    "pairing_same_seed": true,
+    "seeds_unchanged": true,
+    "raster_overlap_used": [],
+    "input_overlap_used": []
+   },
+   "tolerances": {
+    "dots_area_residual": 0.01,
+    "lines_area_residual": 0.05,
+    "budget": "Q = 11695, peak <= 1"
+   },
+   "sigma_correlation": "sigma levels of one block share the base noise field (S3-CODE-03 seeds unchanged): repetitions across sigma are not independent"
+  },
+  "imaging": 0,
+  "t_local": "2026-10-15T13:59:16+02:00"
+ },
+ "B_analysis": {
+  "gate": {
+   "code": "c4_collect.py",
+   "expected_keys": "manifest x frozen method table x frozen fingerprints (decode / eval / diag); only expected keys are read; other versions and unplanned records are reported, never counted",
+   "formal_structure": "8 geometry phases per stratum, sigma 0 once and sigma > 0 twice per phase, one position per phase label and one label per position, 4 patterns per pair key with one seed, every rule / arm / diagnostic arm",
+   "records": "missing / slot identity (image, rule, arm) / duplicates / metric missing with output / accepted count missing -> formal statistics refused; progress mode marked PARTIAL",
+   "no_output": "scientific no-output (no accepted point): C_tau 0, RMSE / P95 undefined, counted in the denominator; never a technical stop",
+   "references": "decode references verify source npz AND source json hashes"
+  },
+  "metrics": {
+   "coverage": "global and local C_valid, C_tau, gap = C_valid - C_tau (supported = interpolable and support measure <= d 6 mm; accurate = supported and |err| <= tau 0.15 mm)",
+   "accuracy": "point RMSE / P95, registered surface RMSE / P95, each with its own valid denominator",
+   "identity_shares": "main w/(c+w); lower bound of all accepted w/(c+w+u); upper bound (w+u)/(c+w+u); incremental on the newly accepted set; zero denominators undefined",
+   "thresholds": "0.1 % main wrong-id gate, 0.05 % / 0.5 % sensitivity, unconfirmable rule unchanged; strict identity pass != task success; no-output never passes",
+   "aggregation": "per surface, layout, level, sigma, front end; repetitions averaged inside a phase, then phases equally weighted; no pooling over surfaces"
+  },
+  "effects": {
+   "E1": "same image, same front end: use code - ignore code",
+   "E2": "coded pattern - plain pattern (scheme difference incl. size-dependent front end; not a pure code-information effect)",
+   "E3": "front-end difference DF / DS / B0 on the same image",
+   "table": {
+    "file": "outputs/surface_revision/s3_code04/results/B_C_effects.csv",
+    "sha256": "03e47d3879e7e551549bca42efade18a1050d6d0ee9e7c58d67e20140aaf46c3"
+   }
+  },
+  "attribution": {
+   "table": {
+    "file": "outputs/surface_revision/s3_code04/results/B_attribution.csv",
+    "sha256": "ef2fa064f6ba946010838d4d4f8ba742c9f087ebc3a8b518d21fe9ae928ce551"
+   },
+   "statement": "R5x4 DF sigma 0 -> 40: C_tau -32.32 pp, C_valid -2.00 pp, gap +30.32 pp; an arithmetic split of the metric, not a causal allocation to detection, localization or interpolation"
+  },
+  "diagnostics": {
+   "table": {
+    "file": "outputs/surface_revision/s3_code04/results/B_diag_compare.csv",
+    "sha256": "8824708f5a4be817151ea4dda8355c30a730b2377b7f3ff11df99912459843bb"
+   },
+   "TC_src": "conditional diagnostic, same front end, correct-class condition; own denominator",
+   "TI_src": "excludes unconfirmable components; not a monotone upper bound of every metric (e.g. R5x4 DF sigma 100: TI C_tau 0.033 < method 0.104)"
+  },
+  "bootstrap": "future 8-block descriptive resampling: 4 blocks drawn within each parity layer, the same index for all paired arms of a block, no fictitious dot / line pairing; the 2 C phases are reported per phase with ranges only",
+  "reeval": {
+   "records": 2232,
+   "images": 576,
+   "stored_subset_mismatches": {
+    "glob_Ctau": 0,
+    "loc_Ctau": 0,
+    "glob_Cvalid": 0,
+    "loc_Cvalid": 0,
+    "glob_pt_rmse": 0,
+    "glob_pt_p95": 0,
+    "loc_pt_rmse": 0,
+    "loc_pt_p95": 0,
+    "glob_surf_rmse": 0,
+    "n_accepted": 0,
+    "n_valid": 0
+   },
+   "ok": true,
+   "kind": "point-cloud re-evaluation (no decode)",
+   "t_local": "2026-10-15T13:18:07+02:00"
+  },
+  "drills": {
+   "first": {
+    "all_ok": false,
+    "failed": [
+     "entry_exception_stops_submission"
+    ],
+    "note": "kept as record: BrokenProcessPool from an unpicklable Stop"
+   },
+   "final": {
+    "all_ok": true,
+    "drills": [
+     [
+      "delete_eval_record",
+      true
+     ],
+     [
+      "duplicate_manifest_row",
+      true
+     ],
+     [
+      "duplicate_record_slot",
+      true
+     ],
+     [
+      "phase_label_mismatch",
+      true
+     ],
+     [
+      "record_of_other_image_in_slot",
+      true
+     ],
+     [
+      "source_json_changed",
+      true
+     ],
+     [
+      "rule_fingerprint_mismatch_runner",
+      true
+     ],
+     [
+      "rule_fingerprint_mismatch_collect",
+      true
+     ],
+     [
+      "legal_no_output",
+      true
+     ],
+     [
+      "metric_missing_with_output",
+      true
+     ],
+     [
+      "entry_exception_stops_submission",
+      true
+     ],
+     [
+      "no_designated_failure_case",
+      true
+     ]
+    ],
+    "formal_structure": true,
+    "synthetic": {
+     "figure_branch": {
+      "ok": true,
+      "detail": "f1 / f2 rendered with 3 layouts per family and 8 phases"
+     },
+     "bootstrap": {
+      "rows": 5,
+      "lo_le_mean_le_hi": true,
+      "ok": true
+     }
+    }
+   },
+   "stop_first_unit": {
+    "broken": "C2I-69b87506242e8e7a664caa0a",
+    "exit": 2,
+    "stdout": "[technical] 1 units failed; submission stopped, 5 queued / unstarted units not run: [{'key': 'C2I-69b87506242e8e7a664caa0a', 'error': 'RuntimeError: Stop: [technical] C2I-69b87506242e8e7a664caa0a: raster does not reproduce the manifest key (parity 0)\\n'}]",
+    "state": {
+     "n_rows": 7,
+     "done": 1,
+     "failed": [
+      {
+       "key": "C2I-69b87506242e8e7a664caa0a",
+       "error": "RuntimeError: Stop: [technical] C2I-69b87506242e8e7a664caa0a: raster does not reproduce the manifest key (parity 0)\n"
+      }
+     ],
+     "not_started": 5,
+     "cancelled": 5
+    },
+    "sigma_pos_rows": 3,
+    "booked": {
+     "decode_attempt": 0,
+     "front_detection": 0
+    },
+    "ok": true,
+    "t_local": "2026-10-15T13:47:49+02:00"
+   },
+   "table": {
+    "file": "outputs/surface_revision/s3_code04/results/B_drill_table.csv",
+    "sha256": "49f63f553c8dde670b98379daa384da7bf35ac5d3de2941fffff27502c82f58b"
+   }
+  },
+  "technical_fixes_this_round": [
+   "c4_collect.gate: repetition check addressed sigma after it had become an index level (crash) -> explicit expected repetitions; formal defaults 8 phases / sigma0 x1 / sigma>0 x2",
+   "c4_collect.gate: pairing seed count dropped NaN seeds of sigma 0 (all pairs refused) -> nunique(dropna=False)",
+   "c4_collect.collect: record identity columns missing when no record is complete (crash instead of refusal) -> columns always present",
+   "c4_collect.gate: new phase-label <-> geometric-position check (phase relabelling is otherwise invisible: records carry the image key only)",
+   "c4_run._worker: Stop(code, msg) is not unpicklable in the parent -> BrokenProcessPool masked the cause and failed the in-flight unit; re-raised as a plain error (inherited from c3_run)"
+  ],
+  "freeze": {
+   "file": {
+    "file": "outputs/surface_revision/s3_code04/formal/frozen.json",
+    "sha256": "65c5f3165aa2a7d6e1c9d8eb6d145eec265fe5e07b50aaf441ba14266b6368bb"
+   },
+   "fingerprints": {
+    "decode": "f70abade510688598692",
+    "eval": "1446746dc1e49fd50653",
+    "diag": "299b6a0cc5a4b5632fe1"
+   },
+   "closure_sha256": "0ac67c885fd5dd4ae447ae005ec52ff8d90fd4aae85432e612cd72b69ab85f9f",
+   "manifest_sha256": "98a01c564aeb75e01c44e7b08552290bb9075a8bc1c11bff24c1ef64984315c7",
+   "class_map_sha256": "d74571228b49870fd9fd1be304bdbdf47f54fb8428475ba160263b7b1b48efb1",
+   "deps": {
+    "file": "outputs/surface_revision/s3_code04/formal/deps_layers.json",
+    "sha256": "6ceb6e50ec3f19266bb70baa87dac1a104b291eb68f2e5bebec76dcd74832eb0"
+   },
+   "permit": "none (imaging needs a later release)"
+  },
+  "t_local": "2026-10-15T13:59:16+02:00"
+ },
+ "C_reverification": {
+  "C1": {
+   "front_ends": {
+    "orig_D0": "binding D0 sequence of S12 (r5_detect candidates -> select D0 -> reconstruct_from(s2.dot_cfg())); stored candidates / features / traces / points are the regression target; the stored point cloud and its stored metrics are reused",
+    "DF": "frozen S3-CODE-03 DF (noise-blob floor by smallest design radius)",
+    "DS": "frozen S3-CODE-03 DS (smoothing localization)"
+   },
+   "source_identity": "re-detected label map of the image + sigma-0 reference map (cached); same evaluator, common / local region and tau for all front ends",
+   "inputs": 1143,
+   "views": {
+    "S1_cap": 288,
+    "S1_fixed_peak": 288,
+    "S2_cap": 660,
+    "counterexample_review": 3
+   },
+   "regression": {
+    "n": 1143,
+    "ok": 1143,
+    "eval_consistency_ok": 1143
+   },
+   "tables": [
+    {
+     "file": "outputs/surface_revision/s3_code04/results/C1_dots_cases.csv",
+     "sha256": "10c4a556c08f38d5dcdd27924c56e17b268174c9a25ffb1d81d9edbcf749e0bb"
+    },
+    {
+     "file": "outputs/surface_revision/s3_code04/results/C1_dots_views.csv",
+     "sha256": "50756e2c64329faf9dc27b75d72f53424f38bbc015e2cf470283063138fa3f52"
+    },
+    {
+     "file": "outputs/surface_revision/s3_code04/results/C1_dots_paired.csv",
+     "sha256": "86b6d23f914e9958321e41c34aa0616d80b1e933aada18379e8d3017b5bcdbb8"
+    },
+    {
+     "file": "outputs/surface_revision/s3_code04/results/C1_dots_cells.csv",
+     "sha256": "5bc85b065275a40f824b077a970634aa08fe9b70a66efa1b6d1d8cb3dce5adf4"
+    },
+    {
+     "file": "outputs/surface_revision/s3_code04/results/C1_regression.csv",
+     "sha256": "77360ffd29604e2fe699b16002c2d5cbadc0dbe1795d72ef9ad68edb7f46e3a3"
+    }
+   ],
+   "compact_records": "cache/C1/<input_key>.json/.npz (one per input: DF / DS points + metrics, old image referenced, not copied)"
+  },
+  "C2": {
+   "table": {
+    "file": "outputs/surface_revision/s3_code04/results/C2_lines_consistency.csv",
+    "sha256": "99dfb626dd65f39fe45cc8396862ef423e215c5e1dfa54e8e038b78ac94b1c29"
+   },
+   "result": "72 / 72 counts equal; RMSE / P95 difference 0; 16 no-output cases handled as no-output; independent recompute <= 4.8e-7 mm (float32 storage); S12 dependency check 16 files, SURF-02 drift none -> plain-line data kept"
+  },
+  "verdicts": {
+   "table": {
+    "file": "outputs/surface_revision/s3_code04/results/C1_verdicts.csv",
+    "sha256": "2014005439eb1e612a92034234a385bb27e8025c938f4997508039ad35d50164"
+   },
+   "rankings": {
+    "file": "outputs/surface_revision/s3_code04/results/C1_s2_rankings.csv",
+    "sha256": "c46164f7b40dd72349425d1df7b0d9ee7d3a666f70d1fef73fcdc49376a45ffb"
+   },
+   "tradeoff": {
+    "file": "outputs/surface_revision/s3_code04/results/C1_tradeoff.csv",
+    "sha256": "30165f115365344bde43af2b9c5bf5a471856f491c7ab1872217c0b2558da3c4"
+   },
+   "localization": {
+    "file": "outputs/surface_revision/s3_code04/results/C1_localization.csv",
+    "sha256": "45015a4be22d9f72c9ea42f26ba42d5c0d1fe52e88e18cab7a0ac3c351f19e98"
+   },
+   "highnoise": {
+    "file": "outputs/surface_revision/s3_code04/results/C1_highnoise.csv",
+    "sha256": "ac088af543724d5effa97221f883bf857d67a9ee0b7d5dd2d2ccae347acf9830"
+   },
+   "brightness": {
+    "file": "outputs/surface_revision/s3_code04/results/C1_brightness.csv",
+    "sha256": "cc497d787f7ad59a1c5c63b063fb6f1107f7e4c57de86a0296a8de02bd7240be"
+   },
+   "counterexample": {
+    "file": "outputs/surface_revision/s3_code04/results/C1_counterexample.csv",
+    "sha256": "e091a69d0cfda4e16141fc1a1d9f84d6ba62178a77967d7ee1c39bbe964d6563"
+   },
+   "counterexample_matches_s3_code02": true,
+   "categories": [
+    "Retain with detector specified",
+    "Restrict to the tested algorithm",
+    "Extend same-image checks"
+   ],
+   "evidence": "seen images, 2 phases / positions; not an unseen validation, not a replacement of the full curves"
+  },
+  "t_local": "2026-10-15T13:59:16+02:00"
+ },
+ "D_figures": {
+  "script": "c4_figs.py",
+  "index": {
+   "file": "outputs/surface_revision/s3_code04/figures/figure_index.csv",
+   "sha256": "b9e71ec2f60c4bc33fcb4dbe5fa7d01488cc1e5eb5f1fc6ae486418afafa81a1"
+  },
+  "figures": [
+   {
+    "figure": "S3C4_F1_E1_Code_Risiko.png",
+    "sources": "B_C_cases.csv",
+    "sha256": "4bcceb1334765e68cc83d4fe75fb75afb022ac3a5f2e2205b8bdd1d90f9fd8bd"
+   },
+   {
+    "figure": "S3C4_F2_E2_Schema.png",
+    "sources": "B_C_cases.csv",
+    "sha256": "e8139ed840290dbf06e398ce4637ba3be6b1a9b6246c997338183f6eabf6a028"
+   },
+   {
+    "figure": "S3C4_F3_Abdeckung_Genauigkeit.png",
+    "sources": "B_C_cases.csv;B_diag_compare.csv;B_attribution.csv",
+    "sha256": "cce2d0c28ac2f9ca7559dee9c2ac68c6001e4288fc2c02df2d2c7a93dfcee650"
+   },
+   {
+    "figure": "S3C4_F4_Frontend_Lesen.png",
+    "sources": "B_frontend.csv;B_C_cases.csv;precheck_levels.json",
+    "sha256": "740bf376a1edad8023c4c5fdc23e984b2a4227470f5c08c7586c6e3cfcdf4a99"
+   },
+   {
+    "figure": "S3C4_F5_Fallbeispiele.png",
+    "sources": "B_C_cases.csv;stored C point clouds (re-evaluated for node maps)",
+    "sha256": "40e994919854eeecccc54dbab0d9bd9f605e6fc9cda60a52070a64f48e3e90bf"
+   },
+   {
+    "figure": "S3C4_F6_Abschnitt1_Frontend.png",
+    "sources": "C1_dots_views.csv",
+    "sha256": "7fee61f7f60997e69fcdb28e505d86b6d614430d8e197830d43b3eeb9b0fee3a"
+   },
+   {
+    "figure": "S3C4_F7_Abschnitt2_Frontend.png",
+    "sources": "C1_dots_views.csv",
+    "sha256": "117b7f0c96e48e9359ceb09976c6d51560efbb95158e11e49315d52720dc9bbd"
+   }
+  ],
+  "rules": "layouts, noise levels, sample sizes, phases / repetitions, flag counts and evidence label generated from the tables; absent transition layouts named in the title; empty case selection prints the registered sentence; synthetic 3-layout / 8-phase branch test only in sandbox/figtest",
+  "fix_from_s3_code03": "3-D truth surface of the S3-CODE-03 case boards was drawn transposed (mask indexed [y, x]); display only, metrics unaffected; F5 uses meshgrid(x, y) and checks X[mask] == x, Y[mask] == y; node maps reproduce the stored C_valid / C_tau exactly",
+  "t_local": "2026-10-15T13:59:16+02:00"
+ },
+ "operations": {
+  "imaging_new": 0,
+  "formal_batch_started": false,
+  "decode_attempts": {
+   "C": 3429,
+   "B": 19,
+   "total": 3448,
+   "caps": {
+    "decode_total": 3480,
+    "decode_C": 3456,
+    "decode_B": 24,
+    "unique_old_dot_inputs": 1152,
+    "new_imaging": 0
+   },
+   "C_by_rule": {
+    "B0": 1143,
+    "DF": 1143,
+    "DS": 1143
+   },
+   "B_note": "19 rule decodes of the first drill call (complete, then refused by the closure check); resumed calls decoded nothing"
+  },
+  "front_detections_B": {
+   "n": 16,
+   "note": "line front-end detections (shared / diagnostic re-runs) booked separately; 6 of them reconstructed (gate sandbox reset before booking)"
+  },
+  "reference_extractions": {
+   "events": 121,
+   "unique_maps": 91,
+   "note": "sigma-0 label maps; repeats from parallel workers before the cache was filled"
+  },
+  "pattern_checks": {
+   "configurations": 144,
+   "manifest_rows": 6336,
+   "rasters": 192,
+   "note": "M2 only, no M3"
+  },
+  "point_cloud_reevaluations": {
+   "B_C_records": 2232,
+   "F5_node_maps": 6,
+   "C2_lines": 72,
+   "C1_eval_consistency": 1143,
+   "drill_sandboxes": "gate sandbox: 25 eval + 40 diag per call x 5 calls that reached it (calls 4-8); stop drills: <= 7 units each (3 runs)"
+  },
+  "c1_run": {
+   "start": "2026-10-15T12:56:03+02:00",
+   "end": "2026-10-15T13:26:28+02:00"
+  },
+  "final_check": true,
+  "t_local": "2026-10-15T13:59:16+02:00"
+ },
+ "pending": {
+  "not_started": [
+   "section 3 formal matrix (6336 images): needs a task book + reference release + permit; nothing rendered",
+   "any replacement of the section 1 / 2 main curves by DF / DS: would need the full stored-image re-processing range (S3-CODE-02 list: dots 3072 + 288 fixed-peak inputs) and a review"
+  ],
+  "next_run_list": {
+   "file": "outputs/surface_revision/s3_code04/formal/manifest.csv",
+   "sha256": "98a01c564aeb75e01c44e7b08552290bb9075a8bc1c11bff24c1ef64984315c7"
+  },
+  "frozen": {
+   "file": "outputs/surface_revision/s3_code04/formal/frozen.json",
+   "sha256": "65c5f3165aa2a7d6e1c9d8eb6d145eec265fe5e07b50aaf441ba14266b6368bb"
+  },
+  "dependencies": {
+   "file": "outputs/surface_revision/s3_code04/formal/deps_layers.json",
+   "sha256": "6ceb6e50ec3f19266bb70baa87dac1a104b291eb68f2e5bebec76dcd74832eb0"
+  },
+  "review": "executor self-check only; reference independent review pending",
+  "t_local": "2026-10-15T13:59:16+02:00"
+ },
+ "post_freeze_update": {
+  "reason": "after the protocol sections were written, F3 (attribution bar labels / legend position) and F4 (two panel titles: removed the unverified mechanism phrase on DS smoothing; shortened the cut title) were corrected; c4_figs.py is in the package closure, so the package was refrozen",
+  "layer_fingerprints_unchanged": {
+   "decode": "f70abade510688598692",
+   "eval": "1446746dc1e49fd50653",
+   "diag": "299b6a0cc5a4b5632fe1"
+  },
+  "closure_sha256_new": "7199fc2897a3608ea60d7469b31ae0c24fe3b5dfb4dea38df0f12ca1bf7e1a85",
+  "closure_sha256_superseded": "0ac67c885fd5dd4ae447ae005ec52ff8d90fd4aae85432e612cd72b69ab85f9f",
+  "figures_new": {
+   "S3C4_F3_Abdeckung_Genauigkeit.png": "70f78361617eb616a9b82d85785d20c556cd322c2f67361320e2839fbd882b22",
+   "S3C4_F4_Frontend_Lesen.png": "5c5a804f931f54b05b7e0aaf10aad58c9d6850b296875bdb0da64ad1e12bb03b"
+  },
+  "figure_index": {
+   "file": "outputs/surface_revision/s3_code04/figures/figure_index.csv",
+   "sha256": "b9e71ec2f60c4bc33fcb4dbe5fa7d01488cc1e5eb5f1fc6ae486418afafa81a1"
+  },
+  "final_check": "checks.json final_fingerprints_after_figure_fix",
+  "t_local": "2026-10-15T14:01:23+02:00"
+ }
+}

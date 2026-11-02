@@ -1,0 +1,480 @@
+{
+ "task": "S12-RESOURCE-01",
+ "task_file": "C:\\Users\\16944\\Desktop\\Masterarbeit\\protocols\\S12-RESOURCE-01_protocol.md",
+ "task_file_sha256": "2fef7323cb15ab642567226694b8c507da0af8ba4064facf28b58d056071ce16",
+ "created_local": "2026-10-14T17:29:12+02:00",
+ "scope": {
+  "surfaces_main": [
+   "M10_curv",
+   "M24_curv",
+   "B_curv"
+  ],
+  "supplement": "M10_curv_gauss",
+  "sigma": [
+   0.0,
+   20.0,
+   40.0,
+   60.0,
+   80.0,
+   100.0
+  ],
+  "S1": {
+   "dots": {
+    "radius_mm": [
+     0.5,
+     1.0,
+     1.5
+    ],
+    "lattice": "sn_lib S1 8 x 4 mm (original generator)",
+    "phases": "sn_phase0..2",
+    "reps": "sigma 0: 1; else 3",
+    "regimes": [
+     "resource_cap_11695",
+     "fixed_peak_1",
+     "equal_integral_5850"
+    ]
+   },
+   "lines": {
+    "width_mm": [
+     0.5,
+     0.75,
+     1.0,
+     1.25,
+     1.5
+    ],
+    "pitch_mm": 8.0,
+    "phi_deg": 0.0,
+    "phases": "ph0..7 (registered phase_frac)",
+    "reps": "sigma 0: 1; else 2",
+    "regimes": [
+     "resource_cap_11695",
+     "fixed_peak_1"
+    ]
+   }
+  },
+  "S2": {
+   "dots": {
+    "radius_mm": 1.0,
+    "lattices": [
+     "R6x4",
+     "R7.35x4",
+     "R8x4",
+     "R10x4",
+     "R12x4",
+     "R8x2.5",
+     "R8x3",
+     "R8x6",
+     "R8x8",
+     "T8x4"
+    ],
+    "positions": "8 registered positions (sl_lib latin indices)",
+    "reps": "sigma 0: 1; else 2"
+   },
+   "lines": {
+    "width_mm": 1.0,
+    "pitch_mm": [
+     4.45,
+     5.0,
+     5.6,
+     6.3,
+     8.0,
+     10.0,
+     12.0
+    ],
+    "phi_deg": [
+     0.0,
+     45.0
+    ],
+    "phases": "ph0..7",
+    "reps": "sigma 0: 1; else 2"
+   },
+   "regimes": [
+    "resource_cap_11695"
+   ],
+   "not_run": "old optional fixed-peak S2 matrix"
+  },
+  "not_in_round": "new sizes / pitches / phases, sections 3-5, other budgets, shot noise / speckle, detector retuning"
+ },
+ "resource": {
+  "name": "resource_cap_11695",
+  "text": "gemeinsame Grauwert-Integral-Obergrenze und Peak-Obergrenze",
+  "Q_budget": 11695.0,
+  "v_max": 1.0,
+  "rule": "Q0 = sum(I0) on the actual 0/1 raster; v_target = min(1, 11695 / Q0); I = float32(v_target) I0; Q_actual = sum(I)",
+  "classes": "Q0 < 11695 peak_limited (peak 1, Q_actual = Q0 < budget); Q0 > 11695 integral_limited (Q_actual = 11695, rel 1e-6); equal: both_limits",
+  "controls": {
+   "fixed_peak_1": "S1 dots / lines, peak 1, may exceed 11695 (mechanism control, not a candidate of the common cap)",
+   "equal_integral_5850": "existing S1 dot results only (low budget supplement; no 5850 lines; no cross-family ranking)"
+  },
+  "unit": "normalised pattern-plane grey sum (not watt, photons or camera grey sum)",
+  "S2_note": "every registered S2 raster has Q0 >= 11695: old strict equal-integral S2 = common cap numerically"
+ },
+ "seeds": {
+  "s1_dot": "9205000 + 10 phase_index + rep (sn_lib, surface independent; same base realisation for every sigma)",
+  "s2_dot": "9420000 + 10 position_index + rep (sl_lib, position index from the old list; surface independent; same base realisation for every sigma)",
+  "line_20_40_60": "10300000 + ((surface_index * 8 + phase_index) * 4 + sigma_index) * 2 + rep, sigma_index from [0, 20, 40, 60] (unchanged old rule)",
+  "line_80_100": "10600000 + ((surface_index * 8 + phase_index) * 2 + high_sigma_index) * 2 + rep, high_sigma_index from [80, 100] (new block)",
+  "surface_index": "M10 0, M24 1, B 2, M10+Gauss 3",
+  "sigma0": "no effective seed (deterministic image; one image per phase)"
+ },
+ "identities": {
+  "image": "raster key + float32 peak + platform surface + PSF + sigma + effective seed + M3 config digest + platform version",
+  "decode": "image + arm + D0 cfg / P4 parameters + float32 pattern peak (lines) + search window",
+  "evaluate": "decode + s1r_eval sha + global domain hash + d / tau / gross",
+  "labels": "regime / section are view labels, not part of the physical identity"
+ },
+ "manifest": {
+  "file": "outputs/surface_revision/s12_resource01/manifest.csv",
+  "sha256": "9c2c9371a479e95d72385bb1ba3806051bc4be50f729976790f187892a378c19",
+  "inputs": "outputs/surface_revision/s12_resource01/inputs.csv",
+  "inputs_sha256": "adf69fd4ce4b819e37208b1dbba4a214d1ff5c6f5ecb2536826fc2dba5581c04",
+  "counts": {
+   "views_S1": {
+    "gauss": 1312,
+    "main": 3936
+   },
+   "views_S2": {
+    "gauss": 2112,
+    "main": 6336
+   },
+   "unique": {
+    "gauss": 3272,
+    "main": 9816
+   },
+   "reuse": {
+    "gauss": 1224,
+    "main": 3672
+   },
+   "new": {
+    "gauss": 2048,
+    "main": 6144
+   },
+   "new_S1_dot_cap": 384,
+   "new_S1_line_high": 1920,
+   "new_S2": 5888,
+   "shared_S1_S2": 352,
+   "shared_S1_S2_old": 96,
+   "shared_S1_S2_reused_now": 160,
+   "views_total": 13696,
+   "unique_total": 13088,
+   "by_source": {
+    "new": 8192,
+    "s1": 2688,
+    "s2": 2208
+   },
+   "s2_record_sources": 2208,
+   "new_views_S2": 6080
+  }
+ },
+ "reuse": {
+  "check": "outputs/surface_revision/s12_resource01/checks/reuse_check.json",
+  "sha256": "17f85fb1a86c1d212e0c711f2691e2afb06f9d641c8daf02e77ff9ffb663ade5",
+  "n": 4896,
+  "sources_file": "outputs/surface_revision/s12_resource01/checks/reuse_sources.json",
+  "sources_sha256": "6168984d6ba44930d70666c7f4ad8e926b990b17df3178bd0e7448df6b61fde9"
+ },
+ "evaluation": {
+  "global_domain": "30947 nodes 0.5 mm (s1_real01 domain, hash e240df004a66e58d8dfb12162a8a18ba6452c6a58c7664a860dd352b2b3b0ea3)",
+  "local": "r <= 15 mm, 22605 nodes (SURF-02 ROI)",
+  "d_mm": 6.0,
+  "tau_mm": 0.15,
+  "gross_mm": 1.0,
+  "evaluator": "s1r_eval.evaluate_case (unchanged)",
+  "no_output": "coverage / recovery 0, errors undefined; technical missing is not a scientific 0"
+ },
+ "statistics": {
+  "aggregation": "realisations averaged inside a phase, phases equally weighted (main = mean); median, range, all phase values, no-output / zero-recovery counts, defined denominators",
+  "resampling": {
+   "kind": "phase-block bootstrap, descriptive 5-95 %",
+   "seed": 2026101401,
+   "draws": 10000,
+   "rule": "one index matrix shared by all linked configurations, regimes, sigma and realisations; S1 dots (3 phases): min-max only"
+  },
+  "contrasts": {
+   "S1": "same regime / surface / sigma: all adjacent sizes and min vs max; same size: common cap vs fixed peak, common cap vs 5850 (dots); identical inputs flagged",
+   "S2": "adjacent p_par (p_perp 4), adjacent p_perp (p_par 8), R8x4 vs T8x4, phi 45 vs 0 at equal pitch, adjacent pitches per phi; sigma changes of C_tau / point error / recovery / identity risk"
+  },
+  "ranking": "per sigma by global C_tau mean (with local C_tau, point P95, wrong / unconfirmable, failure denominators); measured candidates only, no device recommendation"
+ },
+ "sensitivity": {
+  "d_mm": [
+   5.0,
+   6.0,
+   7.0
+  ],
+  "tau_mm": [
+   0.1,
+   0.15,
+   0.2
+  ],
+  "scope": "common-cap main line, three main surfaces, all registered conditions, global domain; from stored valid points (no decoding)"
+ },
+ "diagnostics": {
+  "rule": "per section x family <= 2 extra groups: lowest global C_tau (degradation), highest defined point RMSE (tail); neighbours with the same surface / phase / seed; ties by manifest order"
+ },
+ "examples": {
+  "S1_point": "sn_phase0 (first registered S1 dot phase), rep 0",
+  "S1_line": "ph0, rep 0",
+  "S2_point": "pos33 (first registered position), rep 0",
+  "S2_line": "ph0, rep 0",
+  "note": "fixed instances, not population representatives or independent validation; failures shown in place"
+ },
+ "first_batch": {
+  "rule": "<= 16 new inputs fixed before any new image: all three main surfaces, dots and lines, S1 (common-cap dots r 1 / 1.5, high-noise lines both regimes) and S2 (new sigma 20 / 60 / 80 / 100, dense / wide pitches, phi 0 / 45, R / T), sigma 100 with dark common-cap rasters, one S1/S2 shared input (M24 w 1 s 8 phi 0 sigma 80 ph0 rep 0) and one complete figure group (M24 lines common cap sigma 100 ph0 rep 0, w 0.5 / 1.0 / 1.5)",
+  "rows": [
+   [
+    "S1",
+    "M10_curv",
+    "point",
+    "resource_cap_11695",
+    1.0,
+    "S1_R8x4",
+    "sn_phase0",
+    0.0,
+    0
+   ],
+   [
+    "S1",
+    "M24_curv",
+    "point",
+    "resource_cap_11695",
+    1.5,
+    "S1_R8x4",
+    "sn_phase1",
+    100.0,
+    0
+   ],
+   [
+    "S1",
+    "B_curv",
+    "point",
+    "resource_cap_11695",
+    1.5,
+    "S1_R8x4",
+    "sn_phase2",
+    60.0,
+    2
+   ],
+   [
+    "S1",
+    "M10_curv",
+    "point",
+    "resource_cap_11695",
+    1.5,
+    "S1_R8x4",
+    "sn_phase0",
+    20.0,
+    0
+   ],
+   [
+    "S1",
+    "M24_curv",
+    "line",
+    "resource_cap_11695",
+    0.5,
+    "s8_phi0",
+    "ph0",
+    100.0,
+    0
+   ],
+   [
+    "S1",
+    "M24_curv",
+    "line",
+    "resource_cap_11695",
+    1.0,
+    "s8_phi0",
+    "ph0",
+    100.0,
+    0
+   ],
+   [
+    "S1",
+    "M24_curv",
+    "line",
+    "resource_cap_11695",
+    1.5,
+    "s8_phi0",
+    "ph0",
+    100.0,
+    0
+   ],
+   [
+    "S1",
+    "B_curv",
+    "line",
+    "fixed_peak_1",
+    1.0,
+    "s8_phi0",
+    "ph3",
+    80.0,
+    1
+   ],
+   [
+    "S1",
+    "M10_curv",
+    "line",
+    "fixed_peak_1",
+    1.5,
+    "s8_phi0",
+    "ph5",
+    60.0,
+    0
+   ],
+   [
+    "S1",
+    "M24_curv",
+    "line",
+    "resource_cap_11695",
+    1.0,
+    "s8_phi0",
+    "ph0",
+    80.0,
+    0
+   ],
+   [
+    "S2",
+    "M10_curv",
+    "point",
+    "resource_cap_11695",
+    1.0,
+    "R6x4",
+    "pos33",
+    20.0,
+    0
+   ],
+   [
+    "S2",
+    "M24_curv",
+    "point",
+    "resource_cap_11695",
+    1.0,
+    "T8x4",
+    "pos115",
+    100.0,
+    1
+   ],
+   [
+    "S2",
+    "B_curv",
+    "point",
+    "resource_cap_11695",
+    1.0,
+    "R8x2.5",
+    "pos197",
+    80.0,
+    0
+   ],
+   [
+    "S2",
+    "M10_curv",
+    "line",
+    "resource_cap_11695",
+    1.0,
+    "s4.45_phi0",
+    "ph0",
+    20.0,
+    0
+   ],
+   [
+    "S2",
+    "M24_curv",
+    "line",
+    "resource_cap_11695",
+    1.0,
+    "s12_phi45",
+    "ph2",
+    60.0,
+    1
+   ],
+   [
+    "S2",
+    "B_curv",
+    "line",
+    "resource_cap_11695",
+    1.0,
+    "s6.3_phi0",
+    "ph4",
+    100.0,
+    0
+   ]
+  ],
+  "input_keys": [
+   "S12I-791e4f35554716c2c7b08dc0",
+   "S12I-40d76c561828a7fc6e50c524",
+   "S12I-1fe3929c286e3b7bb0f3d1cb",
+   "S12I-4d898d289b58f69d1a874509",
+   "S12I-b112e849a1822f7ae9155f27",
+   "S12I-09e93aec78fe4ff7f33c6037",
+   "S12I-91c22329b2272ae4f10fb1d2",
+   "S12I-5336b86eb3f60ff6454caf14",
+   "S12I-1a8fd4d1c6dff57062f0583d",
+   "S12I-cded1192f0f7ad9971e924e5",
+   "S12I-b8a0be2d96471943210df6ee",
+   "S12I-7cd8186a0827da8da72c546d",
+   "S12I-1b6af72ef3ca27324fce11ef",
+   "S12I-cc1094b6779be3ab91bdf535",
+   "S12I-b5e8537ee258ffe62921e291",
+   "S12I-1ef91ecb4b76f5013c02031f"
+  ]
+ },
+ "caps": {
+  "render": 8208,
+  "decode": 8208,
+  "replay_decode": 12,
+  "rule": "new renders / main decodes <= 8192 + 16 technical attempts each; replay decodes <= 12 (separate); failed attempts count"
+ },
+ "dependencies": {
+  "release": {
+   "file": "outputs/surface_revision/surf02/release/release_surf02.json",
+   "sha256": "e1b11fefdb85f1909db8e76115bca6a48001bb755858a92f94bc0d345d0ed144",
+   "version": "SURF-02 v1.1 (2026-10-12)"
+  },
+  "platform_dependency_manifest": {
+   "file": "outputs/surface_revision/surf02/release/dependencies_surf02_v1_1.json",
+   "sha256": "547c33d04f84699945b78cfce2c1547c3ccc4947b1ce31639793ece09f5722e0",
+   "n_files": 33,
+   "drift": []
+  },
+  "s1_dependencies": {
+   "file": "outputs/surface_revision/s1_real01/config/s1_dependencies.json",
+   "sha256": "7f5e1d3d0869f45bbf73d348d2dd9315e177ae23b423b58c8d2712eacc90973e"
+  },
+  "s2_formal_freeze": {
+   "ok": true,
+   "sha256": "ec819ddbdb3ac89a417bd33f07cb13ec4fd8eff595dbb763e02edcf6256ca6c3",
+   "part_digests": {
+    "image": "249f5738255d4ac2f6050caf",
+    "decode": "7b9d0988edc6968de153fe69",
+    "eval": "19964ab3b5cd77a54e766f34"
+   }
+  },
+  "binding": {
+   "file": "outputs/surface_revision/sections_adapter/binding.json",
+   "sha256": "95442e9153aba0896f7767ddca88744b99e5ee6fff77ba0805192b236839d50a"
+  },
+  "global_domain": {
+   "file": "outputs/surface_revision/s1_real01/domain/global_domain_step0p50.json",
+   "sha256": "bf69cb787a2029a3640ea242943c79ee2bd8caddf02810c56e30eb7ae3895f12",
+   "npz_sha256": "6c191c249ea3682966a38c4b8ba7721a81bae10f9005fe24847a27795fa53500",
+   "hash": "e240df004a66e58d8dfb12162a8a18ba6452c6a58c7664a860dd352b2b3b0ea3",
+   "n_nodes": 30947
+  },
+  "run_code": {
+   "s12_common.py": "18f90c2083cf2a74cf8335db01e469ae54ab94b55f94d9a2474584a8c02e9bdb",
+   "s12_manifest.py": "56f59c0cca516bb3fdd3464e9fd1df8d9052a6c80c265854be228524dc3a6c3d",
+   "s12_reuse.py": "71e53dce291807bc8e9746276574065ecda7a681d4a90088763cb23a5db3e4a0",
+   "s12_case.py": "1eade2b6768effa980781ffc7c84b9de2a9c0bf2a39b7d727412dae091459ece",
+   "s12_freeze.py": "f29804f4fddd55e13a956367cf1ee936550b09152d3d8f867e6bbcec0e8d71d6",
+   "s12_run.py": "830062020dfe40520f22381d2b5ae6dfa46d83797927dcfd96e84fe8a91468d0"
+  },
+  "reused_modules": {
+   "scripts/surface_revision/sections_adapter/s1r_eval.py": "32e1575b3ca244598c86bef6e67fd6bf666f82094dd41d590961d43db50083d3",
+   "scripts/surface_revision/sections_adapter/s1r_common.py": "91847b35b77af361af116c953df445624016ac441e5cfdd7544212d9abe87b1d",
+   "scripts/surface_revision/s2_prepare/s2p_case.py": "4871ac539de44908183a4bc50de047f53cbaf4165fbb29fae5ac96c18a2089f1",
+   "scripts/surface_revision/s2_prepare/s2p_common.py": "d31a71e725f42ef16183f0ea80ce89347eb8b29ed1769792d87ec6b0f69dc546",
+   "scripts/surface_revision/sections_adapter/adp_patterns.py": "956c1003931a5bbca3e3b256e9c9c58bb3b82c40b078c329ddf5a4c22cb54651"
+  }
+ },
+ "run_code_note": "report-side code (stats / sensitivity / figures / checks / report) is not part of the numerical identity"
+}

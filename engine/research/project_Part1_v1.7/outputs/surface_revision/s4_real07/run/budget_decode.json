@@ -1,0 +1,9 @@
+{
+ "kind": "decode",
+ "cap": 1020,
+ "used": 788,
+ "by_purpose": {
+  "regression": 8,
+  "science": 780
+ }
+}

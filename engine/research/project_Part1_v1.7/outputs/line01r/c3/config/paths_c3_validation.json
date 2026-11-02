@@ -1,0 +1,26 @@
+{
+ "P2_C1_guard": {
+  "detector": "rowcentroid_ext",
+  "guard_min_chain_px": 6.0,
+  "guard_width_window": "auto_geom",
+  "guard_width_mult": [
+   0.5,
+   2.0
+  ],
+  "vote_valid_only": true
+ },
+ "P4_C3_cal": {
+  "detector": "steger",
+  "steger_threshold_rule": "design_or_noise",
+  "guard_min_chain_px": 6.0,
+  "vote_valid_only": true,
+  "steger_noise_coef": {
+   "1.0": 0.745,
+   "1.2028130608117205": 0.4094820595436239,
+   "1.6037507477489605": 0.16644207627234214,
+   "2.0046884346862006": 0.08096365128204507,
+   "2.405626121623441": 0.048
+  },
+  "steger_noise_coef_id": "c2_exact_scales_fp1e-4_v1"
+ }
+}

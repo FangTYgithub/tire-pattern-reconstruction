@@ -1,0 +1,289 @@
+{
+ "name": "formal",
+ "evidence": "Formal Abschnitt 3: 6.336 Bilder (B, M10, M24; drei Abstände; N0–N7; σ 0–100; 2 Rauschrealisierungen je σ > 0)",
+ "evidence_kind": "formal",
+ "record_source": "c34_files",
+ "key_scheme": "c4",
+ "data_root": "outputs/surface_revision/s3_code07/formal_run/records",
+ "inputs": {
+  "manifest": {
+   "file": "outputs/surface_revision/s3_code04/formal/manifest.csv",
+   "sha256": "98a01c564aeb75e01c44e7b08552290bb9075a8bc1c11bff24c1ef64984315c7"
+  },
+  "freeze": {
+   "file": "outputs/surface_revision/s3_code04/formal/frozen.json",
+   "sha256": "8aaaf7e025edd965485d6e82762934844af04b8bd2c52686027c57f40d2564d1"
+  },
+  "class_map": {
+   "file": "outputs/surface_revision/s3_code04/formal/class_map.csv",
+   "sha256": "d74571228b49870fd9fd1be304bdbdf47f54fb8428475ba160263b7b1b48efb1"
+  },
+  "cases": {
+   "file": "outputs/surface_revision/s3_code07/plan/cases_formal.json",
+   "sha256": "471540268552e4f65f732c55efa2a93ea2beb21ed37ae45f188e835d8a805947"
+  },
+  "subset": {
+   "file": "outputs/surface_revision/s3_code07/plan/startup_subset.csv",
+   "sha256": "ca750dc997e46204c66872ca6b54d073924cf2d5e04e0bb575c387194989bc06"
+  },
+  "expected": {
+   "file": "outputs/surface_revision/s3_code07/plan/expected_keys_formal.csv",
+   "sha256": "d0b08f1d7722a04582cc2273c85c4378753f242cc969cdc55fced73060647f14"
+  }
+ },
+ "fingerprints_from": "freeze",
+ "freeze_closure": "verify",
+ "denominators": "derived",
+ "derived": "compute",
+ "derived_tag": "S3-CODE-06 A2 derived evaluation v1",
+ "profile": "c34",
+ "structure": {
+  "name": "formal_8_phases_2_reps",
+  "stratum": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "pattern",
+   "sigma"
+  ],
+  "phase_col": "phase_id",
+  "phases": {
+   "*": [
+    "N0",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7"
+   ]
+  },
+  "reps": {
+   "*": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1
+    ]
+   }
+  },
+  "rep_source": "column",
+  "seed_col": "seed",
+  "pair_block": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "phase_id",
+   "sigma",
+   "rep"
+  ],
+  "pair_key_col": "pair_key",
+  "patterns": [
+   "plain",
+   "weak",
+   "mid",
+   "strong"
+  ],
+  "geometry_cols": [
+   "u",
+   "v",
+   "phase_frac"
+  ],
+  "parity_rule": "formal_N",
+  "block_layers": "formal_N",
+  "ref_col": "ref_image_key",
+  "ref_same": [
+   "surface",
+   "layout",
+   "pattern",
+   "phase_id",
+   "code_parity"
+  ]
+ },
+ "pairs": {
+  "dots_rules": [
+   "B0",
+   "DF",
+   "DS"
+  ],
+  "dots_front_ends": [
+   [
+    "DF",
+    "B0"
+   ],
+   [
+    "DS",
+    "B0"
+   ],
+   [
+    "DF",
+    "DS"
+   ]
+  ],
+  "lines_coded_rules": [
+   "R@1.1247",
+   "LB@1.0000"
+  ],
+  "lines_reference": "ignore",
+  "lines_scheme": [
+   "R@1.1247",
+   "P4"
+  ]
+ },
+ "bootstrap": {
+  "n": 2000,
+  "seed": 20261015
+ },
+ "figures": [
+  "*"
+ ],
+ "cases": [
+  {
+   "group": "fixed",
+   "family": "dots",
+   "layout": "R6x4",
+   "pattern": "mid",
+   "surface": "M24_curv",
+   "phase_id": "N3",
+   "rep": 1,
+   "rule": "DF",
+   "arm": "use",
+   "sigmas": [
+    0.0,
+    40.0,
+    100.0
+   ]
+  },
+  {
+   "group": "fixed",
+   "family": "lines",
+   "layout": "5.6",
+   "pattern": "strong",
+   "surface": "M24_curv",
+   "phase_id": "N5",
+   "rep": 0,
+   "rule": "R@1.1247",
+   "arm": "R@1.1247",
+   "sigmas": [
+    0.0,
+    20.0,
+    60.0
+   ]
+  },
+  {
+   "group": "supplement",
+   "family": "dots",
+   "layout": "R6x4",
+   "pattern": "mid",
+   "surface": "B_curv",
+   "phase_id": "N3",
+   "rep": 1,
+   "rule": "DF",
+   "arm": "use",
+   "sigmas": [
+    0.0,
+    40.0
+   ]
+  },
+  {
+   "group": "supplement",
+   "family": "dots",
+   "layout": "R6x4",
+   "pattern": "mid",
+   "surface": "M10_curv",
+   "phase_id": "N3",
+   "rep": 1,
+   "rule": "DF",
+   "arm": "use",
+   "sigmas": [
+    0.0,
+    40.0
+   ]
+  },
+  {
+   "group": "supplement",
+   "family": "lines",
+   "layout": "5.6",
+   "pattern": "strong",
+   "surface": "M24_curv",
+   "phase_id": "N5",
+   "rep": 0,
+   "rule": "R@1.1247",
+   "arm": "R@1.1247",
+   "sigmas": [
+    40.0
+   ]
+  },
+  {
+   "group": "supplement",
+   "family": "lines",
+   "layout": "5.6",
+   "pattern": "strong",
+   "surface": "B_curv",
+   "phase_id": "N5",
+   "rep": 0,
+   "rule": "R@1.1247",
+   "arm": "R@1.1247",
+   "sigmas": [
+    0.0,
+    40.0
+   ]
+  },
+  {
+   "group": "supplement",
+   "family": "lines",
+   "layout": "5.6",
+   "pattern": "strong",
+   "surface": "M10_curv",
+   "phase_id": "N5",
+   "rep": 0,
+   "rule": "R@1.1247",
+   "arm": "R@1.1247",
+   "sigmas": [
+    0.0,
+    40.0
+   ]
+  }
+ ],
+ "posthoc": [
+  "risk",
+  "collapse"
+ ],
+ "case_states": {
+  "no_output": "0 accepted points",
+  "degraded": "C_tau below 0.5 x C_tau of the first sigma of the same case row",
+  "normal": "otherwise",
+  "not_found": "no record satisfies the registered condition (never replaced by another case)"
+ },
+ "roots": {
+  "records": "outputs/surface_revision/s3_code07/formal_run/records",
+  "run": "outputs/surface_revision/s3_code07/formal_run/run",
+  "derived": "outputs/surface_revision/s3_code07/formal_run/derived",
+  "analysis": "outputs/surface_revision/s3_code07/analysis/formal"
+ },
+ "runner": {
+  "roots": {
+   "records": "outputs/surface_revision/s3_code07/formal_run/records",
+   "run": "outputs/surface_revision/s3_code07/formal_run/run"
+  },
+  "budget_cap": 6400,
+  "permit": "outputs/surface_revision/s3_code07/formal/permit.json",
+  "expected_slots": 79992,
+  "n_images": 6336,
+  "fingerprints": {
+   "decode": "f70abade510688598692",
+   "eval": "1446746dc1e49fd50653",
+   "diag": "299b6a0cc5a4b5632fe1"
+  },
+  "min_free_gb": 8,
+  "workers_default": 6
+ },
+ "output": "outputs/surface_revision/s3_code07/analysis/formal",
+ "note": "formal section 3 (S3-CODE-07): the registered S3-CODE-04 manifest unchanged; one configuration binds every directory; inherited case rules + supplements",
+ "package_freeze": "outputs/surface_revision/s3_code07/formal/frozen.json"
+}

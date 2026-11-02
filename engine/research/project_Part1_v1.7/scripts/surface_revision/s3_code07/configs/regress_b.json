@@ -1,0 +1,202 @@
+{
+ "name": "regress_b",
+ "evidence": "Eingangsprüfung S3-CODE-06: 96 echte Bilder (X0/X1; M24, B, M10), gesehene Prüfdaten - keine formale Validierung",
+ "evidence_kind": "entry_check",
+ "record_source": "c34_files",
+ "key_scheme": "c4",
+ "data_root": "outputs/surface_revision/s3_code06/real/records",
+ "inputs": {
+  "manifest": {
+   "file": "outputs/surface_revision/s3_code06/plan/manifest_b.csv",
+   "sha256": "a9b643f5b368c188e2e57df280fca6161a2fca06d0142994279d753334d06de7"
+  },
+  "class_map": {
+   "file": "outputs/surface_revision/s3_code06/plan/class_map_b.csv",
+   "sha256": "4b920a10abb97794793e0b265eead9cccde4367b9a53a1f36127a12c1c2b7d45"
+  },
+  "phases": {
+   "file": "outputs/surface_revision/s3_code06/plan/B_phases.csv",
+   "sha256": "4298f67c55e2a708271ab326c10ebfe4a8cc1f2093d3e073455baf96c145763c"
+  },
+  "cases": {
+   "file": "outputs/surface_revision/s3_code06/plan/cases_b.json",
+   "sha256": "a90fd54996bdb07a7aec4601459a5bbd52ce7689034a7f245905d9e46c92f6b1"
+  }
+ },
+ "fingerprints_from": "config",
+ "fingerprints": {
+  "decode": "70dd028f6f6c2484a29b",
+  "eval": "1446746dc1e49fd50653",
+  "diag": "299b6a0cc5a4b5632fe1"
+ },
+ "freeze_closure": "none",
+ "denominators": "derived",
+ "derived": "compute",
+ "derived_tag": "S3-CODE-06 A2 derived evaluation v1",
+ "profile": "c34",
+ "structure": {
+  "name": "entry_check_B",
+  "group_col": "sub",
+  "stratum": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "pattern",
+   "sigma"
+  ],
+  "phase_col": "phase_id",
+  "phases": {
+   "B1": [
+    "X0",
+    "X1"
+   ],
+   "B2": [
+    "X0",
+    "X1"
+   ],
+   "B3": [
+    "X0"
+   ]
+  },
+  "reps": {
+   "B1": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1
+    ]
+   },
+   "B2": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1
+    ]
+   },
+   "B3": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0
+    ]
+   }
+  },
+  "rep_source": "column",
+  "seed_col": "seed",
+  "pair_block": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "phase_id",
+   "sigma",
+   "rep"
+  ],
+  "pair_key_col": "pair_key",
+  "patterns": [
+   "plain",
+   "weak",
+   "mid",
+   "strong"
+  ],
+  "geometry_cols": [
+   "u",
+   "v",
+   "phase_frac"
+  ],
+  "parity_rule": "entry_X",
+  "block_layers": null,
+  "ref_col": "ref_image_key",
+  "ref_same": [
+   "surface",
+   "layout",
+   "pattern",
+   "phase_id",
+   "code_parity"
+  ]
+ },
+ "pairs": {
+  "dots_rules": [
+   "B0",
+   "DF",
+   "DS"
+  ],
+  "dots_front_ends": [
+   [
+    "DF",
+    "B0"
+   ],
+   [
+    "DS",
+    "B0"
+   ],
+   [
+    "DF",
+    "DS"
+   ]
+  ],
+  "lines_coded_rules": [
+   "R@1.1247",
+   "LB@1.0000"
+  ],
+  "lines_reference": "ignore",
+  "lines_scheme": [
+   "R@1.1247",
+   "P4"
+  ]
+ },
+ "bootstrap": null,
+ "figures": [],
+ "cases": [
+  {
+   "family": "dots",
+   "layout": "R6x4",
+   "pattern": "strong",
+   "surface": "M24_curv",
+   "phase_id": "X1",
+   "rep": 1,
+   "rule": "DF",
+   "arm": "use",
+   "sigmas": [
+    0.0,
+    40.0,
+    100.0
+   ]
+  },
+  {
+   "family": "lines",
+   "layout": "5.6",
+   "pattern": "strong",
+   "surface": "M24_curv",
+   "phase_id": "X1",
+   "rep": 1,
+   "rule": "R@1.1247",
+   "arm": "R@1.1247",
+   "sigmas": [
+    0.0,
+    20.0,
+    100.0
+   ]
+  }
+ ],
+ "case_states": {
+  "no_output": "0 accepted points",
+  "degraded": "C_tau below 0.5 x C_tau of the first sigma of the same case row",
+  "normal": "otherwise",
+  "not_found": "no record satisfies the registered condition (never replaced by another case)"
+ },
+ "roots": {
+  "derived": "outputs/surface_revision/s3_code07/regress/derived_b_entry"
+ },
+ "output": "outputs/surface_revision/s3_code07/regress/b_entry",
+ "posthoc": [],
+ "regress_reference": "outputs/surface_revision/s3_code06/batches/b_entry/current",
+ "note": "S3-CODE-07 interface regression on S3-CODE-06 inputs (read only); not a research result of this round",
+ "package_freeze": "outputs/surface_revision/s3_code07/formal/frozen.json"
+}

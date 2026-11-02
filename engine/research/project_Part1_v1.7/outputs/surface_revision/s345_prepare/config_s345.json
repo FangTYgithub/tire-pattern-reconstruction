@@ -1,0 +1,249 @@
+{
+ "generated_local": "2026-10-12T00:14:02+02:00",
+ "source": "outputs/surface_revision/sections_adapter/candidates_s1s5.csv",
+ "source_sha256": "8bf872d2d30e530f6113bb91595b458fdba570510fcada06ec6c4894aff57f95",
+ "platform": {
+  "window_mm": [
+   -16.0,
+   4.0
+  ],
+  "margin_mm": 1e-06,
+  "c_ref_mm": 16.645465475819755,
+  "surfaces": {
+   "M10_curv": "A_curv",
+   "M24_curv": "C_curv",
+   "B_curv": "B_curv",
+   "M10_curv_gauss": "A_curv_gauss"
+  },
+  "alignment": "absolute",
+  "negative_z_valid": true,
+  "injection": {
+   "dots": "cfg[search_z_min_mm], cfg[measurement_volume_mm] -> m4_reconstruction.search_window (decoder tracks / acceptance)",
+   "lines": "cfg[search_z_min_mm], cfg[measurement_volume_mm], cfg[search_margin_mm] -> m4_lines / sp_lines_table candidates",
+   "truth": "mesh dict with z_alignment absolute -> m3 heightfield_intersect (sn_lib.expected_dots, l01_common.cast, l01_truth, sp2_lines_table truth / reference)"
+  }
+ },
+ "section3": {
+  "dot_arms": {
+   "1": [
+    "ENC_coded"
+   ],
+   "2": [
+    "ENC_coded",
+    "ENC_ignore"
+   ]
+  },
+  "line_arms_coded": [
+   "LC_ignore",
+   "LC_use",
+   "LC_R",
+   "LC_A"
+  ],
+  "line_arm_uncoded": [
+   "P4_ref"
+  ],
+  "errata": {
+   "margin": "use / R / A margin = 0.5 px as implemented (R2 protocol text: 0.5 * MAD); arm M (text margin) not carried",
+   "threshold": "fixed class threshold 6.05 px, min_rows 5 (R3 config) unchanged; pixel scale changes with the new geometry are reported, not re-tuned",
+   "guard": "dot readability guard: d-prime >= M4.SIZE_DPRIME_MIN, balance >= M4.SIZE_BALANCE_MIN, measured log span inside [SPAN_MIN, SPAN_MAX] x design span; else all classes admissible (fallback)"
+  },
+  "accounting": {
+   "same_image": "ENC_coded vs ENC_ignore and LC_use / LC_R / LC_A vs LC_ignore: same image, same features / front end; differences are decoding-information effects",
+   "brightness": "coded2 vs plain (common budget) and coded_high vs coded_low (peak-matched): different images and peaks -> pattern + brightness, not a pure code effect",
+   "scheme": "V5 45 deg uncoded vs 0 deg coded R: different pattern AND decoder parameters -> scheme comparison only"
+  },
+  "statistics": "phase = unit (16 dots / R4 phases lines), realisations nested; same-image direction counts + mean AND median + tails (p95 / p99 / max); binary events (fallback, decoy) as counts, no interval; ENC bootstrap seed 2026100906",
+  "scope": {
+   "rule": "core = arms plain + coded2 in main_common_budget at sigma 25 / 30 / 35 + coded_high / coded_low (sigma 30) + their sigma-0 references; extension = rot15 arm and rot_high / rot_low cells",
+   "per_old_surface": {
+    "images": 496,
+    "decodes": 768,
+    "by_part": {
+     "cross_cases|core=False": 32,
+     "cross_references|core=False": 16,
+     "main_cases|core=False": 192,
+     "main_references|core=False": 32,
+     "cross_cases|core=True": 32,
+     "cross_references|core=True": 16,
+     "main_cases|core=True": 384,
+     "main_references|core=True": 64
+    }
+   },
+   "total_new": {
+    "images": 1984,
+    "decodes": 3072
+   },
+   "previous_adapter_core_total": {
+    "images": 1536,
+    "decodes": 2112
+   },
+   "sigma_core": [
+    0.0,
+    25.0,
+    30.0,
+    35.0
+   ],
+   "arms_core": [
+    "coded2",
+    "plain"
+   ],
+   "cells_core": [
+    "coded_high",
+    "coded_low",
+    "coded_low_ref",
+    "main_common_budget"
+   ],
+   "questions": {
+    "information_gain": "coded2 images, ENC_coded - ENC_ignore on the same image, sigma 25 / 30 / 35",
+    "brightness_cost": "coded2 vs plain in main_common_budget (same sigma, same phase / realisation) and coded_high vs coded_low (sigma 30)",
+    "protection": "guard fallback incidence per sigma 25 / 30 / 35 and layout (binary per image; counts, no interval)"
+   }
+  }
+ },
+ "section4": {
+  "paths": "dots: D0 with the table raster + table centres for identity; lines: sp2_lines_table.run_p4_table / truth_identity_table / line_reference_table with the table spec",
+  "statistics": "paired diff per phase vs S0 (same surface, baseline, sigma, phase) -> median of 4 phases per block -> equal-weight median over complete blocks; bootstrap seed 20261011; interval only with >= 8 blocks; layouts shared by strategies = one decode",
+  "denominators": "generation attempts / acceptance (SPAT-03, geometry independent), unique layouts, images, decodes, strategy views reported separately"
+ },
+ "section5": {
+  "four_cells": {
+   "dots_parallel": {
+    "sd": "D_r1_p6x4",
+    "ss": "D_r1_p10x4",
+    "ld": "D_r1.5_p6x4",
+    "ls": "D_r1.5_p10x4"
+   },
+   "dots_perp": {
+    "sd": "D_r1_p8x4",
+    "ss": "D_r1_p8x6",
+    "ld": "D_r1.5_p8x4",
+    "ls": "D_r1.5_p8x6"
+   },
+   "lines": {
+    "sd": "L_w0.5_s4.45",
+    "ss": "L_w0.5_s8",
+    "ld": "L_w1.5_s4.45",
+    "ls": "L_w1.5_s8"
+   }
+  },
+  "d_width": {
+   "4.45": [
+    "L_w0.5_s4.45",
+    "L_w1.5_s4.45"
+   ],
+   "6.3": [
+    "L_w0.5_s6.3",
+    "L_w1.5_s6.3"
+   ],
+   "8": [
+    "L_w0.5_s8",
+    "L_w1.5_s8"
+   ]
+  },
+  "not_in_cells": {
+   "D_r0.75_p8x4": "candidate (smallest tested diameter): descriptive only",
+   "D_r1.5_p8x3": "registered failure control: binary state per image (H6)"
+  },
+  "budget_Q": 11695.0,
+  "statistics": "realisations averaged inside a phase (both complete), 8 phases equal weight; mean main, median + n_pos / n_neg + 5-95 % phase-block interval (PCG64 2026101204); a contrast with any missing cell / realisation / phase is incomplete; Ctau of a no-output case = 0, error metrics undefined",
+  "wording": "not an independent unseen validation (two line phases equal SPAT hold-out phases; development-type re-check on new surfaces)",
+  "phase_overlap": {
+   "shared_line_phases": {
+    "-0.328125": "H0",
+    "-0.046875": "H2"
+   },
+   "rows_old_manifest": 120,
+   "rows_new_total": 240,
+   "consequence": "independence wording only: S5 vs S4 do not share rasters (S4 lines are 1.0 mm, S5 0.5 / 1.5 mm) nor seeds; every S5 pair is formed inside S5 at the same S5 phase, so pairing / interaction remain computable",
+   "wording": "not an independent unseen validation; development-type re-check on new surfaces"
+  },
+  "reuse": {
+   "exact_shared_images": 0,
+   "note": "S5 phases / seed bases differ from S1 / S2 registrations; S5 phases are not changed to raise reuse",
+   "s1_real01_manifest_available": true
+  }
+ },
+ "public_contract": {
+  "state": "bind read-only to these files once the section-1 run is settled; sections 3-5 do NOT create their own domain / evaluator",
+  "local_domain": "SURF-02 ROI r <= 15 mm (22605 scientific-grid nodes) via s2_common.evaluate",
+  "global_domain": "outputs/surface_revision/s1_real01/domain/global_domain_step0p50.json / .npz (common observable region of all four surfaces, 0.5 mm, 30947 nodes)",
+  "validity": "s2_common point validity: finite, window [-16, +4] mm, inside the grid; negative z valid",
+  "d_mm": 6.0,
+  "tau_mm": 0.15,
+  "gross_mm": 1.0,
+  "files_seen": {
+   "config/s1_config.json": "44778cf33c3968012b0d379b1a3df0ab7f84c38114a14d5da47a499ec51bea52",
+   "domain/global_domain_step0p50.json": "bf69cb787a2029a3640ea242943c79ee2bd8caddf02810c56e30eb7ae3895f12",
+   "domain/global_domain_step0p50.npz": "6c191c249ea3682966a38c4b8ba7721a81bae10f9005fe24847a27795fa53500"
+  },
+  "release": "SURF-02 v1.1 (2026-10-12)"
+ },
+ "counts": {
+  "S3": {
+   "core": {
+    "images": 2144,
+    "decodes": 3616,
+    "view_rows": 3616,
+    "by_family": {
+     "line": 160,
+     "point": 1984
+    }
+   },
+   "extension": {
+    "images": 1088,
+    "decodes": 1088,
+    "view_rows": 1088,
+    "by_family": {
+     "point": 1088
+    }
+   }
+  },
+  "S4": {
+   "core": {
+    "images": 3520,
+    "decodes": 3520,
+    "view_rows": 6208,
+    "by_family": {
+     "line": 1888,
+     "point": 1632
+    }
+   },
+   "extension": {
+    "images": 3136,
+    "decodes": 3136,
+    "view_rows": 3136,
+    "by_family": {
+     "line": 1568,
+     "point": 1568
+    }
+   }
+  },
+  "S5": {
+   "core": {
+    "images": 1536,
+    "decodes": 1536,
+    "view_rows": 1536,
+    "by_family": {
+     "line": 576,
+     "point": 960
+    }
+   },
+   "extension": {
+    "images": 1024,
+    "decodes": 1024,
+    "view_rows": 1024,
+    "by_family": {
+     "line": 384,
+     "point": 640
+    }
+   }
+  },
+  "core_total": {
+   "images": 7200,
+   "decodes": 8672,
+   "view_rows": 11360
+  }
+ },
+ "candidates_csv": "outputs/surface_revision/s345_prepare/candidates_s345.csv",
+ "candidates_sha256": "84a69e185edb41a9266555f6d47b7f386172ace657a12ca13f89b8e64f784d23"
+}

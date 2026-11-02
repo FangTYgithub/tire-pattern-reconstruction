@@ -1,0 +1,40 @@
+{
+ "schema": "S1S5-ADAPT binding v1",
+ "platform": {
+  "module": "adp_fixture_platform",
+  "module_dir": "scripts/surface_revision/sections_adapter",
+  "expected_version": "fixture-0",
+  "release_record": "outputs/surface_revision/sections_adapter/checks/drill/e2e/fixture_release.json",
+  "release_record_sha256": "e824fc3ec9c42b088c873764d915031a83cb9a0fddaa1602fb8a9634296f0474"
+ },
+ "capabilities": {
+  "version": "version",
+  "release": "release",
+  "surface_record": "surface_record",
+  "sensor_record": "sensor_record",
+  "search_window": "search_window",
+  "render": "render",
+  "decode": "decode",
+  "evaluate": "evaluate"
+ },
+ "surface_id_map": {
+  "M10_curv": "fx_M10_curv",
+  "M24_curv": "fx_M24_curv",
+  "B_curv": "fx_B_curv",
+  "M10_curv_gauss": "fx_M10_curv_gauss"
+ },
+ "methods": {
+  "D0": "fx:D0",
+  "P4_C3_cal": "fx:P4_C3_cal",
+  "P2_C1_guard": "fx:P2_C1_guard",
+  "ENC_coded": "fx:ENC_coded",
+  "ENC_ignore": "fx:ENC_ignore",
+  "LC_ignore": "fx:LC_ignore",
+  "LC_use": "fx:LC_use",
+  "LC_R": "fx:LC_R",
+  "LC_A": "fx:LC_A",
+  "P4_ref": "fx:P4_ref",
+  "SPAT_D0": "fx:SPAT_D0",
+  "SPAT_P4table": "fx:SPAT_P4table"
+ }
+}

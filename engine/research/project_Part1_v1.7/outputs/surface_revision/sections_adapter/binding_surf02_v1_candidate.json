@@ -1,0 +1,79 @@
+{
+ "schema": "S1S5-ADAPT binding v1",
+ "status": "CANDIDATE for SURF-02 v1 via adp_surf02 shim: release_record / release_record_sha256 missing (main project issues them after user confirmation)",
+ "platform": {
+  "module": "adp_surf02",
+  "module_dir": "scripts/surface_revision/sections_adapter",
+  "expected_version": "SURF-02 v1 (2026-10-11)",
+  "release_record": "outputs/surface_revision/surf02/release/release_surf02.json",
+  "release_record_sha256": null
+ },
+ "capabilities": {
+  "version": "version",
+  "release": "release",
+  "surface_record": "surface_record",
+  "sensor_record": "sensor_record",
+  "search_window": "search_window",
+  "render": "render",
+  "decode": "decode",
+  "evaluate": "evaluate"
+ },
+ "capability_contract": {
+  "version": "str or callable() -> str : platform version string (compared with platform.expected_version)",
+  "release": "callable() -> dict : must contain released=True and config_sha256 (the frozen SURF-02 configuration)",
+  "surface_record": "callable(surface_id) -> dict : c, grid / placement / evaluation-domain versions and hashes (enters the forward key)",
+  "sensor_record": "callable() -> dict : camera / projector pose, intrinsics, working distance (enters the forward key)",
+  "search_window": "callable() -> (z0_mm, z1_mm) : the single validated window shared by dots and lines",
+  "render": "callable(surface_id, pattern_f32, peak, sigma, seed, psf_px) -> dict(image=uint8 HxW, meta=dict) : forward image, fixed placement",
+  "decode": "callable(method, image, context) -> dict(pts=(N,3), accepted=(N,), aux=dict) : existing decode paths with the platform window",
+  "evaluate": "callable(surface_id, family, decoded, context) -> dict : per-case evaluation record (see adp_metrics.REQUIRED_EVAL_FIELDS)"
+ },
+ "surface_id_map": {
+  "M10_curv": "A_curv",
+  "M24_curv": "C_curv",
+  "B_curv": "B_curv",
+  "M10_curv_gauss": "A_curv_gauss"
+ },
+ "methods": {
+  "D0": "D0",
+  "P4_C3_cal": "P4_C3_cal"
+ },
+ "expected_conventions": {
+  "mapping": "x = -x_p, y = y_p, z = c - H (H positive toward the tyre interior)",
+  "c_reference": "c = H_B,base(0, 0) of flat-ground tyre B, read once by the platform, shared by all four surfaces",
+  "c_approx_mm": 16.64546548,
+  "camera_C": [
+   0.0,
+   25.0,
+   -150.0
+  ],
+  "projector_C": [
+   0.0,
+   -25.0,
+   -150.0
+  ],
+  "working_distance_note": "150 mm is the nominal project parameter, not a verified Mappes installation distance",
+  "per_case_zmin_shift": false,
+  "search_window_candidate_mm": [
+   -16.0,
+   4.0
+  ],
+  "negative_z_valid": true
+ },
+ "notes": [
+  "Do not point the binding at old runners (sl_lib.work, l01rb_run.work, rd_lib.work): they rebuild old surfaces and apply Z - Z.min().",
+  "Fill methods with every decode arm listed in candidates_s1s5.csv column decode_arm (adp_run.py bind-check lists the missing ones)."
+ ],
+ "unmapped_decode_arms": [
+  "ENC_coded",
+  "ENC_ignore",
+  "LC_ignore",
+  "LC_use",
+  "LC_R",
+  "LC_A",
+  "P4_ref",
+  "SPAT_D0",
+  "SPAT_P4table",
+  "P2_C1_guard"
+ ]
+}

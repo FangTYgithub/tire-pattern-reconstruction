@@ -1,0 +1,9 @@
+{
+ "cap": 96,
+ "used": 85,
+ "by_purpose": {
+  "regression": 12,
+  "main": 72,
+  "spare": 1
+ }
+}

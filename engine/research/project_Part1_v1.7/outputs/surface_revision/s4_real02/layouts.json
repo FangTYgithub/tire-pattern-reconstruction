@@ -1,0 +1,1935 @@
+{
+ "version": "s4_real02_layouts_v1",
+ "source": {
+  "file": "outputs/surface_revision/s4_align02/s4_manifest_candidates.csv",
+  "sha256": "57fde588fda35483b39ed0c0ddbc6c71207a779e94af1fde781d6cfe183ffc07"
+ },
+ "j": 0.2,
+ "alpha": 0.7,
+ "beta": 1.15,
+ "candidate_budget": 1000,
+ "generator": "scripts/spatial_layout/spat03/s3_generate.evaluate (seed_s3, unit vector, general validity)",
+ "blocks": [
+  "B000",
+  "B003",
+  "B006",
+  "B009",
+  "B012",
+  "B015",
+  "B018",
+  "B021"
+ ],
+ "baselines": {
+  "R8x4": {
+   "family": "point",
+   "p0_mm": 8.0,
+   "h0_mm": 4.472135954999594,
+   "movable": [
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3
+   ],
+   "protected_L": -5,
+   "protected_R": 4,
+   "layouts": {
+    "regular": {
+     "layout_id": "R8x4:regular",
+     "block": null,
+     "cand": null,
+     "seed": null,
+     "disp_px": {},
+     "strategies": [
+      [
+       "S0",
+       null
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 8.0,
+     "h_mm": 4.472135954999594,
+     "delta_rms_mm": 0.0,
+     "delta_max_mm": 0.0,
+     "note": "zero displacement (S0); h = registered h0"
+    },
+    "B000_c0": {
+     "layout_id": "R8x4:B000_c0",
+     "block": "B000",
+     "cand": 0,
+     "seed": 3000100000,
+     "unit_hash": "a12d27523fd810ad",
+     "disp_px": {
+      "-4": -0.9376313072047341,
+      "-3": 1.310915460200572,
+      "-2": -1.4081869769976936,
+      "-1": 6.006764663066538,
+      "0": -8.88888888888889,
+      "1": -3.3690921097363224,
+      "2": 5.200472455496605,
+      "3": 2.085646704063925
+     },
+     "strategies": [
+      [
+       "S1",
+       "B000"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.318782360648009,
+     "g_max_mm": 9.542521621741923,
+     "h_mm": 5.1734833260921045,
+     "delta_rms_mm": 0.8110488892563997,
+     "delta_max_mm": 1.6,
+     "edge_clearance_min_mm": 3.318782360648009,
+     "raster_ref_phase": "02b84c39580ddd52450a25f4e41be812e6fc976680cecdab8c4ebb65765da6f6",
+     "n_elements_ref": 264
+    },
+    "B000_c1": {
+     "layout_id": "R8x4:B000_c1",
+     "block": "B000",
+     "cand": 1,
+     "seed": 3000100001,
+     "unit_hash": "a2d0aa48065e8246",
+     "disp_px": {
+      "-4": 0.26309966634545756,
+      "-3": 5.752621104733131,
+      "-2": 4.934050921593121,
+      "-1": -2.2717765528898304,
+      "0": 0.4189616747839158,
+      "1": -4.850387660337139,
+      "2": 0.6003214891398246,
+      "3": -4.84689064336848
+     },
+     "strategies": [
+      [
+       "S2",
+       "B000"
+      ],
+      [
+       "S3",
+       "B000"
+      ],
+      [
+       "S4",
+       "B000"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.702951054593049,
+     "g_max_mm": 8.988113858909784,
+     "h_mm": 4.918998646592773,
+     "delta_rms_mm": 0.6681317239322427,
+     "delta_max_mm": 1.0354717988519635,
+     "edge_clearance_min_mm": 4.702951054593049,
+     "raster_ref_phase": "ef72c23bee04c5ed7fbb8b1fd532850a6b7d5294590a4b5b3edf9b3bbb4174aa",
+     "n_elements_ref": 264
+    },
+    "B003_c0": {
+     "layout_id": "R8x4:B003_c0",
+     "block": "B003",
+     "cand": 0,
+     "seed": 3000103000,
+     "unit_hash": "b7efa424ad647389",
+     "disp_px": {
+      "-4": -6.09220917537097,
+      "-3": -1.122229826839776,
+      "-2": -0.22600956769813627,
+      "-1": -4.592042241831484,
+      "0": 5.97602830575032,
+      "1": -4.079479810637943,
+      "2": 2.454739621022688,
+      "3": 7.681202695605305
+     },
+     "strategies": [
+      [
+       "S1",
+       "B003"
+      ],
+      [
+       "S2",
+       "B003"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.1900085390500985,
+     "g_max_mm": 9.902252698564753,
+     "h_mm": 5.339817611731531,
+     "delta_rms_mm": 0.8464164729979848,
+     "delta_max_mm": 1.3826164852089549,
+     "edge_clearance_min_mm": 4.1900085390500985,
+     "raster_ref_phase": "d3768552c4ce9d879f1f98a7956d52c01ca91e9076ce716061ffbf5067033e28",
+     "n_elements_ref": 264
+    },
+    "B003_c1": {
+     "layout_id": "R8x4:B003_c1",
+     "block": "B003",
+     "cand": 1,
+     "seed": 3000103001,
+     "unit_hash": "432ce30d480a8454",
+     "disp_px": {
+      "-4": 0.7050967673773065,
+      "-3": -8.88888888888889,
+      "-2": -1.3835737432277284,
+      "-1": -1.7460573523244927,
+      "0": 3.1715964529270635,
+      "1": 4.892283952716367,
+      "2": -0.5350925828369775,
+      "3": 3.784635394257351
+     },
+     "strategies": [
+      [
+       "S3",
+       "B003"
+      ],
+      [
+       "S4",
+       "B003"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.2730825818720835,
+     "g_max_mm": 9.350956726219009,
+     "h_mm": 5.085282482213267,
+     "delta_rms_mm": 0.7341367777863809,
+     "delta_max_mm": 1.6,
+     "edge_clearance_min_mm": 4.2730825818720835,
+     "raster_ref_phase": "86e7b1820afa40065402aaf0b30b6f7bfed2d5103847e0ab9a7b1add49a85594",
+     "n_elements_ref": 264
+    },
+    "B006_c0": {
+     "layout_id": "R8x4:B006_c0",
+     "block": "B006",
+     "cand": 0,
+     "seed": 3000106000,
+     "unit_hash": "85e0f6acbeb47591",
+     "disp_px": {
+      "-4": -2.6102835215954094,
+      "-3": 6.892744277541511,
+      "-2": -0.4254841354178561,
+      "-1": -8.88888888888889,
+      "0": 3.828310632417511,
+      "1": -1.2852883665732309,
+      "2": 5.614097970358397,
+      "3": -3.125207967842034
+     },
+     "strategies": [
+      [
+       "S1",
+       "B006"
+      ],
+      [
+       "S2",
+       "B006"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.42692493112393,
+     "g_max_mm": 10.289095913835151,
+     "h_mm": 5.519635285145641,
+     "delta_rms_mm": 0.8797697618302088,
+     "delta_max_mm": 1.6,
+     "edge_clearance_min_mm": 4.42692493112393,
+     "raster_ref_phase": "ecbeecc3ab1b4cf5fdd330ac4843b84633485a72a590e24e5fdbffb4ede3defa",
+     "n_elements_ref": 264
+    },
+    "B006_c9": {
+     "layout_id": "R8x4:B006_c9",
+     "block": "B006",
+     "cand": 9,
+     "seed": 3000106009,
+     "unit_hash": "9a70ec44013fbd51",
+     "disp_px": {
+      "-4": 5.15417467800492,
+      "-3": 4.767903784265746,
+      "-2": -3.2394284836367038,
+      "-1": 4.937538213356568,
+      "0": 2.219800766136506,
+      "1": -7.575651837810407,
+      "2": -2.3393138760929713,
+      "3": -3.9250232442236554
+     },
+     "strategies": [
+      [
+       "S3",
+       "B006"
+      ],
+      [
+       "S4",
+       "B006"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.23681853128956,
+     "g_max_mm": 9.47185400545878,
+     "h_mm": 5.140914760544216,
+     "delta_rms_mm": 0.8233101831334126,
+     "delta_max_mm": 1.3636173308058732,
+     "edge_clearance_min_mm": 4.23681853128956,
+     "raster_ref_phase": "34f663e339d44d8efc88d377c9f64fe27b20f238969cb2c8406950515e06b1f8",
+     "n_elements_ref": 264
+    },
+    "B009_c0": {
+     "layout_id": "R8x4:B009_c0",
+     "block": "B009",
+     "cand": 0,
+     "seed": 3000109000,
+     "unit_hash": "c6d8998dce3bb7d4",
+     "disp_px": {
+      "-4": 7.286789477430888,
+      "-3": -5.011868698612524,
+      "-2": -1.5309545117928074,
+      "-1": 0.2714015512096335,
+      "0": -5.128358916141012,
+      "1": 0.36641726594235025,
+      "2": 3.881638252816291,
+      "3": -0.1350644208528203
+     },
+     "strategies": [
+      [
+       "S1",
+       "B009"
+      ],
+      [
+       "S2",
+       "B009"
+      ],
+      [
+       "S3",
+       "B009"
+      ],
+      [
+       "S4",
+       "B009"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.786241528312179,
+     "g_max_mm": 9.31162210593756,
+     "h_mm": 5.0672059915644105,
+     "delta_rms_mm": 0.7033639460289884,
+     "delta_max_mm": 1.31162210593756,
+     "edge_clearance_min_mm": 3.7862415283121793,
+     "raster_ref_phase": "29d10edee83f618c0a61f9bf99d33075af15d52dc5031c6126f2ffc9aa8e9117",
+     "n_elements_ref": 264
+    },
+    "B012_c0": {
+     "layout_id": "R8x4:B012_c0",
+     "block": "B012",
+     "cand": 0,
+     "seed": 3000112000,
+     "unit_hash": "b4a27c69abd74927",
+     "disp_px": {
+      "-4": -0.2866152775735019,
+      "-3": -5.562949225935604,
+      "-2": 7.490839070789549,
+      "-1": -0.7863533217380344,
+      "0": -1.6689415724487182,
+      "1": 5.2915951704603295,
+      "2": -5.187869575836891,
+      "3": 0.7102947322828704
+     },
+     "strategies": [
+      [
+       "S1",
+       "B012"
+      ],
+      [
+       "S2",
+       "B012"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.113696345666517,
+     "g_max_mm": 10.349681893410523,
+     "h_mm": 5.547880570424836,
+     "delta_rms_mm": 0.768866656996938,
+     "delta_max_mm": 1.3483510327421186,
+     "edge_clearance_min_mm": 4.113696345666517,
+     "raster_ref_phase": "f18ccf33ce6f25bb6b2609b8322af5cc4dc7f0737be7755c7a37550e3f5b11a7",
+     "n_elements_ref": 264
+    },
+    "B012_c2": {
+     "layout_id": "R8x4:B012_c2",
+     "block": "B012",
+     "cand": 2,
+     "seed": 3000112002,
+     "unit_hash": "27a41434cde595fc",
+     "disp_px": {
+      "-4": -2.6630108058060555,
+      "-3": 2.5892489967927657,
+      "-2": 2.57269411479992,
+      "-1": 0.6711740350774844,
+      "0": -0.3500584116874814,
+      "1": 0.1900451059998323,
+      "2": -4.9726062074512845,
+      "3": 1.962513172274817
+     },
+     "strategies": [
+      [
+       "S3",
+       "B012"
+      ],
+      [
+       "S4",
+       "B012"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 7.070722763578808,
+     "g_max_mm": 9.248321488350706,
+     "h_mm": 5.038140786835195,
+     "delta_rms_mm": 0.44820539903026785,
+     "delta_max_mm": 0.8950691173412312,
+     "edge_clearance_min_mm": 5.070722763578808,
+     "raster_ref_phase": "003338d811a2952dd4563aad29e08dac1f559056db71c2510aa39e4fdc258d36",
+     "n_elements_ref": 264
+    },
+    "B015_c0": {
+     "layout_id": "R8x4:B015_c0",
+     "block": "B015",
+     "cand": 0,
+     "seed": 3000115000,
+     "unit_hash": "e017c5fa6d2261a5",
+     "disp_px": {
+      "-4": 0.9924033336580033,
+      "-3": 2.9526325223929146,
+      "-2": -7.8659192778748555,
+      "-1": 5.120633815711562,
+      "0": 4.648648762207143,
+      "1": -8.121441165709822,
+      "2": -0.7825714961472429,
+      "3": 3.0556135057622984
+     },
+     "strategies": [
+      [
+       "S1",
+       "B015"
+      ],
+      [
+       "S2",
+       "B015"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.70138381297494,
+     "g_max_mm": 10.337579556845542,
+     "h_mm": 5.542236712152208,
+     "delta_rms_mm": 0.889392672758609,
+     "delta_max_mm": 1.461859409827768,
+     "edge_clearance_min_mm": 3.7013838129749397,
+     "raster_ref_phase": "11dcf5595af212a0539273cbe687e81fd13cd3e7094419f90be91f0eeb6b62a4",
+     "n_elements_ref": 264
+    },
+    "B015_c3": {
+     "layout_id": "R8x4:B015_c3",
+     "block": "B015",
+     "cand": 3,
+     "seed": 3000115003,
+     "unit_hash": "ba4a2c070464f7de",
+     "disp_px": {
+      "-4": -1.778303644549255,
+      "-3": -8.88888888888889,
+      "-2": -3.261392738484251,
+      "-1": 0.49543909500103694,
+      "0": 2.1429808416826366,
+      "1": 3.61369376616797,
+      "2": 3.393275080835396,
+      "3": 4.283196488235354
+     },
+     "strategies": [
+      [
+       "S3",
+       "B015"
+      ],
+      [
+       "S4",
+       "B015"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.7200946560188655,
+     "g_max_mm": 9.01294930707282,
+     "h_mm": 4.930346215324651,
+     "delta_rms_mm": 0.7545202199959876,
+     "delta_max_mm": 1.6,
+     "edge_clearance_min_mm": 4.7200946560188655,
+     "raster_ref_phase": "92fb78053eb979cfcbc7847b0e978ddb2d14cdbd501222b4de426b8483995b90",
+     "n_elements_ref": 264
+    },
+    "B018_c0": {
+     "layout_id": "R8x4:B018_c0",
+     "block": "B018",
+     "cand": 0,
+     "seed": 3000118000,
+     "unit_hash": "34466e47f5b09315",
+     "disp_px": {
+      "-4": 4.4775023312634,
+      "-3": 2.607618152695203,
+      "-2": 2.8572768903177703,
+      "-1": -4.823924510561201,
+      "0": -0.7849336396487101,
+      "1": -2.5463664565379673,
+      "2": 1.7599465362748805,
+      "3": -3.547119303803377
+     },
+     "strategies": [
+      [
+       "S1",
+       "B018"
+      ],
+      [
+       "S2",
+       "B018"
+      ],
+      [
+       "S3",
+       "B018"
+      ],
+      [
+       "S4",
+       "B018"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.617383747841789,
+     "g_max_mm": 8.805950419627418,
+     "h_mm": 4.835927077431387,
+     "delta_rms_mm": 0.57297405854424,
+     "delta_max_mm": 0.8683064119010162,
+     "edge_clearance_min_mm": 4.617383747841789,
+     "raster_ref_phase": "d2b117ebccd083179e63dc1caa1a794e32ecbe1f75806e194382d88fd747c380",
+     "n_elements_ref": 264
+    },
+    "B021_c0": {
+     "layout_id": "R8x4:B021_c0",
+     "block": "B021",
+     "cand": 0,
+     "seed": 3000121000,
+     "unit_hash": "4d9913f7fc92e693",
+     "disp_px": {
+      "-4": 8.88888888888889,
+      "-3": -7.120772604023743,
+      "-2": 6.167839350035535,
+      "-1": -4.118484716153372,
+      "0": -6.857078709879743,
+      "1": 0.7414976836829273,
+      "2": -2.7727957577263798,
+      "3": 5.070905865175889
+     },
+     "strategies": [
+      [
+       "S1",
+       "B021"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.118260931275729,
+     "g_max_mm": 10.391950151730668,
+     "h_mm": 5.567598853097605,
+     "delta_rms_mm": 1.0373329423592492,
+     "delta_max_mm": 1.6,
+     "edge_clearance_min_mm": 3.118260931275729,
+     "raster_ref_phase": "8110d8ad41933621462d7f23e4d1791ea610c6b77092d6a29ce6047ff6321eec",
+     "n_elements_ref": 264
+    },
+    "B021_c1": {
+     "layout_id": "R8x4:B021_c1",
+     "block": "B021",
+     "cand": 1,
+     "seed": 3000121001,
+     "unit_hash": "c02cfc1129a2ab81",
+     "disp_px": {
+      "-4": -5.286480118949868,
+      "-3": -0.5092986081911893,
+      "-2": -0.4810592079982892,
+      "-1": -5.092107350920197,
+      "0": 6.172912791691663,
+      "1": 0.7221668993506546,
+      "2": -1.800717991380315,
+      "3": 6.274583586397543
+     },
+     "strategies": [
+      [
+       "S2",
+       "B021"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.87057495444844,
+     "g_max_mm": 10.027703625670148,
+     "h_mm": 5.398028343855704,
+     "delta_rms_mm": 0.7410848173160918,
+     "delta_max_mm": 1.1294250455515578,
+     "edge_clearance_min_mm": 4.87057495444844,
+     "raster_ref_phase": "53bb8f68d85af55d578d027d014ef9e616eff7410a37e9a01427e3ab1dfaccbe",
+     "n_elements_ref": 264
+    },
+    "B021_c10": {
+     "layout_id": "R8x4:B021_c10",
+     "block": "B021",
+     "cand": 10,
+     "seed": 3000121010,
+     "unit_hash": "3ed3d2abee9806ef",
+     "disp_px": {
+      "-4": 1.1708578399468006,
+      "-3": 3.543251874135199,
+      "-2": -8.88888888888889,
+      "-1": -1.481848191309218,
+      "0": 1.7376893614343685,
+      "1": 0.17194191789759355,
+      "2": -0.9062389952132937,
+      "3": 4.6532350819974395
+     },
+     "strategies": [
+      [
+       "S3",
+       "B021"
+      ],
+      [
+       "S4",
+       "B021"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.762214662655658,
+     "g_max_mm": 9.333267325564337,
+     "h_mm": 5.077151735236177,
+     "delta_rms_mm": 0.6990421025915687,
+     "delta_max_mm": 1.6,
+     "edge_clearance_min_mm": 3.7622146626556576,
+     "raster_ref_phase": "0e0c020e6458fa301c62adfd9333fd7f2b87deae904ccff34f44b31be5ad1e93",
+     "n_elements_ref": 264
+    }
+   },
+   "views": [
+    {
+     "strategy": "S0",
+     "block": null,
+     "layout": "regular",
+     "cand": null,
+     "n_mask_candidates": null,
+     "n_raster_evaluated": null,
+     "generation": "none (regular)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B000",
+     "layout": "B000_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B000",
+     "layout": "B000_c1",
+     "cand": 1,
+     "n_mask_candidates": 816,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B000",
+     "layout": "B000_c1",
+     "cand": 1,
+     "n_mask_candidates": 270,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B000",
+     "layout": "B000_c1",
+     "cand": 1,
+     "n_mask_candidates": 243,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B003",
+     "layout": "B003_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B003",
+     "layout": "B003_c0",
+     "cand": 0,
+     "n_mask_candidates": 831,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B003",
+     "layout": "B003_c1",
+     "cand": 1,
+     "n_mask_candidates": 256,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B003",
+     "layout": "B003_c1",
+     "cand": 1,
+     "n_mask_candidates": 235,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B006",
+     "layout": "B006_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B006",
+     "layout": "B006_c0",
+     "cand": 0,
+     "n_mask_candidates": 830,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B006",
+     "layout": "B006_c9",
+     "cand": 9,
+     "n_mask_candidates": 257,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B006",
+     "layout": "B006_c9",
+     "cand": 9,
+     "n_mask_candidates": 241,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B009",
+     "layout": "B009_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B009",
+     "layout": "B009_c0",
+     "cand": 0,
+     "n_mask_candidates": 830,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B009",
+     "layout": "B009_c0",
+     "cand": 0,
+     "n_mask_candidates": 266,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B009",
+     "layout": "B009_c0",
+     "cand": 0,
+     "n_mask_candidates": 248,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B012",
+     "layout": "B012_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B012",
+     "layout": "B012_c0",
+     "cand": 0,
+     "n_mask_candidates": 826,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B012",
+     "layout": "B012_c2",
+     "cand": 2,
+     "n_mask_candidates": 265,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B012",
+     "layout": "B012_c2",
+     "cand": 2,
+     "n_mask_candidates": 244,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B015",
+     "layout": "B015_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B015",
+     "layout": "B015_c0",
+     "cand": 0,
+     "n_mask_candidates": 824,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B015",
+     "layout": "B015_c3",
+     "cand": 3,
+     "n_mask_candidates": 273,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B015",
+     "layout": "B015_c3",
+     "cand": 3,
+     "n_mask_candidates": 244,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B018",
+     "layout": "B018_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B018",
+     "layout": "B018_c0",
+     "cand": 0,
+     "n_mask_candidates": 826,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B018",
+     "layout": "B018_c0",
+     "cand": 0,
+     "n_mask_candidates": 235,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B018",
+     "layout": "B018_c0",
+     "cand": 0,
+     "n_mask_candidates": 211,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B021",
+     "layout": "B021_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B021",
+     "layout": "B021_c1",
+     "cand": 1,
+     "n_mask_candidates": 800,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B021",
+     "layout": "B021_c10",
+     "cand": 10,
+     "n_mask_candidates": 223,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B021",
+     "layout": "B021_c10",
+     "cand": 10,
+     "n_mask_candidates": 205,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    }
+   ]
+  },
+  "L6.3": {
+   "family": "line",
+   "p0_mm": 6.3,
+   "h0_mm": 3.15,
+   "movable": [
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "protected_L": -6,
+   "protected_R": 6,
+   "layouts": {
+    "regular": {
+     "layout_id": "L6.3:regular",
+     "block": null,
+     "cand": null,
+     "seed": null,
+     "disp_px": {},
+     "strategies": [
+      [
+       "S0",
+       null
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 6.3,
+     "h_mm": 3.15,
+     "delta_rms_mm": 0.0,
+     "delta_max_mm": 0.0,
+     "note": "zero displacement (S0); h = registered h0"
+    },
+    "B000_c0": {
+     "layout_id": "L6.3:B000_c0",
+     "block": "B000",
+     "cand": 0,
+     "seed": 3001100000,
+     "unit_hash": "fb57ce4d20507318",
+     "disp_px": {
+      "-5": -0.8126164186258686,
+      "-4": 1.611328344180089,
+      "-3": -1.658851260390366,
+      "-2": -1.5375475871984954,
+      "-1": -3.009685967633745,
+      "0": 3.658025252278044,
+      "1": -0.36702260408945553,
+      "2": 5.7737770235444605,
+      "3": -6.110842141103585,
+      "4": -2.8354674114883833,
+      "5": 5.288902770527305
+     },
+     "strategies": [
+      [
+       "S1",
+       "B000"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.160768550363352,
+     "g_max_mm": 7.762386632762825,
+     "h_mm": 3.8811933163814123,
+     "delta_rms_mm": 0.6367151220050864,
+     "delta_max_mm": 1.0999515853986452,
+     "edge_clearance_min_mm": 3.1607685503633522,
+     "raster_ref_phase": "b13cf371475171123718e8dbd2d0c0ef7c4f0d6cc943d247158006184c7018f7",
+     "n_elements_ref": 15
+    },
+    "B000_c1": {
+     "layout_id": "L6.3:B000_c1",
+     "block": "B000",
+     "cand": 1,
+     "seed": 3001100001,
+     "unit_hash": "8cf311d5e6ba3a7c",
+     "disp_px": {
+      "-5": -4.204640369329913,
+      "-4": -6.1479247808745,
+      "-3": -2.8849582946364145,
+      "-2": 4.048646866973339,
+      "-1": 7.0,
+      "0": 0.06792673985177985,
+      "1": -5.326104272732445,
+      "2": 5.619598070074509,
+      "3": 1.515941578078434,
+      "4": -4.319255869297162,
+      "5": 4.630770331892375
+     },
+     "strategies": [
+      [
+       "S2",
+       "B000"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.052226813173321,
+     "g_max_mm": 8.27022642170525,
+     "h_mm": 4.135113210852625,
+     "delta_rms_mm": 0.8258280317687458,
+     "delta_max_mm": 1.26,
+     "edge_clearance_min_mm": 4.052226813173321,
+     "raster_ref_phase": "91affaeb65d45525fb0063e8802ad1093b6ba55652b99fe49fa1f8fbb32955c1",
+     "n_elements_ref": 15
+    },
+    "B000_c63": {
+     "layout_id": "L6.3:B000_c63",
+     "block": "B000",
+     "cand": 63,
+     "seed": 3001100063,
+     "unit_hash": "4e85eef8a9293cb4",
+     "disp_px": {
+      "-5": -4.477366392186841,
+      "-4": -2.124902290974334,
+      "-3": -3.3379540166626023,
+      "-2": 0.4604327974922323,
+      "-1": -1.7331292231931315,
+      "0": 3.2876131340589883,
+      "1": 7.0,
+      "2": -1.3878504750256049,
+      "3": 1.0720128051997089,
+      "4": -1.9328178215497078,
+      "5": 3.1739614828412925
+     },
+     "strategies": [
+      [
+       "S3",
+       "B000"
+      ],
+      [
+       "S4",
+       "B000"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.790186914495392,
+     "g_max_mm": 7.2192202747903815,
+     "h_mm": 3.6096101373951908,
+     "delta_rms_mm": 0.5835525413729544,
+     "delta_max_mm": 1.26,
+     "edge_clearance_min_mm": 3.7901869144953917,
+     "raster_ref_phase": "485c31e3b4f1e101b1eb722a84164d1a43740a8225eb4ff8b4b7d35ff5d99392",
+     "n_elements_ref": 15
+    },
+    "B003_c0": {
+     "layout_id": "L6.3:B003_c0",
+     "block": "B003",
+     "cand": 0,
+     "seed": 3001103000,
+     "unit_hash": "f502c16f23187fd5",
+     "disp_px": {
+      "-5": 3.5553223476886395,
+      "-4": 0.15839242183243563,
+      "-3": 3.334471706336357,
+      "-2": -2.362718577120025,
+      "-1": -0.949060903319762,
+      "0": -2.721535631747627,
+      "1": 3.0016010846110204,
+      "2": -2.9981090476670307,
+      "3": 6.695458504529206,
+      "4": -1.9651260571913598,
+      "5": -5.748695847951853
+     },
+     "strategies": [
+      [
+       "S1",
+       "B003"
+      ],
+      [
+       "S2",
+       "B003"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.7410947788903,
+     "g_max_mm": 8.044842159395321,
+     "h_mm": 4.0224210796976605,
+     "delta_rms_mm": 0.6361893552444634,
+     "delta_max_mm": 1.205182530815257,
+     "edge_clearance_min_mm": 3.7410947788903,
+     "raster_ref_phase": "3ed1d8ff4c413bde036d6118f3c0beed9d95771218996f7335dbaaafd1275fa6",
+     "n_elements_ref": 15
+    },
+    "B003_c54": {
+     "layout_id": "L6.3:B003_c54",
+     "block": "B003",
+     "cand": 54,
+     "seed": 3001103054,
+     "unit_hash": "c33b71a6c3941b15",
+     "disp_px": {
+      "-5": 3.861401014859769,
+      "-4": -4.508369086617332,
+      "-3": -4.62142751012154,
+      "-2": -0.4312855632613838,
+      "-1": 0.5295721209255245,
+      "0": 2.958766365556012,
+      "1": 5.793487010995284,
+      "2": 0.6243051808896322,
+      "3": 2.323325804198165,
+      "4": -1.6329474765929857,
+      "5": -4.896827860831142
+     },
+     "strategies": [
+      [
+       "S3",
+       "B003"
+      ],
+      [
+       "S4",
+       "B003"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.793441381734119,
+     "g_max_mm": 7.181429014949605,
+     "h_mm": 3.5907145074748024,
+     "delta_rms_mm": 0.6230933559341255,
+     "delta_max_mm": 1.042827661979151,
+     "edge_clearance_min_mm": 3.7934413817341186,
+     "raster_ref_phase": "70be0695e33d27a9f7c93b239eb395cfd2f040560d59682a6f0627c3b7b3da25",
+     "n_elements_ref": 15
+    },
+    "B006_c0": {
+     "layout_id": "L6.3:B006_c0",
+     "block": "B006",
+     "cand": 0,
+     "seed": 3001106000,
+     "unit_hash": "2e6412dccb4d466e",
+     "disp_px": {
+      "-5": 0.9608391830710858,
+      "-4": -2.45024994613903,
+      "-3": -4.519530357580907,
+      "-2": 6.4443919847524045,
+      "-1": -1.6456467748157282,
+      "0": 2.8282450033249034,
+      "1": 3.2052628950817534,
+      "2": -1.0937049775003547,
+      "3": -2.1980408784743704,
+      "4": -2.044627147369419,
+      "5": 0.5130610156496609
+     },
+     "strategies": [
+      [
+       "S1",
+       "B006"
+      ],
+      [
+       "S2",
+       "B006"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.843793023277735,
+     "g_max_mm": 8.273506021619996,
+     "h_mm": 4.136753010809998,
+     "delta_rms_mm": 0.5436298515252445,
+     "delta_max_mm": 1.1599905572554328,
+     "edge_clearance_min_mm": 3.843793023277735,
+     "raster_ref_phase": "a66b96979b27c6d6a92364167e7296806d3e171049d921954244bf1c0a68f8da",
+     "n_elements_ref": 15
+    },
+    "B006_c13": {
+     "layout_id": "L6.3:B006_c13",
+     "block": "B006",
+     "cand": 13,
+     "seed": 3001106013,
+     "unit_hash": "11908b00371e53b9",
+     "disp_px": {
+      "-5": 5.150084892538726,
+      "-4": -3.2450401141863376,
+      "-3": -0.5977995744080198,
+      "-2": 2.9007865952578125,
+      "-1": 0.46111639282020395,
+      "0": 2.5704390078091675,
+      "1": -3.116533158369307,
+      "2": -3.211717580404421,
+      "3": -0.9803202920589136,
+      "4": 1.391380931262509,
+      "5": -1.3223971002614223
+     },
+     "strategies": [
+      [
+       "S3",
+       "B006"
+      ],
+      [
+       "S4",
+       "B006"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.788877498789488,
+     "g_max_mm": 7.227015280656971,
+     "h_mm": 3.6135076403284856,
+     "delta_rms_mm": 0.47722065295804633,
+     "delta_max_mm": 0.9270152806569707,
+     "edge_clearance_min_mm": 3.788877498789488,
+     "raster_ref_phase": "eda98c613665f0c3998fe8cd60f596d18f07dbf5fae677a34ce3262281f56c22",
+     "n_elements_ref": 15
+    },
+    "B009_c0": {
+     "layout_id": "L6.3:B009_c0",
+     "block": "B009",
+     "cand": 0,
+     "seed": 3001109000,
+     "unit_hash": "73c3ff81b0bad32c",
+     "disp_px": {
+      "-5": -4.094856178095987,
+      "-4": 5.616752103864068,
+      "-3": -2.82176215485533,
+      "-2": -1.575169237061269,
+      "-1": 0.9294289660827192,
+      "0": 0.5842518717894155,
+      "1": -2.5405195452548464,
+      "2": 3.1046549225598405,
+      "3": 3.7750192180086413,
+      "4": 1.2404660352591288,
+      "5": -4.21826600229638
+     },
+     "strategies": [
+      [
+       "S1",
+       "B009"
+      ],
+      [
+       "S2",
+       "B009"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.7810674334305086,
+     "g_max_mm": 8.04808949075281,
+     "h_mm": 4.024044745376405,
+     "delta_rms_mm": 0.5682799979277229,
+     "delta_max_mm": 1.0110153786955323,
+     "edge_clearance_min_mm": 3.7810674334305086,
+     "raster_ref_phase": "6f79860727bf126017f0f4705d97a7da4405fe973085dc1eda17c99c27cdbe6b",
+     "n_elements_ref": 15
+    },
+    "B009_c3": {
+     "layout_id": "L6.3:B009_c3",
+     "block": "B009",
+     "cand": 3,
+     "seed": 3001109003,
+     "unit_hash": "0d6bb32bb497544d",
+     "disp_px": {
+      "-5": -2.1954638008921084,
+      "-4": 0.039562054025396864,
+      "-3": 0.11188211198418369,
+      "-2": 2.9654102470731027,
+      "-1": 0.8933842430923051,
+      "0": 3.451115179083472,
+      "1": -4.756100762262321,
+      "2": -0.49357900399343696,
+      "3": -0.9138391976323101,
+      "4": 2.712068760485816,
+      "5": -1.8144398309641017
+     },
+     "strategies": [
+      [
+       "S3",
+       "B009"
+      ],
+      [
+       "S4",
+       "B009"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.822701130557757,
+     "g_max_mm": 7.0672539164884,
+     "h_mm": 3.5336269582442,
+     "delta_rms_mm": 0.42277488445329897,
+     "delta_max_mm": 0.8560981372072177,
+     "edge_clearance_min_mm": 3.822701130557757,
+     "raster_ref_phase": "0aace4923f506c20a50799eba7e925fa4c9b36840c66cffc071258c219827e26",
+     "n_elements_ref": 15
+    },
+    "B012_c0": {
+     "layout_id": "L6.3:B012_c0",
+     "block": "B012",
+     "cand": 0,
+     "seed": 3001112000,
+     "unit_hash": "0971c02d63fde59f",
+     "disp_px": {
+      "-5": 5.212904703574042,
+      "-4": -0.9474431764170644,
+      "-3": -3.0333212601695276,
+      "-2": -2.367675835749894,
+      "-1": 4.7637121940223714,
+      "0": -3.0834168840640093,
+      "1": 3.8801902641344466,
+      "2": -0.37646311685740497,
+      "3": -0.1531682425848467,
+      "4": -4.497729193740254,
+      "5": 0.6024105478521417
+     },
+     "strategies": [
+      [
+       "S1",
+       "B012"
+      ],
+      [
+       "S2",
+       "B012"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.887516765944451,
+     "g_max_mm": 7.583649845359008,
+     "h_mm": 3.791824922679504,
+     "delta_rms_mm": 0.5715155056705964,
+     "delta_max_mm": 0.9383228466433274,
+     "edge_clearance_min_mm": 3.8875167659444507,
+     "raster_ref_phase": "edba399393e931ddd26dae10e0fc0cb600e6d71aeed6462c9bd4b3cbacf3332d",
+     "n_elements_ref": 15
+    },
+    "B012_c2": {
+     "layout_id": "L6.3:B012_c2",
+     "block": "B012",
+     "cand": 2,
+     "seed": 3001112002,
+     "unit_hash": "324815a9be0ca0bc",
+     "disp_px": {
+      "-5": 3.524806984871215,
+      "-4": 7.0,
+      "-3": 0.4894405017600494,
+      "-2": -0.505126042913126,
+      "-1": -2.1808174280678747,
+      "0": 0.4437177880503075,
+      "1": -0.9775161320532388,
+      "2": 0.9897634218038767,
+      "3": -2.880511825908173,
+      "4": -4.324836808491727,
+      "5": -1.5789204590513108
+     },
+     "strategies": [
+      [
+       "S3",
+       "B012"
+      ],
+      [
+       "S4",
+       "B012"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.128099290316808,
+     "g_max_mm": 6.934465257276819,
+     "h_mm": 3.4672326286384094,
+     "delta_rms_mm": 0.538091736731841,
+     "delta_max_mm": 1.26,
+     "edge_clearance_min_mm": 4.128099290316808,
+     "raster_ref_phase": "2fecaa383b512b786866b3a043040da202759c60efda62ac1ece56b4bd1f4217",
+     "n_elements_ref": 15
+    },
+    "B015_c0": {
+     "layout_id": "L6.3:B015_c0",
+     "block": "B015",
+     "cand": 0,
+     "seed": 3001115000,
+     "unit_hash": "8984a9d23f376f2a",
+     "disp_px": {
+      "-5": 5.93498130172956,
+      "-4": -1.0118957073856087,
+      "-3": -5.679231047338428,
+      "-2": -0.09253920329503744,
+      "-1": -4.450155466411652,
+      "0": -1.0271742371597181,
+      "1": 1.0805524564185043,
+      "2": 5.1371211217121,
+      "3": 4.95476123550823,
+      "4": -5.796485196714807,
+      "5": 0.9500647429368557
+     },
+     "strategies": [
+      [
+       "S1",
+       "B015"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.364775642199855,
+     "g_max_mm": 7.514378989137298,
+     "h_mm": 3.757189494568649,
+     "delta_rms_mm": 0.7199555405480859,
+     "delta_max_mm": 1.0682966343113207,
+     "edge_clearance_min_mm": 3.364775642199855,
+     "raster_ref_phase": "2c824bfa7de4dbb1acec07874d870cb03de9d1b63e537c6b9e9be63d6da22744",
+     "n_elements_ref": 15
+    },
+    "B015_c1": {
+     "layout_id": "L6.3:B015_c1",
+     "block": "B015",
+     "cand": 1,
+     "seed": 3001115001,
+     "unit_hash": "56b1de3a2c752e72",
+     "disp_px": {
+      "-5": -3.6420563846281953,
+      "-4": 2.6887914345941506,
+      "-3": -2.618742319169074,
+      "-2": -3.861719626383085,
+      "-1": -1.792165769184746,
+      "0": -3.6736928711037278,
+      "1": 5.569487090326585,
+      "2": -3.2479451537090185,
+      "3": -2.4092667887105765,
+      "4": 7.0,
+      "5": 5.987310387967684
+     },
+     "strategies": [
+      [
+       "S2",
+       "B015"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.712862196073591,
+     "g_max_mm": 7.993668021967904,
+     "h_mm": 3.996834010983952,
+     "delta_rms_mm": 0.7504344375847313,
+     "delta_max_mm": 1.26,
+     "edge_clearance_min_mm": 3.7128621960735906,
+     "raster_ref_phase": "43f2407a4238cad1a29bd92bc1d5569bef2f97aed4e384658f4b4a78b9aade46",
+     "n_elements_ref": 15
+    },
+    "B015_c9": {
+     "layout_id": "L6.3:B015_c9",
+     "block": "B015",
+     "cand": 9,
+     "seed": 3001115009,
+     "unit_hash": "a73d4bebd584c2b6",
+     "disp_px": {
+      "-5": -4.791772766031016,
+      "-4": -3.0055004662006133,
+      "-3": -0.5048963870970262,
+      "-2": 0.5969022681430167,
+      "-1": 0.8753981698926392,
+      "0": 1.546757115255722,
+      "1": 4.545397089983452,
+      "2": 6.396804658783232,
+      "3": -2.354167087182094,
+      "4": -0.1142895341493208,
+      "5": -3.190633061397991
+     },
+     "strategies": [
+      [
+       "S3",
+       "B015"
+      ],
+      [
+       "S4",
+       "B015"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.724825085726243,
+     "g_max_mm": 6.874313951051637,
+     "h_mm": 3.4371569755258187,
+     "delta_rms_mm": 0.5771217603550705,
+     "delta_max_mm": 1.1514248385809818,
+     "edge_clearance_min_mm": 3.724825085726243,
+     "raster_ref_phase": "2f0a43f0717d16c59e786ef152a8c8f09eadd86229928ff8a363430b8c025178",
+     "n_elements_ref": 15
+    },
+    "B018_c0": {
+     "layout_id": "L6.3:B018_c0",
+     "block": "B018",
+     "cand": 0,
+     "seed": 3001118000,
+     "unit_hash": "a80779fdf100ccae",
+     "disp_px": {
+      "-5": 0.6165696444622314,
+      "-4": -5.6571424315839325,
+      "-3": 5.865733614082057,
+      "-2": -3.1525221139933515,
+      "-1": 2.270813938311206,
+      "0": 3.905800100815574,
+      "1": -4.639301979783674,
+      "2": -4.0753055460335466,
+      "3": 4.52897710467065,
+      "4": 4.468637544983769,
+      "5": -4.132259875930986
+     },
+     "strategies": [
+      [
+       "S1",
+       "B018"
+      ],
+      [
+       "S2",
+       "B018"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.676713968946425,
+     "g_max_mm": 8.37411768821988,
+     "h_mm": 4.18705884410994,
+     "delta_rms_mm": 0.7536346381972195,
+     "delta_max_mm": 1.0558320505347703,
+     "edge_clearance_min_mm": 3.6767139689464248,
+     "raster_ref_phase": "031de8558937abef9363059a4ccdc3b00a70d6cabdc0edc948e53f8b31b984ab",
+     "n_elements_ref": 15
+    },
+    "B018_c1": {
+     "layout_id": "L6.3:B018_c1",
+     "block": "B018",
+     "cand": 1,
+     "seed": 3001118001,
+     "unit_hash": "254f889d9f245ea6",
+     "disp_px": {
+      "-5": 0.6396538294250127,
+      "-4": -5.191214404976511,
+      "-3": -3.732476982766932,
+      "-2": 1.4186493025344966,
+      "-1": -2.477705996302416,
+      "0": -0.3369478663212277,
+      "1": 2.103124330510536,
+      "2": 2.093341440526178,
+      "3": 6.140067731859879,
+      "4": -1.4023940150512437,
+      "5": 0.7459026305622309
+     },
+     "strategies": [
+      [
+       "S3",
+       "B018"
+      ],
+      [
+       "S4",
+       "B018"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 4.942356885555999,
+     "g_max_mm": 7.227202731354255,
+     "h_mm": 3.6136013656771273,
+     "delta_rms_mm": 0.5388617921422844,
+     "delta_max_mm": 1.1052121917347781,
+     "edge_clearance_min_mm": 3.9423568855559994,
+     "raster_ref_phase": "5d8cc7c3df3564e823b2fabaaf0e228dc211c7011cc1f9f1be6abbaa6c0e2243",
+     "n_elements_ref": 15
+    },
+    "B021_c0": {
+     "layout_id": "L6.3:B021_c0",
+     "block": "B021",
+     "cand": 0,
+     "seed": 3001121000,
+     "unit_hash": "c3407ef6ce956c7d",
+     "disp_px": {
+      "-5": -3.484292573316292,
+      "-4": -3.9736702591868673,
+      "-3": 1.795670088173934,
+      "-2": -2.829085939939219,
+      "-1": -3.8679322382504813,
+      "0": 5.46385629314682,
+      "1": -1.2256091259237138,
+      "2": -0.3716606218375911,
+      "3": -1.0647837743231414,
+      "4": 3.7498234063094884,
+      "5": 5.807684745147062
+     },
+     "strategies": [
+      [
+       "S1",
+       "B021"
+      ],
+      [
+       "S2",
+       "B021"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.095896224567304,
+     "g_max_mm": 7.979721935651514,
+     "h_mm": 3.989860967825757,
+     "delta_rms_mm": 0.6295031099185543,
+     "delta_max_mm": 1.0453832541264712,
+     "edge_clearance_min_mm": 4.095896224567304,
+     "raster_ref_phase": "d4be69aec5ec535ab0cfa75c58e46d2f6c1e6a13b67bb3a8a1a9fd06cd431541",
+     "n_elements_ref": 15
+    },
+    "B021_c12": {
+     "layout_id": "L6.3:B021_c12",
+     "block": "B021",
+     "cand": 12,
+     "seed": 3001121012,
+     "unit_hash": "12f154b70ffafe60",
+     "disp_px": {
+      "-5": 4.341285470902145,
+      "-4": 0.38488095369838526,
+      "-3": -0.07424868853093568,
+      "-2": -4.763766142053842,
+      "-1": -0.6584750187860613,
+      "0": -1.4536288784898321,
+      "1": 3.093925694353634,
+      "2": -0.5254939928182025,
+      "3": 3.8087758221962034,
+      "4": -2.6671414512125033,
+      "5": -1.4861137692589907
+     },
+     "strategies": [
+      [
+       "S3",
+       "B021"
+      ],
+      [
+       "S4",
+       "B021"
+      ]
+     ],
+     "general_ok": true,
+     "g_min_mm": 5.134334890786434,
+     "g_max_mm": 7.1185598231118234,
+     "h_mm": 3.5592799115559117,
+     "delta_rms_mm": 0.4790655922420762,
+     "delta_max_mm": 0.8574779055696915,
+     "edge_clearance_min_mm": 4.134334890786434,
+     "raster_ref_phase": "1e5f573e25961208ac23db0b98a8b53ae503070c85c7f4e43182e99e14cd63f9",
+     "n_elements_ref": 15
+    }
+   },
+   "views": [
+    {
+     "strategy": "S0",
+     "block": null,
+     "layout": "regular",
+     "cand": null,
+     "n_mask_candidates": null,
+     "n_raster_evaluated": null,
+     "generation": "none (regular)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B000",
+     "layout": "B000_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B000",
+     "layout": "B000_c1",
+     "cand": 1,
+     "n_mask_candidates": 766,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B000",
+     "layout": "B000_c63",
+     "cand": 63,
+     "n_mask_candidates": 42,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B000",
+     "layout": "B000_c63",
+     "cand": 63,
+     "n_mask_candidates": 38,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B003",
+     "layout": "B003_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B003",
+     "layout": "B003_c0",
+     "cand": 0,
+     "n_mask_candidates": 780,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B003",
+     "layout": "B003_c54",
+     "cand": 54,
+     "n_mask_candidates": 57,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B003",
+     "layout": "B003_c54",
+     "cand": 54,
+     "n_mask_candidates": 55,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B006",
+     "layout": "B006_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B006",
+     "layout": "B006_c0",
+     "cand": 0,
+     "n_mask_candidates": 756,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B006",
+     "layout": "B006_c13",
+     "cand": 13,
+     "n_mask_candidates": 50,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B006",
+     "layout": "B006_c13",
+     "cand": 13,
+     "n_mask_candidates": 50,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B009",
+     "layout": "B009_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B009",
+     "layout": "B009_c0",
+     "cand": 0,
+     "n_mask_candidates": 756,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B009",
+     "layout": "B009_c3",
+     "cand": 3,
+     "n_mask_candidates": 45,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B009",
+     "layout": "B009_c3",
+     "cand": 3,
+     "n_mask_candidates": 42,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B012",
+     "layout": "B012_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B012",
+     "layout": "B012_c0",
+     "cand": 0,
+     "n_mask_candidates": 758,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B012",
+     "layout": "B012_c2",
+     "cand": 2,
+     "n_mask_candidates": 47,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B012",
+     "layout": "B012_c2",
+     "cand": 2,
+     "n_mask_candidates": 40,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B015",
+     "layout": "B015_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B015",
+     "layout": "B015_c1",
+     "cand": 1,
+     "n_mask_candidates": 776,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B015",
+     "layout": "B015_c9",
+     "cand": 9,
+     "n_mask_candidates": 48,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B015",
+     "layout": "B015_c9",
+     "cand": 9,
+     "n_mask_candidates": 46,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B018",
+     "layout": "B018_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B018",
+     "layout": "B018_c0",
+     "cand": 0,
+     "n_mask_candidates": 789,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B018",
+     "layout": "B018_c1",
+     "cand": 1,
+     "n_mask_candidates": 29,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B018",
+     "layout": "B018_c1",
+     "cand": 1,
+     "n_mask_candidates": 28,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S1",
+     "block": "B021",
+     "layout": "B021_c0",
+     "cand": 0,
+     "n_mask_candidates": 1000,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S2",
+     "block": "B021",
+     "layout": "B021_c0",
+     "cand": 0,
+     "n_mask_candidates": 784,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S3",
+     "block": "B021",
+     "layout": "B021_c12",
+     "cand": 12,
+     "n_mask_candidates": 45,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    },
+    {
+     "strategy": "S4",
+     "block": "B021",
+     "layout": "B021_c12",
+     "cand": 12,
+     "n_mask_candidates": 45,
+     "n_raster_evaluated": 1,
+     "generation": "selected (first valid candidate in the registered order)"
+    }
+   ]
+  }
+ }
+}

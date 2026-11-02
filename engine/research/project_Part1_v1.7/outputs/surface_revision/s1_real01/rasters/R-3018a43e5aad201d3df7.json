@@ -1,0 +1,13 @@
+{
+ "raster_key": "R-3018a43e5aad201d3df7",
+ "family": "point",
+ "size_mm": 1.5,
+ "phase_label": "sn_phase2",
+ "phase_frac": null,
+ "integral_I0": 52787.0,
+ "n_features": 242,
+ "generator": "sn_lib.centres(S1, phase) + sn_lib.binary_pattern(c, r)",
+ "meta_olines": null,
+ "npz_sha256": "1c7f2c7ada572f3e550ddc1616707f14dc62e6f1c6f185fb402cc772e05426b9",
+ "complete": true
+}

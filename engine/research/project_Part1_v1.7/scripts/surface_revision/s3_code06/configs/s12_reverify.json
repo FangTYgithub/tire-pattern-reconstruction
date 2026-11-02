@@ -1,0 +1,151 @@
+{
+ "name": "s12_reverify",
+ "evidence": "Gesehen: gespeicherte S12-Bilder, Ein-Bild-Vergleich Original-D0 / DF / DS (S3-CODE-04), 2 Phasen bzw. Positionen - keine ungesehene Validierung",
+ "evidence_kind": "seen",
+ "record_source": "s12_c1",
+ "key_scheme": "s12",
+ "data_root": "outputs/surface_revision/s3_code04/cache/C1",
+ "inputs": {
+  "manifest": {
+   "file": "outputs/surface_revision/s3_code04/results/scope_C1_dots.csv",
+   "sha256": "1fd364039fd02a8b4714e0e1d008396681c0f43eaa76e1f995a8ed1711634673"
+  },
+  "registry": {
+   "file": "outputs/surface_revision/s3_code04/results/scope_inputs_sha.csv",
+   "sha256": "828606d867d05691a646449a224f414287854549c5811c84a9bfb1da891496a9"
+  }
+ },
+ "fingerprints_from": "none",
+ "freeze_closure": "none",
+ "manifest_map": {
+  "image_key": "input_key"
+ },
+ "manifest_constants": {
+  "family": "dots",
+  "pattern": "plain"
+ },
+ "denominators": "row",
+ "profile": "s12",
+ "structure": {
+  "name": "S12_views",
+  "group_col": "part",
+  "stratum": [
+   "family",
+   "surface",
+   "layout",
+   "size_mm",
+   "regime",
+   "sigma"
+  ],
+  "phase_col": "phase_label",
+  "phases": {
+   "S1_cap": [
+    "sn_phase0",
+    "sn_phase1"
+   ],
+   "S1_fixed_peak": [
+    "sn_phase0",
+    "sn_phase1"
+   ],
+   "S2_cap": [
+    "pos13",
+    "pos23"
+   ],
+   "counterexample_review": [
+    "sn_phase2"
+   ]
+  },
+  "reps": {
+   "S1_cap": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1,
+     2
+    ]
+   },
+   "S1_fixed_peak": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1,
+     2
+    ]
+   },
+   "S2_cap": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1
+    ]
+   },
+   "counterexample_review": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  "rep_source": "column",
+  "seed_col": "noise_seed",
+  "pair_block": null,
+  "pair_key_col": null,
+  "patterns": [
+   "plain"
+  ],
+  "geometry_cols": [],
+  "parity_rule": null,
+  "block_layers": null,
+  "ref_col": "ref_input_key",
+  "ref_same": [
+   "surface",
+   "layout",
+   "size_mm",
+   "phase_label"
+  ],
+  "rules": [
+   "orig_D0",
+   "DF",
+   "DS"
+  ],
+  "reference_only": [
+   {
+    "part": "counterexample_review",
+    "sigma": 0.0
+   }
+  ]
+ },
+ "pairs": {
+  "front_ends": [
+   [
+    "DF",
+    "orig_D0"
+   ],
+   [
+    "DS",
+    "orig_D0"
+   ],
+   [
+    "DS",
+    "DF"
+   ]
+  ]
+ },
+ "bootstrap": null,
+ "figures": [],
+ "cases": [],
+ "output": "outputs/surface_revision/s3_code06/batches/s12_reverify",
+ "derived": "none",
+ "derived_note": "S1 / S2 rows carry all surface fields of the full evaluation; their interpolation node counts were not stored (proxy rule of the S3-CODE-05 gate; no re-evaluation of the 1,143 inputs in this round)",
+ "package_freeze": "outputs/surface_revision/s3_code06/formal/frozen.json"
+}

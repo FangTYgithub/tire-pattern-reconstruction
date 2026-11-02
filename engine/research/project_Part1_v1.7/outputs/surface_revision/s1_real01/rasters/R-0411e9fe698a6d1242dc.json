@@ -1,0 +1,218 @@
+{
+ "raster_key": "R-0411e9fe698a6d1242dc",
+ "family": "line",
+ "size_mm": 1.0,
+ "phase_label": "ph0",
+ "phase_frac": -0.46875,
+ "integral_I0": 34816.0,
+ "n_features": 12,
+ "generator": "l01rb_common.pattern_for (m2_pattern olines)",
+ "meta_olines": {
+  "angle_deg": 0.0,
+  "phase_frac": -0.46875,
+  "spacing_px": 44.44444444444444,
+  "width_px": 5.555555555555555,
+  "centre_uv": [
+   255.5,
+   255.5
+  ],
+  "normal_uv": [
+   1.0,
+   0.0
+  ],
+  "direction_uv": [
+   -0.0,
+   1.0
+  ],
+  "ids": [
+   -5,
+   -4,
+   -3,
+   -2,
+   -1,
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "n_lines": 12,
+  "lit_px_total": 34816,
+  "segments": {
+   "-5": {
+    "q_px": -243.05555555555554,
+    "start_uv": [
+     12.444444444444457,
+     -0.5
+    ],
+    "end_uv": [
+     12.444444444444457,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   },
+   "-4": {
+    "q_px": -198.61111111111111,
+    "start_uv": [
+     56.888888888888886,
+     -0.5
+    ],
+    "end_uv": [
+     56.888888888888886,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 2560,
+    "mean_lit_width_px": 5.0
+   },
+   "-3": {
+    "q_px": -154.16666666666666,
+    "start_uv": [
+     101.33333333333334,
+     -0.5
+    ],
+    "end_uv": [
+     101.33333333333334,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   },
+   "-2": {
+    "q_px": -109.72222222222221,
+    "start_uv": [
+     145.77777777777777,
+     -0.5
+    ],
+    "end_uv": [
+     145.77777777777777,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   },
+   "-1": {
+    "q_px": -65.27777777777777,
+    "start_uv": [
+     190.22222222222223,
+     -0.5
+    ],
+    "end_uv": [
+     190.22222222222223,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   },
+   "0": {
+    "q_px": -20.833333333333332,
+    "start_uv": [
+     234.66666666666666,
+     -0.5
+    ],
+    "end_uv": [
+     234.66666666666666,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   },
+   "1": {
+    "q_px": 23.61111111111111,
+    "start_uv": [
+     279.1111111111111,
+     -0.5
+    ],
+    "end_uv": [
+     279.1111111111111,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 2560,
+    "mean_lit_width_px": 5.0
+   },
+   "2": {
+    "q_px": 68.05555555555556,
+    "start_uv": [
+     323.55555555555554,
+     -0.5
+    ],
+    "end_uv": [
+     323.55555555555554,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   },
+   "3": {
+    "q_px": 112.5,
+    "start_uv": [
+     368.0,
+     -0.5
+    ],
+    "end_uv": [
+     368.0,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 2560,
+    "mean_lit_width_px": 5.0
+   },
+   "4": {
+    "q_px": 156.94444444444443,
+    "start_uv": [
+     412.44444444444446,
+     -0.5
+    ],
+    "end_uv": [
+     412.44444444444446,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   },
+   "5": {
+    "q_px": 201.38888888888889,
+    "start_uv": [
+     456.8888888888889,
+     -0.5
+    ],
+    "end_uv": [
+     456.8888888888889,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 2560,
+    "mean_lit_width_px": 5.0
+   },
+   "6": {
+    "q_px": 245.83333333333331,
+    "start_uv": [
+     501.3333333333333,
+     -0.5
+    ],
+    "end_uv": [
+     501.3333333333333,
+     511.5
+    ],
+    "length_px": 512.0,
+    "lit_px": 3072,
+    "mean_lit_width_px": 6.0
+   }
+  },
+  "clipped_lines": {},
+  "rule": "pixel lit when |n.(p - c) - (k + phase_frac) * spacing_px| <= line_width_px / 2; ids = lines whose centre segment lies inside the image (fully clipped bands stay lit and are listed under clipped_lines)"
+ },
+ "npz_sha256": "9ac4e3e66705bd9923d24a3c8c9c5f9c9c8c81a7c50f14f4c324bf1895367592",
+ "complete": true
+}

@@ -1,0 +1,7 @@
+# Preserve exact bytes, including original line endings, for recorded hashes.
+* -text
+*.py diff=python
+*.png binary
+*.pdf binary
+*.npz binary
+*.gz binary

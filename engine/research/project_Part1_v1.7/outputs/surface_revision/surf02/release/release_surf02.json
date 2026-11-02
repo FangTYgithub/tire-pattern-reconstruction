@@ -1,0 +1,84 @@
+{
+ "released": true,
+ "version": "SURF-02 v1.1 (2026-10-12)",
+ "released_local": "2026-10-12T00:07:10+02:00",
+ "task": "S1-REAL-01",
+ "authorised_by": "user task S1-REAL-01 (2026-10-11): complete the SURF-02 release record and binding; technical release for section 1 after the listed checks",
+ "scope": {
+  "decode_paths": [
+   "D0 (dots)",
+   "P4_C3_cal (lines)"
+  ],
+  "not_provided": [
+   "ENC_*",
+   "LC_*",
+   "P4_ref",
+   "SPAT_*",
+   "P2_C1_guard"
+  ],
+  "sections": "S1 now; S2 / S5 may bind read-only"
+ },
+ "dependency_manifest": "outputs/surface_revision/surf02/release/dependencies_surf02_v1_1.json",
+ "dependency_manifest_sha256": "547c33d04f84699945b78cfce2c1547c3ccc4947b1ce31639793ece09f5722e0",
+ "v1_registration": {
+  "config": "outputs/surface_revision/surf02/config/surf02_config.json",
+  "config_sha256": "5b8eed1823d953aeb3e257a99bdf5ca4f3549ce48cb4166587b52ae3d7561c51",
+  "differences": [
+   {
+    "file": "scripts/surface_revision/surf02/s2_common.py",
+    "v1_sha256_prefix": "58318e404290",
+    "change": "n_nonfinite counted among ACCEPTED points only (evaluation bookkeeping; images, decodes and all other metrics unchanged)",
+    "proof": "reversing this one line reproduces the registered sha256 exactly"
+   },
+   {
+    "file": "scripts/surface_revision/surf02/s2_run.py",
+    "v1_sha256_prefix": "7db6f2ce06e8",
+    "change": "SURF-02 check tolerances (1e-6 -> 1e-5 mm float32 output; 5e-4 -> 1e-3 mm bilinear bound) and reuse of stored check / grid cases; runner only, not imported by the platform",
+    "proof": "reversing these edits (LF) reproduces the registered sha256 exactly"
+   },
+   {
+    "file": "scripts/surface_revision/surf02/s2_common.py",
+    "change": "v1.1 (S1-REAL-01): line_cfg(peak) (pattern_peak = actual peak; default 1.0 = v1), point_validity() shared by evaluate and the section adapters, VERSION string",
+    "proof": "replay of the 32 stored SURF-02 images: accepted masks, counts and identities exact, points within float32 storage tolerance, metrics within 1e-9"
+   },
+   {
+    "file": "src/m3_virtual_camera.py",
+    "change": "working-copy line endings normalised CRLF -> LF (content identical; git diff = z_alignment mode only)"
+   }
+  ]
+ },
+ "basis": {
+  "tests_v115": "53/53 (tests/test_v115.py, 2026-10-12, log outputs/surface_revision/s1_real01/checks/test_v115_v1_1.log)",
+  "surf02_checks": {
+   "file": "outputs/surface_revision/surf02/checks/surf02_checks.json",
+   "sha256": "f4010a3a7efef5a36cd5df037e67d480e3dd7a2c4a4e6b6eaa21d1f6ac376d0c",
+   "all_passed": true
+  },
+  "replay": {
+   "file": "outputs/surface_revision/s1_real01/checks/replay_surf02.json",
+   "sha256": "3170852bf87616d14efbf269f57fe3623401c01420c6f8cb0ee0043df7caca37",
+   "all_equal": true,
+   "n": 32
+  }
+ },
+ "conventions": {
+  "mapping": "x = -x_p, y = y_p, z = c - H",
+  "c_ref_mm": 16.645465475819755,
+  "z_alignment": "absolute",
+  "window_mm": [
+   -16.0,
+   4.0
+  ],
+  "camera_mm": [
+   0,
+   25,
+   -150
+  ],
+  "projector_mm": [
+   0,
+   -25,
+   -150
+  ],
+  "note": "nominal simulation device (150 mm working distance is a project parameter, not a verified installation distance)"
+ }
+}

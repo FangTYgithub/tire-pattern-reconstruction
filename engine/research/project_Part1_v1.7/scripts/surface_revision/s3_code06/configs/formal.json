@@ -1,0 +1,182 @@
+{
+ "name": "formal",
+ "evidence": "Formal Abschnitt 3 (6.336 Bilder, N0-N7, 2 Realisierungen) - noch nicht aufgenommen",
+ "evidence_kind": "formal",
+ "record_source": "c34_files",
+ "key_scheme": "c4",
+ "data_root": "outputs/surface_revision/s3_code06/formal_run/records",
+ "inputs": {
+  "manifest": {
+   "file": "outputs/surface_revision/s3_code04/formal/manifest.csv",
+   "sha256": "98a01c564aeb75e01c44e7b08552290bb9075a8bc1c11bff24c1ef64984315c7"
+  },
+  "freeze": {
+   "file": "outputs/surface_revision/s3_code04/formal/frozen.json",
+   "sha256": "8aaaf7e025edd965485d6e82762934844af04b8bd2c52686027c57f40d2564d1"
+  },
+  "class_map": {
+   "file": "outputs/surface_revision/s3_code04/formal/class_map.csv",
+   "sha256": "d74571228b49870fd9fd1be304bdbdf47f54fb8428475ba160263b7b1b48efb1"
+  }
+ },
+ "fingerprints_from": "freeze",
+ "freeze_closure": "verify",
+ "denominators": "derived",
+ "profile": "c34",
+ "structure": {
+  "name": "formal_8_phases_2_reps",
+  "stratum": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "pattern",
+   "sigma"
+  ],
+  "phase_col": "phase_id",
+  "phases": {
+   "*": [
+    "N0",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7"
+   ]
+  },
+  "reps": {
+   "*": {
+    "zero": [
+     0
+    ],
+    "pos": [
+     0,
+     1
+    ]
+   }
+  },
+  "rep_source": "column",
+  "seed_col": "seed",
+  "pair_block": [
+   "family",
+   "surface",
+   "layout",
+   "regime",
+   "phase_id",
+   "sigma",
+   "rep"
+  ],
+  "pair_key_col": "pair_key",
+  "patterns": [
+   "plain",
+   "weak",
+   "mid",
+   "strong"
+  ],
+  "geometry_cols": [
+   "u",
+   "v",
+   "phase_frac"
+  ],
+  "parity_rule": "formal_N",
+  "block_layers": "formal_N",
+  "ref_col": "ref_image_key",
+  "ref_same": [
+   "surface",
+   "layout",
+   "pattern",
+   "phase_id",
+   "code_parity"
+  ]
+ },
+ "pairs": {
+  "dots_rules": [
+   "B0",
+   "DF",
+   "DS"
+  ],
+  "dots_front_ends": [
+   [
+    "DF",
+    "B0"
+   ],
+   [
+    "DS",
+    "B0"
+   ],
+   [
+    "DF",
+    "DS"
+   ]
+  ],
+  "lines_coded_rules": [
+   "R@1.1247",
+   "LB@1.0000"
+  ],
+  "lines_reference": "ignore",
+  "lines_scheme": [
+   "R@1.1247",
+   "P4"
+  ]
+ },
+ "bootstrap": {
+  "n": 2000,
+  "seed": 20261015
+ },
+ "figures": [
+  "F1",
+  "F2",
+  "F5"
+ ],
+ "cases": [
+  {
+   "family": "dots",
+   "layout": "R6x4",
+   "pattern": "mid",
+   "surface": "M24_curv",
+   "phase_id": "N3",
+   "rep": 1,
+   "rule": "DF",
+   "arm": "use",
+   "sigmas": [
+    0.0,
+    40.0,
+    100.0
+   ]
+  },
+  {
+   "family": "lines",
+   "layout": "5.6",
+   "pattern": "strong",
+   "surface": "M24_curv",
+   "phase_id": "N5",
+   "rep": 0,
+   "rule": "R@1.1247",
+   "arm": "R@1.1247",
+   "sigmas": [
+    0.0,
+    20.0,
+    60.0
+   ]
+  }
+ ],
+ "case_states": {
+  "no_output": "0 accepted points",
+  "degraded": "C_tau below 0.5 x C_tau of the first sigma of the same case row",
+  "normal": "otherwise",
+  "not_found": "no record satisfies the registered condition (never replaced by another case)"
+ },
+ "output": "outputs/surface_revision/s3_code06/batches/formal",
+ "derived": "compute",
+ "derived_tag": "S3-CODE-06 A2 derived evaluation v1",
+ "roots": {
+  "records": "outputs/surface_revision/s3_code06/formal_run/records",
+  "run": "outputs/surface_revision/s3_code06/formal_run/run",
+  "derived": "outputs/surface_revision/s3_code06/formal_run/derived",
+  "analysis": "outputs/surface_revision/s3_code06/batches/formal"
+ },
+ "note": "future formal batch (6,336 images); NOT run in this round; one configuration binds every directory",
+ "package_freeze": "outputs/surface_revision/s3_code06/formal/frozen.json"
+}
