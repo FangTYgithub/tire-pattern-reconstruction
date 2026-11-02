@@ -2,6 +2,8 @@
 
 Python 3.13. Source, digitised profiles, experiment settings, phases and seeds are included. Generated results are not bundled.
 
+[KI-Nutzungserklärung (PDF)](KI_Nutzungserklaerung.pdf)
+
 ## Run
 
 ```powershell
@@ -75,4 +77,4 @@ Final figure scripts: `plots/kap2_redraw.py`, `kap3_redraw.py`, `kap3b_redraw.py
 
 Study IDs, schema versions and hashes preserve result compatibility. Public entries use the packaged inputs; older study runners also contain protocol and release interfaces. Generated outputs are excluded from submission and Git.
 
-All packaged paths and public commands use English names. Original surface labels remain as UTF-8 metadata in the frozen surface configuration and two corresponding modules. They require no Chinese system locale. Legacy protocol-document paths are not used by public commands.
+All packaged paths are ASCII; public commands use English names. Original surface labels remain as UTF-8 metadata in the frozen surface configuration and two corresponding modules. They require no Chinese system locale. Legacy protocol-document paths are not used by public commands.
